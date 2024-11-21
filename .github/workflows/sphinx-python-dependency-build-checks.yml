@@ -39,7 +39,7 @@ jobs:
             python3-venv \
             rustc
       - name: Build Sphinx venv
-        working-directory: "docs"
+        working-directory: "."
         run: |
           set -ex
           make -f Makefile.sp \
