@@ -12,7 +12,7 @@ build:
     python: "3.11"
   jobs:
     pre_install:
-      - git fetch --unshallow || true
+      - git fetch || true
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
