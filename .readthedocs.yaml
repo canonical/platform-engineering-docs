@@ -12,7 +12,7 @@ build:
     python: "3.11"
   jobs:
     post_checkout:
-      - git fetch --unshallow || true
+      - git fetch --depth 1 || true
       - git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' || true
       - git fetch --all --tags || true
 
