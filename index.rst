@@ -45,7 +45,7 @@ Resources
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 3
 
    Home <self>
    How to <how-to/index>
