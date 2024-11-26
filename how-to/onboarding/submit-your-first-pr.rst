@@ -1,21 +1,21 @@
 How to submit your first pull request
 =====================================
 
-This is a quick guide to help onboarders submit their first PR!
+This is a quick guide to help newcomers submit their first PR!
 
-Sounds simple enough - you may even have already forked a repo and successfully
+Sounds simple enough - you may even have already forked a repository and successfully
 merged your branch. While this is perfectly fine to do, Jira can automatically
 track the progress of a story if we employ a few simple practices in our workflow.
 
 This guide is optional but can help your team (and yourself) track progress on a
 task better through the Jira dashboard.
 
-Basic Outline
--------------
+Requirements
+------------
 
-- Prepare your branch
-- Standardise commit messages
-- Create your PR
+- GitHub account
+- Knowledge of the `contributing guide <https://github.com/canonical/is-charms-contributing-guide>`_
+- Jira account
 
 Steps
 -----
@@ -23,7 +23,7 @@ Steps
 Prepare your branch
 ~~~~~~~~~~~~~~~~~~~
 
-Firstly, we want to clone the repo we want to modify We will create our own branch
+Firstly, we want to clone the repository we want to modify We will create our own branch
 to work on, and once finished we will push to an upstream version of that branch.
 
 Once cloned, we will checkout to a carefully named branch. The name of this branch
@@ -55,13 +55,12 @@ be done by setting the upstream target to be titled the same as our local branch
 
 Once this has been done, we can create a pull request to compare this remote branch to main.
 
-If the repo is public, consider renaming the PR title to explain your issue clearly. For
+If the repository is public, consider renaming the PR title to explain your issue clearly. For
 those external to Canonical, the Jira identifiers mean nothing!
 
-Also remember to fill out the spec to describe what your PR aims to do.
+Also remember to fill out the specification to describe what your PR aims to do.
 
 If your PR is currently being worked on, remember to mark your PR as a draft so that it is
 not accidentally merged.
 
-From here, we just have to wait for your PR to be accepted! Typically, a number of reviewers
-will have to check the changes you have made before a merge will be allowed.
+From here, we just have to wait for your PR to be accepted!
