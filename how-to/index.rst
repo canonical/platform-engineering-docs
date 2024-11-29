@@ -12,4 +12,4 @@ Various docs that will help with your on-boarding in the Platform Engineering te
    :maxdepth: 1
 
    /how-to/onboarding/index
-   Submit your first pull request </how-to/onboarding/submit-your-first-pr>
+   Connect your pull request to a Jira ticket </how-to/onboarding/submit-a-pr-tied-to-jira>
