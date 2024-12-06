@@ -1,2 +1,9 @@
 Jira
 ISD
+Github
+APAC
+EMEA
+Onboarding
+DevOps
+Indico
+Wordpress
