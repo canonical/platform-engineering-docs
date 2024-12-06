@@ -305,7 +305,7 @@ repositories:
     - [ ] The changes are compliant with [ISD054 - Manging Charm Complexity](https://discourse.charmhub.io/t/specification-isd014-managing-charm-complexity/11619)
     - [ ] The documentation is generated using `src-docs`
     - [ ] The documentation for charmhub is updated.
-    - [ ] The PR is tagged with appropriate label (`urgent`, `trivial`, `require-senior-review`, `documentation`)
+    - [ ] The PR is tagged with appropriate label (`trivial`, `require-senior-review`, `documentation`)
 
     <Explanation for any unchecked items above>
 
