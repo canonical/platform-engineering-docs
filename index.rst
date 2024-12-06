@@ -9,7 +9,7 @@ For a full list of charms we are responsible for, see the `Charm Engineering Rel
 Our mission
 -----------
 
-Our mission is to drive operational efficiency and enable self service capabilities through standardising workflows, building toolchains and automating key operations.
+Our mission is to drive operational efficiency and enable self service capabilities through standardising workflows, building tool chains and automating key operations.
 We are building foundational components that allow IS to provide our internal cloud as a service.
 
 Roadmap
