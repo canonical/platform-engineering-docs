@@ -1,15 +1,18 @@
-Platform Engineering how-to guides
+Delivery Workflows
 ==================================
 
-These guides cover key operations, requests and tasks related to Platform Engineering.
-
-On-boarding
------------
-
-Various docs that will help with your on-boarding in the Platform Engineering team.
 
 .. toctree::
    :maxdepth: 1
 
-   /how-to/onboarding/index
-   Connect your pull request to a Jira ticket </how-to/onboarding/submit-a-pr-tied-to-jira>
+   /delivery-workflows/cycles/index
+   Cycle Planning </delivery-workflows/cycles/cycle-planning>
+   /delivery-workflows/cycles/index
+   Cycle Retro </delivery-workflows/cycles/cycle-planning>
+   /delivery-workflows/pulses/index
+   Pulse Planning </delivery-workflows/pulses/pulse-planning>
+   /delivery-workflows/pulses/index
+   Pulse Demo </delivery-workflows/pulses/pulse-demo>
+   /delivery-workflows/pulses/index
+   Pulse Retro </delivery-workflows/pulses/pulse-retro>
+   
