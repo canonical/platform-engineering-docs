@@ -1,4 +1,4 @@
-Delivery Workflows
+Platform Engineering Team
 ==================================
 
 The Platform Engineering team (formerly IS DevOps) is responsible for building, transitioning and maintaining operations-specific charms in line with the latest charming standards. 
