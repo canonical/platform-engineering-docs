@@ -213,7 +213,7 @@ help indicate the complexity of the review:
 
 PRs in GitHub can be labeled in the following way below the reviewers section:
 
-.. image:: team-practices/add-labels.jpg
+.. image:: add-labels.jpg
   :width: 400
 
 PRs with documentation
