@@ -262,14 +262,14 @@ such as enabling a new bot), the PR description should include:
 * Any high level changes to modules and why (Service, Observer, helper)
 * Any changes to charm libraries
 * Either
-  * A confirmation that
-    * The `charm style guide <https://juju.is/docs/sdk/styleguide>`_ was applied
-    * The
-      `contributing guide <https://github.com/canonical/is-charms-contributing-guide>`_
-      was applied
-    * The changes are compliant with
-      `ISD014 - Managing Charm Complexity <https://docs.google.com/document/d/1G62PosrObvmQY5KbxvqaxByojlhDxrmNtcbPS39YbaY/edit?usp=sharing>`_
-  * Or which of the standards/ guidelines was not applied and why
+    * A confirmation that
+        * The `charm style guide <https://juju.is/docs/sdk/styleguide>`_ was applied
+        * The
+          `contributing guide <https://github.com/canonical/is-charms-contributing-guide>`_
+        was applied
+        * The changes are compliant with
+          `ISD014 - Managing Charm Complexity <https://docs.google.com/document/d/1G62PosrObvmQY5KbxvqaxByojlhDxrmNtcbPS39YbaY/edit?usp=sharing>`_
+    * Or which of the standards/ guidelines was not applied and why
 
 The above should be created as a template for raising PRs across all of our
 repositories:
