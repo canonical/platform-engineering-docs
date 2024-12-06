@@ -1,2 +1,12 @@
-Jira
+deliverables
+DevOps
+docstrings
 ISD
+Jira
+juju
+PR
+PRs
+SRR
+Standup
+standup
+WIP
