@@ -1,4 +1,4 @@
-Onboarding
+Security Practices
 ==================================
 
 .. toctree::
