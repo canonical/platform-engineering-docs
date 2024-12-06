@@ -4,7 +4,7 @@ Platform Engineering Team
 The Platform Engineering team (formerly IS DevOps) is responsible for building, transitioning and maintaining operations-specific charms in line with the latest charming standards. 
 We have 3 teams with folks from Americas, EMEA and APAC and are responsible for products like Indico, Github runners, Jenkins, Wordpress, Discourse, 12-factor charms and many more!
 
-For a full list of charms we are responsible for, see the `Charm Engineering Releases<https://releases.juju.is/?team=IS>` page.
+For a full list of charms we are responsible for, see the `Charm Engineering Releases <https://releases.juju.is/?team=IS>`_ page.
 
 Our mission
 -----------
@@ -15,13 +15,13 @@ We are building foundational components that allow IS to provide our internal cl
 Roadmap
 -----------
 
-* `Public Roadmap <https://docs.google.com/spreadsheets/d/1ykieRvaUVY4fS4ZqGH_jjyQuI6K-wBxgzQoTT2g_3vg/edit?gid=1941638273#gid=1941638273>`
+* `Public Roadmap <https://docs.google.com/spreadsheets/d/1ykieRvaUVY4fS4ZqGH_jjyQuI6K-wBxgzQoTT2g_3vg/edit?gid=1941638273#gid=1941638273>`_
 
-* `Team internal cycle planning and roadmap document <https://docs.google.com/spreadsheets/d/1iSkut6Qf_mm7_HynYeCX_lB47noCGJuXNe1ODrbXTPk/edit#gid=0>`
+* `Team internal cycle planning and roadmap document <https://docs.google.com/spreadsheets/d/1iSkut6Qf_mm7_HynYeCX_lB47noCGJuXNe1ODrbXTPk/edit#gid=0>`_
 
 Team members
 ------------
-This is a global team with a team in each of the regions(EMEA, APAC and Americas). A full list of everyone can be found on the `directory <https://directory.canonical.com/products/Platform%20Engineering>`!
+This is a global team with a team in each of the regions(EMEA, APAC and Americas). A full list of everyone can be found on the `directory <https://directory.canonical.com/products/Platform%20Engineering>`_ !
 
 
 Resources
