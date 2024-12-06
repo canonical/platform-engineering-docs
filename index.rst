@@ -15,13 +15,14 @@ We are building foundational components that allow IS to provide our internal cl
 Roadmap
 -----------
 
-`Public Roadmap<https://docs.google.com/spreadsheets/d/1ykieRvaUVY4fS4ZqGH_jjyQuI6K-wBxgzQoTT2g_3vg/edit?gid=1941638273#gid=1941638273>`
-`Team internal cycle planning and roadmap document<https://docs.google.com/spreadsheets/d/1iSkut6Qf_mm7_HynYeCX_lB47noCGJuXNe1ODrbXTPk/edit#gid=0>`
+* `Public Roadmap <https://docs.google.com/spreadsheets/d/1ykieRvaUVY4fS4ZqGH_jjyQuI6K-wBxgzQoTT2g_3vg/edit?gid=1941638273#gid=1941638273>`
+
+* `Team internal cycle planning and roadmap document <https://docs.google.com/spreadsheets/d/1iSkut6Qf_mm7_HynYeCX_lB47noCGJuXNe1ODrbXTPk/edit#gid=0>`
 
 Team members
 ------------
-This is a global team with a team in each of the regions(EMEA, APAC and Americas). A full list of everyone can be found on the `directory<https://directory.canonical.com/products/Platform%20Engineering>`!
-``
+This is a global team with a team in each of the regions(EMEA, APAC and Americas). A full list of everyone can be found on the `directory <https://directory.canonical.com/products/Platform%20Engineering>`!
+
 
 Resources
 ---------
@@ -30,7 +31,7 @@ Resources
 * `Get support <https://discourse.charmhub.io/>`_
 * `Private Mattermost channel <https://chat.canonical.com/canonical/channels/is-charms>`_
 * `Contributing guide <https://github.com/canonical/is-charms-contributing-guide>`_
-* `Roadmap <https://docs.google.com/spreadsheets/d/1iSkut6Qf_mm7_HynYeCX_lB47noCGJuXNe1ODrbXTPk/edit?usp=sharing>`_
+
 
 
 .. toctree::
