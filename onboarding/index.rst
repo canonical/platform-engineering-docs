@@ -1,9 +1,8 @@
 Onboarding
-==================================
+==========
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
-   /onboarding/index
-   Onboarding </onboarding/index>
+   Connect your pull request to a Jira ticket </onboarding/submit-a-pr-tied-to-jira>

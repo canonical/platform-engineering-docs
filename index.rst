@@ -21,7 +21,7 @@ Roadmap
 
 Team members
 ------------
-This is a global team with a team in each of the regions(EMEA, APAC and Americas). A full list of everyone can be found on the `directory <https://directory.canonical.com/products/Platform%20Engineering>`_!
+This is a global team with a team in each of the regions (EMEA, APAC and Americas). A full list of everyone can be found on the `directory <https://directory.canonical.com/products/Platform%20Engineering>`_!
 
 
 Resources
@@ -45,5 +45,3 @@ Resources
    Implementation <implementation/index>
    Onboarding <onboarding/index>
    Security Practices <security-practices/index>
-   How to <how-to/index>
-
