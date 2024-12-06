@@ -266,7 +266,7 @@ such as enabling a new bot), the PR description should include:
         * The `charm style guide <https://juju.is/docs/sdk/styleguide>`_ was applied
         * The
           `contributing guide <https://github.com/canonical/is-charms-contributing-guide>`_
-        was applied
+          was applied
         * The changes are compliant with
           `ISD014 - Managing Charm Complexity <https://docs.google.com/document/d/1G62PosrObvmQY5KbxvqaxByojlhDxrmNtcbPS39YbaY/edit?usp=sharing>`_
     * Or which of the standards/ guidelines was not applied and why
