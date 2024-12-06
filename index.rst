@@ -49,3 +49,4 @@ Resources
 
    Home <self>
    How to <how-to/index>
+   Team practises <team-practises/index>
