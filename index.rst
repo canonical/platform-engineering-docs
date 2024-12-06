@@ -7,32 +7,6 @@ other items.
 
 ---------
 
-In this documentation
----------------------
-
-..  grid:: 1 1 2 2
-
-   ..  grid-item:: :doc:`Tutorial </index>`
-
-       **Start here**: a hands-on introduction for new users
-
-   ..  grid-item:: :doc:`How-to guides <how-to/index>`
-
-      **Step-by-step guides** covering key operations and common tasks
-
-.. grid:: 1 1 2 2
-   :reverse:
-
-   .. grid-item:: :doc:`Reference </index>`
-
-      **Technical information** - specifications, APIs, architecture
-
-   .. grid-item:: :doc:`Explanation </index>`
-
-      **Discussion and clarification** of key topics
-
----------
-
 Resources
 ---------
 
