@@ -33,7 +33,7 @@ branch named ``feat/ISD-5678``:
 
    git checkout -b 'feat/ISD-5678'
 
-Standardise commit messages
+Standardize commit messages
 ---------------------------
 
 When you have changed some code, commit using a consistent style to make it clear
