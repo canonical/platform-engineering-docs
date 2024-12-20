@@ -47,6 +47,7 @@ Resources
    Delivery Workflows <delivery-workflows/index>
    Delivery Practices <delivery-practices/index>
    Design <design/index>
+   Documentation <documentation/index>
    Implementation <implementation/index>
    Onboarding <onboarding/index>
    Security Practices <security-practices/index>
