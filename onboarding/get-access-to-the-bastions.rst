@@ -6,7 +6,7 @@ This is a quick guide to help newcomers access the bastions.
 Requirements
 ------------
 
-- Have a ssh key on your `Launchpad <https://launchpad.net/people/+me>`_ account.
+- Have a SSH key on your `Launchpad <https://launchpad.net/people/+me>`_ account.
 - Be part of the `Canonical Platform Engineering <https://launchpad.net/~canonical-is-devops>`_ team.
 
 Create a PR to be added to the IAM group
