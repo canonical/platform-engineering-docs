@@ -1,9 +1,12 @@
 Guidance on writing READMEs
 ===========================
 
-The README is a vital part of our charm's documentation. It helps the user
+The README is a vital part of a charm's documentation. It helps the user
 navigate the code repository, and it provides a brief description of the
 project and links to relevant resources (especially documentation).
+
+The README template
+~~~~~~~~~~~~~~~~~~~
 
 If you create a new charm using the ``is-charms-template-repo``, then your new
 repository will contain the `README template <https://github.com/canonical/is-charms-template-repo/blob/main/README.md>`_
@@ -29,7 +32,7 @@ The template contains the following required components:
   tutorial in its documentation, use this section to link the documentation.
   You don't need to duplicate documentation here. If the tutorial is more
   complex than getting started, then provide brief descriptions of the steps
-  needed for the simplest deployment.
+  needed for the simplest possible deployment.
 * **Basic operations**. Use this section to provide information on important
   actions, required configurations, or other operations the user should know
   about. You don't need to list every action or configuration. Use this section
@@ -37,7 +40,7 @@ The template contains the following required components:
 * **Learn more**. Provide a list of resources, including the official
   documentation, developer documentation, an official website for the software
   and a troubleshooting guide. Note that this list is not exhaustive or always
-  relevant for your charm. If there is no official troubleshooting guide,
+  relevant for every charm. If there is no official troubleshooting guide,
   include a link to the relevant Matrix channel.
 * **Project and community**. Use this section to link to the issues page,
   Launchpad (if applicable), contributing guides, and other contact info such
@@ -49,8 +52,8 @@ whether your charm supports any integrations. Use this section to inform the
 user about any required integrations. Otherwise, include a link the Charmhub
 documentation on integrations. 
 
-Implementing the template for more complex cases
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Implementing the README template for more complex cases
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The README template may not be appropriate for certain charms or projects.
 In this case, use your best discretion for additional sections to include
@@ -58,9 +61,9 @@ or sections to ignore.
 
 In the case of a mono-repository setup where multiple charms are housed in the
 same code repository, it may be more appropriate to adopt this template in the
-individual charm directories, and include a README in the root directory to
-offer context for the repository structure and provide a brief description of
-its components.
+directories for the individual charms, and then include a README in the root
+directory to offer context for the repository structure and provide a brief
+description of its components.
 
 Example READMEs
 ~~~~~~~~~~~~~~~
