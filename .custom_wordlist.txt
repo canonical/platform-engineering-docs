@@ -1,11 +1,16 @@
+amd
 APAC
+Chrony
 Daniele
 DevOps
 Diátaxis
 EMEA
 Github
 GitHub
+inclusivity
 Indico
+Integrations
+integrations
 ISD
 Jira
 Maubot
@@ -14,4 +19,5 @@ MicroK8s
 Multipass
 Onboarding
 READMEs
+Varshi
 Wordpress

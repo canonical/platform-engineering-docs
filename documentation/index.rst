@@ -51,7 +51,7 @@ When testing locally, some useful commands include:
 * ``make spellcheck`` runs the spelling check. You can add words to
   ``.custom_wordlist.txt`` to prevent unnecessary failures.
 * ``make linkcheck`` runs the link checker.
-* ``make woke`` runs the inclusivty tests.
+* ``make woke`` runs the inclusivity tests.
 
 Resources
 ~~~~~~~~~

@@ -19,7 +19,7 @@ The template was born from documentation practice discussions about offering
 guidelines on charm documentation, from the code repository to Charmhub. The
 template aims to meet the needs of a basic charm implementation and does not
 cover more complex situations (for instance, mono-repository projects with
-multple charms or directories). 
+multiple charms or directories). 
 
 The template contains the following required components:
 
