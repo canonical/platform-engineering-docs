@@ -5,9 +5,9 @@ A `tutorial <https://diataxis.fr/tutorials/>`_ is a learning-based, end-to-end
 experience that provides a complete journey for the user.
 
 The majority of our tutorials take on the form "Deploy X charm for the first
-time". This document will provide guidance on constructing a tutorial of this
-type, whether you are updating an existing tutorial or creating one from
-scratch.
+time". This document will provide guidance on constructing or editing a
+tutorial of this type, although some parts of this document is still
+applicable to a different type of tutorial.
 
 Pieces of the tutorial
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -24,12 +24,14 @@ The tutorial should contain the following pieces:
 * **What you'll do**. This should be the first section in the tutorial. It
   aims to quickly and succinctly establish everything the user will do in the
   tutorial. 
-* **Requirements**. In this section, provide the list below. If the charm
-  supports architecture beyond amd64, update accordingly. If the tutorial
-  involves a machine charm, update the type of controller that the user will
-  need. If there is some reason why a Multipass VM is not acceptable for the
-  tutorial, provide an alternate guide to help the user with installing Juju
-  and bootstrapping a controller. Finally, include additional information if the
+* **Requirements**. This section should contain a list of resources, software
+  or other tools that the user will need before starting the tutorial. In
+  this section, provide *at least* the list below. If the tutorial supports
+  architecture beyond amd64, update accordingly. If the tutorial involves
+  a machine charm, update the type of controller that the user will need. If
+  there is some reason why a Multipass VM is not acceptable for the tutorial,
+  provide an alternate guide to help the user with installing Juju and
+  bootstrapping a controller. Finally, include additional information if the
   tutorial will require significant resources (CPU, RAM, or disk space).
 
   * A working station, e.g., a laptop, with amd64 architecture.
@@ -39,17 +41,17 @@ The tutorial should contain the following pieces:
 
 * **Set up tutorial model**. The tutorial should begin at this point. Have
   the user create Juju model with a predetermined name so that you can reference
-  it throughout the tutorial.
+  the model name throughout the tutorial.
 * **Deploy the charm + its dependencies**. If the charm requires any other
-  charms to successfully deploy, either include in this section or split into
-  multiple sections. Use this section to enable any required configurations.
-  Make sure to briefly explain what the configuration or additional charms are
+  charms to successfully deploy, either include in a single section or split into
+  multiple sections. Use this pat of the tutorial to enable any required configurations.
+  Make sure to briefly explain what the configurations or additional charms are
   and why the steps are necessary. Split up important commands into separate
   command blocks, and provide explanations between each command.
 * **Check the deployment was successful**. Instruct the user to run
   ``juju status`` and show example output. If appropriate, also instruct the
-  user to run `kubectl get pods -n <juju model name>` and show the output.
-  Offer a brief explanation about how the user knows that the deployment was
+  user to run ``kubectl get pods -n <juju model name>`` and show the output.
+  Offer a brief explanation so that the user knows that the deployment was
   successful.
 * **Some final checkpoint**. Have the user visit a website, change a
   configuration, or run an action (maybe some combination of the three). Check
@@ -63,11 +65,12 @@ The tutorial should contain the following pieces:
 Other guidance
 ~~~~~~~~~~~~~~
 
-* Use section titles that summarize the action the user will take in that step.
+* Use section titles that summarize the action the user will take during that step.
   Avoid using present participles (for instance, "Deploying the charm") and
   instead opt for the infinitive (for the above example, use "Deploy the
   charm").
-* Test your tutorial! Or send to another team member so they can test!
+* Test your tutorial (either manually or using a spread test)! Or send the tutorial
+  to another team member so they can test it!
 
 Some example tutorials
 ~~~~~~~~~~~~~~~~~~~~~~
