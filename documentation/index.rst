@@ -16,20 +16,21 @@ maintained by Daniele. Our team is represented in this spreadsheet under "IS Cha
 2. **12-Factor app support**, representing the 12-Factor project.
 
 These rows are connected to automated objectives spreadsheets that track our
-documentation progress and update the dashboard.
+documentation progress and update the dashboard. The spreadsheets contain a
+list of approved agreement items between Erin, Varshi and Daniele for the
+upcoming cycle.
 
-We are represented in two rows because we wanted to reduce the duplication of
-effort maintaining 20+ spreadsheets for each individual charm. All of our charms
-are tracked in the `Wordpress spreadsheet <https://docs.google.com/spreadsheets/d/1v0DzKMIwj80vzfWJBAn2QsdgHIx9xYsL-xZBOf75GkI/edit?usp=sharing>`_
-under the "Other IS charms". That tab contains a subjective assessment of our
-charms' documentations when compared to the Wordpress charm. 
+We are represented in only two rows because we wanted to reduce the duplication of
+effort in maintaining 20+ spreadsheets for individual charms. Therefore, all of our
+charms are tracked in the
+`Wordpress spreadsheet <https://docs.google.com/spreadsheets/d/1v0DzKMIwj80vzfWJBAn2QsdgHIx9xYsL-xZBOf75GkI/edit?usp=sharing>`_
+under the "Other IS charms" tab. The tab contains a subjective assessment of our
+charms' documentation sets when compared to the Wordpress charm. 
 
-Because the 12-Factor app project is a distinct product comapred to the rest
-of our charms, the project is represented separately, and its documentation
-efforts are tracked in a `separate spreadsheet <https://docs.google.com/spreadsheets/d/1TYg6-4Ys6RMzmLvQNDq_Lxk6k5v7ykBscU6vmJB9414/edit?usp=sharing>`_.
-
-The automated objectives spreadsheets contain a list of approved
-agreement items between Erin, Varshi, and Daniele for the upcoming cycle.
+Because the 12-Factor app project is a distinct product compared to the rest
+of our charms, the project is represented separately in the documentation
+dashboard, and its agreement items are tracked in a
+`separate spreadsheet <https://docs.google.com/spreadsheets/d/1TYg6-4Ys6RMzmLvQNDq_Lxk6k5v7ykBscU6vmJB9414/edit?usp=sharing>`_.
 
 Contributing to our RTD site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,7 +51,7 @@ When testing locally, some useful commands include:
 * ``make spellcheck`` runs the spelling check. You can add words to
   ``.custom_wordlist.txt`` to prevent unnecessary failures.
 * ``make linkcheck`` runs the link checker.
-* ``make woke`` runs the inclusive tests.
+* ``make woke`` runs the inclusivty tests.
 
 Resources
 ~~~~~~~~~
