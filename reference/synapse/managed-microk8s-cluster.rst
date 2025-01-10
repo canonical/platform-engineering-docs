@@ -185,8 +185,8 @@ Configure Ingress
 Now we need to expose Synapse externally as it was set before via url
 `chat.staging.ubuntu.com <https://chat.staging.ubuntu.com>`_ . To do this, first let's enable Ingress in our cluster.
 
-Login in any worker and enable Ingress
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Log in to any worker and enable Ingress
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On bastion - **prod-synapse-microk8s** environment
 
