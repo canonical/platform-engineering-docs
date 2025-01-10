@@ -87,7 +87,7 @@ Submit FW rule allowing bastion to controller
 
 See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478599>`__.
 
-Add the new microk8s cloud
+Add the new MicroK8s cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On bastion - **prod-synapse-external** environment
