@@ -29,7 +29,7 @@ The reason for all the following MPs are described in the spec.
 - `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/477248>`__ firewall rules for bastion/juju controller
 - `canonical-is-dns-configs MP <https://code.launchpad.net/~amandahla/canonical-is-dns-configs/+git/canonical-is-dns-configs/+merge/477352>`_ DNS for microk8s workers
 
-The next step accordingly to the spec would be registering the cluster as a
+The next step according to the spec would be to register the cluster as a
 cloud and request it via ticket like it was done in the `C167497 <https://portal.admin.canonical.com/C167497/>`_.
 But IS mentioned that issues in our cluster could affect other environments so
 the solution was to create our own Juju controller.
