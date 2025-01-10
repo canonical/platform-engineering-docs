@@ -4,8 +4,8 @@ Managed MicroK8S Cluster
 We chose to set up our own cluster for the system to enhance stability and
 autonomy, ensuring it operates independently of other environments.
 
-This reference will explain the steps required for doing that considering
-specifically the Synapse architecture.
+This reference will explain the steps required for setting up a cluster
+specifically for the Synapse architecture.
 
 Create Microk8s Cluster
 -----------------------
