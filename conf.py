@@ -189,7 +189,9 @@ redirects = {}
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
     "https://github.com/canonical/ACME/*",
-    "https://github.com/canonical/infrastructure-services"
+    "https://github.com/canonical/infrastructure-services",
+    "https://github.com/canonical/is-prod-synapse-external/*",
+    "https://chat.staging.ubuntu.com"
 ]
 
 

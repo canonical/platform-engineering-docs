@@ -85,7 +85,7 @@ Manually edit the resource by adding other workers IP
 Submit FW rule allowing bastion to controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is the `MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478599>`_.
+See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478599>`_.
 
 Add the new microk8s cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -93,7 +93,231 @@ Add the new microk8s cloud
 On bastion - **prod-synapse-external** environment
 
 .. code:: bash
+
     KUBECONFIG=k8s_temp/prod-synapse-microk8s.yaml juju add-k8s cloud-prod-synapse-microk8s
 
 The kubeconfig can be copied from the **prod-synapse-microk8s** environment.
+
+Bootstrap the controller
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: bash
+
+    juju bootstrap cloud-prod-synapse-microk8s juju-controller-prod-synapse-microk8s-ps6 --config controller-service-type=loadbalancer
+
+Create a Juju model
+-------------------
+
+On bastion - **prod-synapse-external** environment
+
+Create the model
+~~~~~~~~~~~~~~~~
+
+.. code:: bash
+
+    juju add-model prod-synapse-external
+    # change JUJU_CONTROLLER and JUJU_MODEL in .bashrc file too
+    juju add-user prod-synapse-external
+    juju change-user-password prod-synapse-external
+    juju grant prod-synapse-external admin prod-synapse-external
+
+Create the user
+~~~~~~~~~~~~~~~
+
+.. code:: bash
+
+    juju add-user prod-synapse-external
+    juju change-user-password prod-synapse-external
+    juju grant prod-synapse-external admin prod-synapse-external
+
+The password will be used in next step *Apply the terraform plan*.
+
+Apply the terraform plan
+------------------------
+
+On bastion - **prod-synapse-external** environment
+
+Since we are using our own Juju controller now, the credentials should be added
+to Vault and the providers.tf file needs to be changed as well.
+
+Add credentials to Vault
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: bash
+
+  load_creds vault
+  vault write secret/prodstack6/roles/prod-synapse-external/juju-prod-synapse-microk8s password=[PASSWORD] username=prod-synapse-external
+  juju show-controller juju-controller-prod-synapse-microk8s-ps6 --format json| jq '.["juju-controller-prod-synapse-microk8s-ps6"].details["ca-cert"]'|sed 's/\\n/\n/g' > /tmp/cert
+  vault write secret/prodstack6/roles/prod-synapse-external/juju-controller-prod-synapse-microk8s-ps6 ca_cert="$(cat /tmp/cert)"
+
+Change the terraform plan
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The locals.tf and providers.tf need to be updated with the new cloud/vault information.
+
+See this `is-prod-synapse-external PR <https://github.com/canonical/is-prod-synapse-external/pull/11>`_  for reference.
+
+Re-import the model
+~~~~~~~~~~~~~~~~~~~
+
+Since the model was re-created, we need to re-import it.
+
+.. code:: bash
+
+    load_creds s3
+    terraform state rm module.synapse.juju_model.synapse
+    terraform import module.synapse.juju_model.synapse prod-synapse-external
+
+Apply the plan
+~~~~~~~~~~~~~~
+
+Upgrade the providers, apply the terraform and verify the changes.
+
+.. code:: bash
+
+  https_proxy=http://squid.internal:3128 NO_PROXY=radosgw.ps6.canonical.com terraform init -upgrade
+  terraform plan
+  juju status
+
+Configure Ingress
+-----------------
+
+Now we need to expose Synapse externally as it was set before via url
+`chat.staging.ubuntu.com <https://chat.staging.ubuntu.com>`_ . To do this, first let's enable Ingress in our cluster.
+
+Login in any worker and enable Ingress
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+On bastion - **prod-synapse-microk8s** environment
+
+.. code:: bash
+
+ juju ssh microk8s-worker/1
+ sudo microk8s enable ingress
+ exit
+
+Edit ingress daemonset
+~~~~~~~~~~~~~~~~~~~~~~
+
+On bastion - **prod-synapse-external** environment
+Note: you can do this in prod-synapse-microk8s as well just mind the namespaces.
+
+Edit ingress daemonset to be deployed on all worker nodes and publish-status-address to 0.0.0.0
+
+It should look like this:
+
+.. code:: bash
+
+    kubectl describe daemonset nginx-ingress-microk8s-controller -n ingress
+
+.. code:: yaml
+
+    Pod Template:
+      Labels:           name=nginx-ingress-microk8s
+      Service Account:  nginx-ingress-microk8s-serviceaccount
+      Containers:
+      nginx-ingress-microk8s:
+        Image:       registry.k8s.io/ingress-nginx/controller:v1.8.0
+        Ports:       80/TCP, 443/TCP, 10254/TCP
+        Host Ports:  80/TCP, 443/TCP, 10254/TCP
+        Args:
+          /nginx-ingress-controller
+          --configmap=$(POD_NAMESPACE)/nginx-load-balancer-microk8s-conf
+          --tcp-services-configmap=$(POD_NAMESPACE)/nginx-ingress-tcp-microk8s-conf
+          --udp-services-configmap=$(POD_NAMESPACE)/nginx-ingress-udp-microk8s-conf
+          --ingress-class=public
+          
+          --publish-status-address=0.0.0.0
+          
+          nodeSelector:
+            node.kubernetes.io/microk8s-worker: microk8s-worker
+
+
+Extracted backup from previous secret
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Since we have a certificate set, we'll get it from the previous secret.
+
+.. code:: bash
+
+  KUBECONFIG=~/.kube/config-20241218 kubectl get secret nginx-ingress-integrator-cert-tls-secret-chat.staging.ubuntu.com -o yaml > nginx-ingress-integrator-cert-tls-secret-chat.staging.ubuntu.com.bkp.yaml
+
+The kubeconfig can be copied from the **prod-synapse-microk8s** environment.
+
+Re-create the secret
+~~~~~~~~~~~~~~~~~~~~
+
+.. code:: bash
+
+  kubectl apply -f nginx-ingress-integrator-cert-tls-secret-chat.staging.ubuntu.com.bkp.yaml
+
+Edit ingress to enable TLS
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After applying the terraform, the ingress is created by the NGINX Integrator charm.
+
+.. code:: bash
+
+    kubectl edit ing relation-27-chat-staging-ubuntu-com-ingress
+
+    kubectl get ing relation-27-chat-staging-ubuntu-com-ingress -o yaml
+
+.. code:: yaml
+
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      annotations:
+        nginx.ingress.kubernetes.io/backend-protocol: HTTP
+        nginx.ingress.kubernetes.io/proxy-body-size: 21m
+        nginx.ingress.kubernetes.io/proxy-read-timeout: "60"
+        nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      creationTimestamp: "2024-12-19T17:23:15Z"
+      generation: 2
+      labels:
+        app.juju.is/created-by: nginx-ingress-integrator
+        nginx-ingress-integrator.charm.juju.is/managed-by: nginx-ingress-integrator
+      name: relation-27-chat-staging-ubuntu-com-ingress
+      namespace: prod-synapse-external
+      resourceVersion: "5370088"
+      uid: f018e32e-a75d-4e48-a343-f425981657be
+    spec:
+      ingressClassName: public
+      rules:
+      - host: chat.staging.ubuntu.com
+        http:
+          paths:
+          - backend:
+              service:
+                name: relation-27-synapse-service
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix
+      tls:
+      - hosts:
+        - chat.staging.ubuntu.com
+        secretName: nginx-ingress-integrator-cert-tls-secret-chat.staging.ubuntu.com
+    status:
+      loadBalancer:
+        ingress:
+        - ip: 0.0.0.0
+
+Submit firewall rules
+~~~~~~~~~~~~~~~~~~~~~
+
+We need to add FW rule to allow access to our Ingress.
+
+This rule also allows communication from the K8S workers to Swift/Rados required by Synapse Media Integration.
+
+See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478693>`_.
+
+And this `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478742>`_  adds the control nodes to proxy access as well.
+
+Change the DNS
+~~~~~~~~~~~~~~
+
+The URL chat.staging.ubuntu.com should point for the new IP now.
+
+See `canonical-is-dns-configs MP <https://code.launchpad.net/~amandahla/canonical-is-dns-configs/+git/canonical-is-dns-configs/+merge/478729>`_.
 
