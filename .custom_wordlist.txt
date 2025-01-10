@@ -1,9 +1,11 @@
 amd
 APAC
+Bootstack
 Chrony
 Daniele
 DevOps
 Diátaxis
+DNS
 EMEA
 Github
 GitHub
@@ -17,7 +19,14 @@ Maubot
 MicroK
 MicroK8s
 Multipass
+OCI
 Onboarding
+onboarding
+OpenStack
 READMEs
+subnets
+terraform
+Traefik
+uptime
 Varshi
 Wordpress

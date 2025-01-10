@@ -1,9 +1,10 @@
 Onboarding
 ==========
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
+These documents may be helpful as you get started in the team.
 
-   Connect your pull request to a Jira ticket </onboarding/submit-a-pr-tied-to-jira>
-   Get access to the bastions </onboarding/get-access-to-the-bastions>
+.. toctree::
+   :maxdepth: 2
+
+   How-to guides </onboarding/how-to/index>
+
