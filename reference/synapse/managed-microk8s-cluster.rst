@@ -85,7 +85,7 @@ Manually edit the resource by adding other workers IP
 Submit FW rule allowing bastion to controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478599>`_.
+See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478599>`__.
 
 Add the new microk8s cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -310,14 +310,14 @@ We need to add FW rule to allow access to our Ingress.
 
 This rule also allows communication from the K8S workers to Swift/Rados required by Synapse Media Integration.
 
-See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478693>`_.
+See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478693>`__.
 
-And this `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478742>`_  adds the control nodes to proxy access as well.
+And this `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478742>`__  adds the control nodes to proxy access as well.
 
 Change the DNS
 ~~~~~~~~~~~~~~
 
 The URL chat.staging.ubuntu.com should point for the new IP now.
 
-See `canonical-is-dns-configs MP <https://code.launchpad.net/~amandahla/canonical-is-dns-configs/+git/canonical-is-dns-configs/+merge/478729>`_.
+See `canonical-is-dns-configs MP <https://code.launchpad.net/~amandahla/canonical-is-dns-configs/+git/canonical-is-dns-configs/+merge/478729>`__.
 
