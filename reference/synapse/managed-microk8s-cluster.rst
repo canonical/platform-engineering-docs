@@ -210,7 +210,8 @@ It should look like this:
 
     kubectl describe daemonset nginx-ingress-microk8s-controller -n ingress
 
-.. code:: yaml
+.. code-block:: yaml
+    :emphasize-lines: 16
 
     Pod Template:
       Labels:           name=nginx-ingress-microk8s
