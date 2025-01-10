@@ -25,8 +25,8 @@ The reason for all the following MPs are described in the spec.
 
 - `canonical-is-internal-proxy-configs MP <https://code.launchpad.net/~amandahla/canonical-is-internal-proxy-configs/+git/canonical-is-internal-proxy-configs/+merge/477156>`_ to allow access to Squid proxy:
 - `canonical-terraform-plans MP <https://code.launchpad.net/~amandahla/canonical-terraform-plans/+git/canonical-terraform-plans/+merge/477157>`_ to add the microk8s terraform plan
-- `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/477239>`_ external ingress
-- `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/477248>`_ firewall rules for bastion/juju controller
+- `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/477239>`__ external ingress
+- `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/477248>`__ firewall rules for bastion/juju controller
 - `canonical-is-dns-configs MP <https://code.launchpad.net/~amandahla/canonical-is-dns-configs/+git/canonical-is-dns-configs/+merge/477352>`_ DNS for microk8s workers
 
 The next step accordingly to the spec would be registering the cluster as a
