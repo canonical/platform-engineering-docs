@@ -318,7 +318,7 @@ And this `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canon
 Change the DNS
 ~~~~~~~~~~~~~~
 
-The URL chat.staging.ubuntu.com should point for the new IP now.
+The URL https://chat.staging.ubuntu.com should point to the new IP now.
 
 See `canonical-is-dns-configs MP <https://code.launchpad.net/~amandahla/canonical-is-dns-configs/+git/canonical-is-dns-configs/+merge/478729>`__.
 
