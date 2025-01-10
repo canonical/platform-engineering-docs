@@ -200,7 +200,7 @@ Edit ingress daemonset
 ~~~~~~~~~~~~~~~~~~~~~~
 
 On bastion - **prod-synapse-external** environment
-Note: you can do this in prod-synapse-microk8s as well just mind the namespaces.
+Note: you can do this in prod-synapse-microk8s as well. Just mind the namespaces.
 
 Edit ingress daemonset to be deployed on all worker nodes and publish-status-address to 0.0.0.0
 
