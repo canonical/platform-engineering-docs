@@ -307,7 +307,7 @@ After applying the terraform, the ingress is created by the NGINX Integrator cha
 Submit firewall rules
 ~~~~~~~~~~~~~~~~~~~~~
 
-We need to add FW rule to allow access to our Ingress.
+We need to add a FW rule to allow access to our Ingress.
 
 This rule also allows communication from the K8S workers to Swift/Rados required by Synapse Media Integration.
 
