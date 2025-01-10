@@ -40,8 +40,8 @@ Create a Juju controller
 Before bootstrapping the controller, we need to enable Metallb to use the
 workers IP as a pool.
 
-Login in any worker and enable Metallb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Log in to any worker and enable Metallb
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On bastion - **prod-synapse-microk8s** environment
 
