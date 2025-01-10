@@ -153,7 +153,7 @@ Add credentials to Vault
 Change the terraform plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The locals.tf and providers.tf need to be updated with the new cloud/vault information.
+The locals.tf and providers.tf files need to be updated with the new cloud/vault information.
 
 See this `is-prod-synapse-external PR <https://github.com/canonical/is-prod-synapse-external/pull/11>`_  for reference.
 
