@@ -59,6 +59,11 @@ Manually edit the resource by adding other workers IP
 
  kubectl edit IPAddressPool default-addresspool -n metallb-system
 
+
+This is the result after changing the "spec.addresses" field.
+
+.. code:: bash
+
  kubectl get IPAddressPool default-addresspool -n metallb-system -o yaml
 
 .. code:: yaml
@@ -260,6 +265,13 @@ After applying the terraform, the ingress is created by the NGINX Integrator cha
 .. code:: bash
 
     kubectl edit ing relation-27-chat-staging-ubuntu-com-ingress
+
+
+Check if the ingress look like the following or change it accordingly.
+
+Note: '27' can be a different number.
+
+.. code:: bash
 
     kubectl get ing relation-27-chat-staging-ubuntu-com-ingress -o yaml
 
