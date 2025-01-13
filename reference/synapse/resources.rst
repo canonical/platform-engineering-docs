@@ -1,5 +1,5 @@
-Links
-=====
+Resources
+=========
 
 Synapse is a drop in replacement for other chat servers like Mattermost and
 Slack.
