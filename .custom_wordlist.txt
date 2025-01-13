@@ -15,6 +15,7 @@ FW
 Github
 GitHub
 GitOps
+https
 inclusivity
 Indico
 integrations
