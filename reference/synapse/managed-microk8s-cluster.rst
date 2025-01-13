@@ -87,7 +87,7 @@ This is the result after changing the "spec.addresses" field.
   - 10.141.124.250/32
   autoAssign: true
 
-Submit FW rule allowing bastion to controller
+Submit firewall rule allowing bastion to controller
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See `canonical-is-firewalls MP <https://code.launchpad.net/~amandahla/canonical-is-firewalls/+git/canonical-is-firewalls/+merge/478599>`__.
@@ -319,7 +319,7 @@ Note: '27' can be a different number.
 Submit firewall rules
 ~~~~~~~~~~~~~~~~~~~~~
 
-We need to add a FW rule to allow access to our Ingress.
+We need to add a firewall rule to allow access to our Ingress.
 
 This rule also allows communication from the K8S workers to Swift/Rados required by Synapse Media Integration.
 
