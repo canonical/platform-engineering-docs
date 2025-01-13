@@ -132,7 +132,7 @@ the terminal should respond with:
 
 You can also add an option for new repositories to use the template repository:
 
-.. code-block:: hcl
+.. code-block::
 
    resource "github_repository" "templated" {
      # ... existing code omitted
@@ -148,7 +148,7 @@ You can also add an option for new repositories to use the template repository:
 
 Along with the settings, you can also manage files in the repository:
 
-.. code:: hcl
+.. code-block::
 
    locals {
      repos_and_files = distinct(flatten([
