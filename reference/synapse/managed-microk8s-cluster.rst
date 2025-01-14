@@ -10,7 +10,7 @@ specifically for the Synapse architecture.
 Create MicroK8s cluster
 -----------------------
 
-The spec `IS0057 <https://docs.google.com/document/d/1mgfNZ5KKWMtudUTWGYzR9GrVE4A0mVD4hIxKpzHC-AM/edit?usp=sharing>`_ describes how to create a MicroK8S cluster
+The spec `IS0057 <https://docs.google.com/document/d/1mgfNZ5KKWMtudUTWGYzR9GrVE4A0mVD4hIxKpzHC-AM/edit?usp=sharing>`_ describes how to create a MicroK8s cluster
 and it was used for creating the environment.
 
 TL;DR
