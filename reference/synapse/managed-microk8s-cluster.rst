@@ -7,7 +7,7 @@ autonomy, ensuring it operates independently of other environments.
 This reference will explain the steps required for setting up a cluster
 specifically for the Synapse architecture.
 
-Create Microk8s Cluster
+Create MicroK8s cluster
 -----------------------
 
 The spec `IS0057 <https://docs.google.com/document/d/1mgfNZ5KKWMtudUTWGYzR9GrVE4A0mVD4hIxKpzHC-AM/edit?usp=sharing>`_ describes how to create a MicroK8S cluster
