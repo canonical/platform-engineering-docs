@@ -58,14 +58,18 @@ additional trickery inside the ``renovate.json`` file:
 Some breakdown of the important items here:
 
 -  ``regexManagers``: This section creates a custom manager that will
-   look for ``rockcraft.yaml`` files - specifically the regex ensures that
+   look for ``rockcraft.yaml`` files. Specifically, the regex ensures that
    renovate will match a ``rockcraft.yaml`` at any depth (and usually
    rocks are at depth ``root_folder++``). If renovate finds a string that
    starts with “**# renovate: build-base**” or “**# renovate: base**”,
-   it will extract the versioning details. Getting that data is via the
-   ``docker`` data source, **however the versioning is** ``ubuntu`` -
-   **you want this so that renovate doesn’t try to update the tag from
-   like 22.04 to 22.10, a thing you might not want.** 
+   it will extract the versioning details. Using the ``datasourceTemplate``
+   attribute, the regex will match the ``depName``, ``currentValue`` and
+   ``currentDigest`` caught attributes to the ``docker`` data source.
+   
+   Note that the versioning is checked against the ``ubuntu`` method of
+   versioning using ``versioningTemplate``. See the
+   `Renovate Bot docs <https://docs.renovatebot.com/modules/versioning/ubuntu/>`_
+   for more details. 
 
 -  ``packageRules``: This bit ensures that we have digest pinning enabled
    and also explicitly discards anything that is not a digest update
@@ -108,21 +112,22 @@ If you use something like
 or have a CI/CD in place that builds and pushes your rock on merge, you
 are all set.
 
-Footnote
---------
+.. important::
 
-If you don’t reuse the rock built by the initial CI triggered by the PR
-of renovate, you’ll end up with an OCI image build when the PR is
-merged, so if you don’t renovate auto-merge for instance, you can end up
-with a base different that the one in the comment. This can when there’s
-a new change and you merge before renovate has picked it up.
+    If you don’t reuse the rock built by the initial CI triggered by the PR
+    of renovate, you’ll end up with an OCI image build when the PR is
+    merged, so if you don’t renovate auto-merge for instance, you can end up
+    with a base different that the one in the comment. This can happen when
+    there's a new change and you merge before renovate has picked it up.
 
-Similarly, a PR on something else could rebuild your image (this depends
-on your CI/CD), but won’t update the comment - so you might be running a
-newer version before renovate has the chance to propose the change.
+    Similarly, a PR on something else could rebuild your image (this depends
+    on your CI/CD), but won’t update the comment - so you might be running a
+    newer version before renovate has the chance to propose the change.
 
-And while renovate will pick up the new digest at some point in time and
-update the comments, these two races might occur. With this renovate
-trick/configuration, renovate will ensure that the base will use this
-digest or a more recent one, but can’t ensure this exact digest is used
-at all times.
+    And while renovate will pick up the new digest at some point in time and
+    update the comments, these two races might occur. With this renovate
+    trick/configuration, renovate will ensure that the base will use this
+    digest or a more recent one, but can’t ensure this exact digest is used
+    at all times.
+
+
