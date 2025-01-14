@@ -269,7 +269,9 @@ After applying the terraform, the ingress is created by the NGINX Integrator cha
 
 Check if the ingress look like the following or change it accordingly.
 
-Note: '27' can be a different number.
+.. note::
+
+    '27' can be a different number.
 
 .. code:: bash
 
