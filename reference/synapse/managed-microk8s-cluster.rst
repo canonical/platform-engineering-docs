@@ -1,4 +1,4 @@
-Managed MicroK8S Cluster
+Managed MicroK8s Cluster
 ========================
 
 We chose to set up our own cluster for the system to enhance stability and
