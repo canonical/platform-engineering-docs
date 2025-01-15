@@ -31,7 +31,7 @@ Steps
 
    After a short wait, a new IP should be assigned to Traefik.
 
-2. There is a DNS record for ``cos-ps6.is-devops`` that needs to be
+2. There is a DNS record  (in this case it was ``cos-ps6.is-devops``) that needs to be
    updated in ``canonical-is-dns-configs``; see the
    `Launchpad repository <https://git.launchpad.net/canonical-is-dns-configs/>`_.
 
