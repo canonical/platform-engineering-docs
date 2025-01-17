@@ -63,6 +63,7 @@ Resources
    :hidden:
    :maxdepth: 1
 
+   Architecture design record <architecture-design-record-guidance>
    Architecture diagrams <architecture-diagram-guidance>
    Guidance on READMEs <readme-guidance>
    Guidance on tutorials <tutorial-guidance>
