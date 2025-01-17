@@ -5,6 +5,12 @@ This guide will help you maintain repository settings
 and your sanity consistently to ensure that the repository
 meets the standards you want and need. 
 
+.. warning::
+
+   These instructions may not fully work. Exercise
+   caution while implementing these instructions into your
+   workflows.
+
 Using a terraform solution
 --------------------------
 
