@@ -1,6 +1,8 @@
 During Pulse
 ============
 
+.. _eod-digest:
+
 End of Day Digest
 -----------------
 
