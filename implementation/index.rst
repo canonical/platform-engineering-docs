@@ -2,7 +2,6 @@ Implementation
 ==============
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    Contributing Guide <contributing-guide/index>
