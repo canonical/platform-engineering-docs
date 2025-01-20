@@ -83,6 +83,7 @@ Once a day
   it. This should only cover the period for a given ninja when they are
   assigned, previously created issues are out of scope. If no response to a tag
   is received, Ninja should add the repo
+
   * `https://github.com/canonical/discourse-k8s-operator <https://github.com/canonical/discourse-k8s-operator>`_
   * `https://github.com/canonical/gateway-api-integrator-operator <https://github.com/canonical/gateway-api-integrator-operator>`_
   * `https://github.com/canonical/github-runner-operator <https://github.com/canonical/github-runner-operator>`_
@@ -109,6 +110,7 @@ Once a day
   * `https://github.com/canonical/github-runner-image-builder-operator <https://github.com/canonical/github-runner-image-builder-operator>`_
   * `https://github.com/canonical/tmate-ssh-server-operator <https://github.com/canonical/tmate-ssh-server-operator>`_
   * `https://github.com/canonical/repo-policy-compliance <https://github.com/canonical/repo-policy-compliance>`_
+
 * Merge renovate PRs across all GH repos if tests pass, if not retrigger tests/tag responsible
   engineers to fix
 * Check `IS DevOps queue <https://portal.admin.canonical.com/q/is_devops/>`_ for
