@@ -70,11 +70,10 @@ Multiple times a day
   production and report on IS charms channel tagging relevant individuals in
   case of issues or improvement suggestions. Could be done twice a day(start and
   end). Identify if any new alerts need to be added/modified to reduce noise.
-   - `GH Runners <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/44304e53d8a6d8bc/github-self-hosted-runner-metrics>`_
-   - `Discourse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/ccaed73a5712d5f6/discourse-stats?orgId=1>`_
-   - `Synapse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/528989afbcc43cea/synapse-operator?orgId=1>`_
-   - `Charm status <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/cf5659dc-dfd9-45b6-a124-1956296e3a11/charm-status?orgId=1>`_
-     (contains information about last alerts for model in PS6)
+  - `GH Runners <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/44304e53d8a6d8bc/github-self-hosted-runner-metrics>`_
+  - `Discourse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/ccaed73a5712d5f6/discourse-stats?orgId=1>`_
+  - `Synapse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/528989afbcc43cea/synapse-operator?orgId=1>`_
+  - `Charm status <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/cf5659dc-dfd9-45b6-a124-1956296e3a11/charm-status?orgId=1>`_ (contains information about last alerts for model in PS6)
 
 Once a day
 ++++++++++
@@ -84,32 +83,32 @@ Once a day
   it. This should only cover the period for a given ninja when they are
   assigned, previously created issues are out of scope. If no response to a tag
   is received, Ninja should add the repo
-    * `https://github.com/canonical/discourse-k8s-operator <https://github.com/canonical/discourse-k8s-operator>`_
-    * `https://github.com/canonical/gateway-api-integrator-operator <https://github.com/canonical/gateway-api-integrator-operator>`_
-    * `https://github.com/canonical/github-runner-operator <https://github.com/canonical/github-runner-operator>`_
-    * `https://github.com/canonical/haproxy-operator <https://github.com/canonical/haproxy-operator>`_
-    * `https://github.com/canonical/httprequest-lego-provider <https://github.com/canonical/httprequest-lego-provider>`_
-    * `https://github.com/canonical/indico-operator <https://github.com/canonical/indico-operator>`_
-    * `https://github.com/canonical/irc-bridge-operator <https://github.com/canonical/irc-bridge-operator>`_
-    * `https://github.com/canonical/jenkins-agent-k8s-operator <https://github.com/canonical/jenkins-agent-k8s-operator>`_
-    * `https://github.com/canonical/mattermost-k8s-operator <https://github.com/canonical/mattermost-k8s-operator>`_
-    * `https://github.com/canonical/maubot-operator <https://github.com/canonical/maubot-operator>`_
-    * `https://github.com/canonical/netbox <https://github.com/canonical/netbox>`_
-    * `https://github.com/canonical/nginx-ingress-integrator-operator <https://github.com/canonical/nginx-ingress-integrator-operator>`_
-    * `https://github.com/canonical/operator-workflows <https://github.com/canonical/operator-workflows>`_
-    * `https://github.com/canonical/paas-charm <https://github.com/canonical/paas-charm>`_
-    * `https://github.com/canonical/penpot-operator <https://github.com/canonical/penpot-operator>`_
-    * `https://github.com/canonical/pollen-operator <https://github.com/canonical/pollen-operator>`_
-    * `https://github.com/canonical/synapse-operator <https://github.com/canonical/synapse-operator>`_
-    * `https://github.com/canonical/wazuh-server-operator <https://github.com/canonical/wazuh-server-operator>`_
-    * `https://github.com/canonical/wordpress-k8s-operator <https://github.com/canonical/wordpress-k8s-operator>`_
-    * `https://github.com/canonical/chrony-operator <https://github.com/canonical/chrony-operator>`_
-    * `https://github.com/canonical/content-cache-k8s-operator <https://github.com/canonical/content-cache-k8s-operator>`_
-    * `https://github.com/canonical/github-runner-webhook-router <https://github.com/canonical/github-runner-webhook-router>`_
-    * `https://github.com/canonical/github-runner-image-builder <https://github.com/canonical/github-runner-image-builder>`_
-    * `https://github.com/canonical/github-runner-image-builder-operator <https://github.com/canonical/github-runner-image-builder-operator>`_
-    * `https://github.com/canonical/tmate-ssh-server-operator <https://github.com/canonical/tmate-ssh-server-operator>`_
-    * `https://github.com/canonical/repo-policy-compliance <https://github.com/canonical/repo-policy-compliance>`_
+  * `https://github.com/canonical/discourse-k8s-operator <https://github.com/canonical/discourse-k8s-operator>`_
+  * `https://github.com/canonical/gateway-api-integrator-operator <https://github.com/canonical/gateway-api-integrator-operator>`_
+  * `https://github.com/canonical/github-runner-operator <https://github.com/canonical/github-runner-operator>`_
+  * `https://github.com/canonical/haproxy-operator <https://github.com/canonical/haproxy-operator>`_
+  * `https://github.com/canonical/httprequest-lego-provider <https://github.com/canonical/httprequest-lego-provider>`_
+  * `https://github.com/canonical/indico-operator <https://github.com/canonical/indico-operator>`_
+  * `https://github.com/canonical/irc-bridge-operator <https://github.com/canonical/irc-bridge-operator>`_
+  * `https://github.com/canonical/jenkins-agent-k8s-operator <https://github.com/canonical/jenkins-agent-k8s-operator>`_
+  * `https://github.com/canonical/mattermost-k8s-operator <https://github.com/canonical/mattermost-k8s-operator>`_
+  * `https://github.com/canonical/maubot-operator <https://github.com/canonical/maubot-operator>`_
+  * `https://github.com/canonical/netbox <https://github.com/canonical/netbox>`_
+  * `https://github.com/canonical/nginx-ingress-integrator-operator <https://github.com/canonical/nginx-ingress-integrator-operator>`_
+  * `https://github.com/canonical/operator-workflows <https://github.com/canonical/operator-workflows>`_
+  * `https://github.com/canonical/paas-charm <https://github.com/canonical/paas-charm>`_
+  * `https://github.com/canonical/penpot-operator <https://github.com/canonical/penpot-operator>`_
+  * `https://github.com/canonical/pollen-operator <https://github.com/canonical/pollen-operator>`_
+  * `https://github.com/canonical/synapse-operator <https://github.com/canonical/synapse-operator>`_
+  * `https://github.com/canonical/wazuh-server-operator <https://github.com/canonical/wazuh-server-operator>`_
+  * `https://github.com/canonical/wordpress-k8s-operator <https://github.com/canonical/wordpress-k8s-operator>`_
+  * `https://github.com/canonical/chrony-operator <https://github.com/canonical/chrony-operator>`_
+  * `https://github.com/canonical/content-cache-k8s-operator <https://github.com/canonical/content-cache-k8s-operator>`_
+  * `https://github.com/canonical/github-runner-webhook-router <https://github.com/canonical/github-runner-webhook-router>`_
+  * `https://github.com/canonical/github-runner-image-builder <https://github.com/canonical/github-runner-image-builder>`_
+  * `https://github.com/canonical/github-runner-image-builder-operator <https://github.com/canonical/github-runner-image-builder-operator>`_
+  * `https://github.com/canonical/tmate-ssh-server-operator <https://github.com/canonical/tmate-ssh-server-operator>`_
+  * `https://github.com/canonical/repo-policy-compliance <https://github.com/canonical/repo-policy-compliance>`_
 * Merge renovate PRs across all GH repos if tests pass, if not retrigger tests/tag responsible
   engineers to fix
 * Check `IS DevOps queue <https://portal.admin.canonical.com/q/is_devops/>`_ for
