@@ -51,3 +51,4 @@ Resources
    Onboarding <onboarding/index>
    Security Practices <security-practices/index>
    Working with other teams <working-with-other-teams/index>
+   Hiring <hiring/index>
