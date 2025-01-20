@@ -40,7 +40,7 @@ The external updates will be published as follows:
   ...
 
 Here is an
-`example <https://discourse.charmhub.io/t/platform-engineering-team-updates-pulse-25-2024/16122>`_.
+`external example <https://discourse.charmhub.io/t/platform-engineering-team-updates-pulse-25-2024/16122>`_.
 
 The pulse number should be the pulse number that the items in the post where
 completed in.
@@ -86,7 +86,7 @@ The internal updates will be published as follows:
   folder, his is the EMEA and APAC demo for the pulse.
 
 Here is an
-`example <https://discourse.canonical.com/t/is-devops-team-updates-pulse-1-2025/4982>`_
+`internal example <https://discourse.canonical.com/t/is-devops-team-updates-pulse-1-2025/4982>`_
 
 The scope of the items to be covered include anything in the external update in
 addition to what the team delivers that would not be of interest to external
