@@ -244,6 +244,7 @@ extensions = [
 
 exclude_patterns = [
     "doc-cheat-sheet*",
+    "README.md",
 ]
 
 # Adds custom CSS files, located under 'html_static_path'
