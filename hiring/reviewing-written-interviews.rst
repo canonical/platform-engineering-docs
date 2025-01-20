@@ -13,11 +13,11 @@ have English as their first language.
 We are also looking for motivation. An indicator of that could be the effort put
 into the submission. When you are judging the interviews look for:
 
-1. Evidence of exception achievements (e.g., during education, in their hobbies,
+#. Evidence of exception achievements (e.g., during education, in their hobbies,
    in their jobs)
-1. Any open source contributions
-1. Why they want to join Canonical
-1. Skills they have and technologies they are familiar with (we use Python,
+#. Any open source contributions
+#. Why they want to join Canonical
+#. Skills they have and technologies they are familiar with (we use Python,
    Plinux, k8s, GitHub actions, …)
 
 Evidence of Exceptional Achievement

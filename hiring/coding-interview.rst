@@ -55,54 +55,54 @@ problem live. The following is a suggested runsheet (note that most candidates
 won’t make it all the way through which is ok, we will get a good impression of
 the candidate’s coding abilities anyway):
 
-1. Share the first part of the code over chat (don’t share the find_secrets code
-  yet), it might require more than one message due to message length limitations
-  on some video call clients. Files can’t be easily shared so it is generally
-  preferable to use the chat function.
-1. Give the candidate an overview of the purpose of the class. For example, it
-  is a basic implementation of a secret store product of a cloud provider. It
-  should be able to store and return secrets. It is a shared store so more than
+#. Share the first part of the code over chat (don’t share the find_secrets code
+   yet), it might require more than one message due to message length
+   limitations on some video call clients. Files can’t be easily shared so it is
+   generally preferable to use the chat function.
+#. Give the candidate an overview of the purpose of the class. For example, it
+   is a basic implementation of a secret store product of a cloud provider. It
+   should be able to store and return secrets. It is a shared store so more than
   one user may interact with the store. Any interactions with the store can be
-  assumed to be authenticated (the user can be assumed to be who they claim to
-  be) but not authorized (the store needs to check whether the user should be
-  able to access a given secret). There are 2 classes of users, a normal user
-  who should only be able to access secrets they have created and an admin user
-  (indicated by the “admin” username) who should be able to access any secret by
-  its id. The same secret value can be stored multiple times where each secret
-  should have their own secret id.
-1. Give the candidate an opportunity to read through the code and ask any
-  questions. Be generous when answering questions although limit giving the
-  candidate hints. If they ask you an implementation question it can help to ask
-  them how they would do this implementation.
-1. Ask the candidate to share their screen and start implementing the
-  store_secret and get_secret function. Encourage them to talk as they are
-  thinking and implementing to help you understand their thought process.
-1. If you spot a mistake or an opportunity for the candidate to make an
-  improvement, ask the candidate some questions. For example, why did you pick
-  that data structure? You will need to balance how much guidance you give the
-  candidate although it is better to help the candidate to move the interview
-  along rather than them getting stuck on something small. It is also worth
-  pointing out a mistake and giving the candidate a chance to improve rather
-  than letting the candidate make a mistake without comment. Be sure to note any
-  mistakes you spot or opportunities for them to do better on the notes
-  including how the candidate responded to you pointing it out.
-1. Once the candidate has progressed with the implementation (although before
-  they are finished), give them a new requirement that multiple users should be
-  able to be associated with the same secret. Ask them to adapt their
-  implementation of store_secret and get_secret to support this, although they
-  are not required to implement a way to associate another user to the same
-  secret. If they happen to ask you about whether multiple users can be
-  associated with the same secret on their own, share the information at that
-  time. Be sure to note this in the document, it is a good quality to
-  proactively ask questions to identify hidden requirements!
-1. Once the implementation of store_secret and get_secret is complete, ask the
-  candidate to write a few tests. This can be done in the same file as the other
-  code. Optionally get them to run the tests, although you should be able to
-  tell whether the tests will work by looking at them.
-1. Once the tests are reasonably completed and you still have time left, share
-  the find_secrets code with them. This function should return all the secrets
-  the user has access to as an iterable. This is a bonus section and gives
-  candidates an opportunity to shine.
+   assumed to be authenticated (the user can be assumed to be who they claim to
+   be) but not authorized (the store needs to check whether the user should be
+   able to access a given secret). There are 2 classes of users, a normal user
+   who should only be able to access secrets they have created and an admin user
+   (indicated by the “admin” username) who should be able to access any secret
+   by its id. The same secret value can be stored multiple times where each
+   secret should have their own secret id.
+#. Give the candidate an opportunity to read through the code and ask any
+   questions. Be generous when answering questions although limit giving the
+   candidate hints. If they ask you an implementation question it can help to
+   ask them how they would do this implementation.
+#. Ask the candidate to share their screen and start implementing the
+   store_secret and get_secret function. Encourage them to talk as they are
+   thinking and implementing to help you understand their thought process.
+#. If you spot a mistake or an opportunity for the candidate to make an
+   improvement, ask the candidate some questions. For example, why did you pick
+   that data structure? You will need to balance how much guidance you give the
+   candidate although it is better to help the candidate to move the interview
+   along rather than them getting stuck on something small. It is also worth
+   pointing out a mistake and giving the candidate a chance to improve rather
+   than letting the candidate make a mistake without comment. Be sure to note
+   any mistakes you spot or opportunities for them to do better on the notes
+   including how the candidate responded to you pointing it out.
+#. Once the candidate has progressed with the implementation (although before
+   they are finished), give them a new requirement that multiple users should be
+   able to be associated with the same secret. Ask them to adapt their
+   implementation of store_secret and get_secret to support this, although they
+   are not required to implement a way to associate another user to the same
+   secret. If they happen to ask you about whether multiple users can be
+   associated with the same secret on their own, share the information at that
+   time. Be sure to note this in the document, it is a good quality to
+   proactively ask questions to identify hidden requirements!
+#. Once the implementation of store_secret and get_secret is complete, ask the
+   candidate to write a few tests. This can be done in the same file as the
+   other code. Optionally get them to run the tests, although you should be able
+   to tell whether the tests will work by looking at them.
+#. Once the tests are reasonably completed and you still have time left, share
+   the find_secrets code with them. This function should return all the secrets
+   the user has access to as an iterable. This is a bonus section and gives
+   candidates an opportunity to shine.
 
 The candidate should lead the implementation although if the candidate is stuck
 it is reasonable to help the candidate or give them pointers. If the candidate
