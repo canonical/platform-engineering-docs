@@ -70,11 +70,11 @@ Multiple times a day
   production and report on IS charms channel tagging relevant individuals in
   case of issues or improvement suggestions. Could be done twice a day(start and
   end). Identify if any new alerts need to be added/modified to reduce noise.
-    * `GH Runners <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/44304e53d8a6d8bc/github-self-hosted-runner-metrics>`_
-    * `Discourse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/ccaed73a5712d5f6/discourse-stats?orgId=1>`_
-    * `Synapse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/528989afbcc43cea/synapse-operator?orgId=1>`_
-    * `Charm status <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/cf5659dc-dfd9-45b6-a124-1956296e3a11/charm-status?orgId=1>`_
-      (contains information about last alerts for model in PS6)
+   * `GH Runners <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/44304e53d8a6d8bc/github-self-hosted-runner-metrics>`_
+   * `Discourse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/ccaed73a5712d5f6/discourse-stats?orgId=1>`_
+   * `Synapse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/528989afbcc43cea/synapse-operator?orgId=1>`_
+   * `Charm status <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/cf5659dc-dfd9-45b6-a124-1956296e3a11/charm-status?orgId=1>`_
+     (contains information about last alerts for model in PS6)
 
 Once a day
 ++++++++++
