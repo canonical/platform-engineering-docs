@@ -1,3 +1,5 @@
+.. _coding-take-home-exercise-review:
+
 Coding take home exrercise review
 =================================
 
