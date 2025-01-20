@@ -112,6 +112,7 @@ Once a day
     * `https://github.com/canonical/github-runner-image-builder-operator <https://github.com/canonical/github-runner-image-builder-operator>`_
     * `https://github.com/canonical/tmate-ssh-server-operator <https://github.com/canonical/tmate-ssh-server-operator>`_
     * `https://github.com/canonical/repo-policy-compliance <https://github.com/canonical/repo-policy-compliance>`_
+
 * Merge renovate PRs across all GH repos if tests pass, if not retrigger tests/tag responsible
   engineers to fix
 * Check `IS DevOps queue <https://portal.admin.canonical.com/q/is_devops/>`_ for
