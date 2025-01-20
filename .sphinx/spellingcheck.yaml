@@ -10,6 +10,7 @@ matrix:
       output: .sphinx/.wordlist.dic
     sources:
       - _build/**/*.html
+      - "!README.md"
     pipeline:
       - pyspelling.filters.html:
           comments: false
