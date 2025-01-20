@@ -5,9 +5,6 @@ Implementation
    :hidden:
    :maxdepth: 1
 
-   Contributing Guide </implementation/contributing-guide/index>
-   Architecture Guidance </implementation/architecture-guidance/index>
+   Contributing Guide <contributing-guide/index>
+   Architecture Guidance <architecture-guidance/index>
 
-
-   
-   

@@ -4,7 +4,7 @@ Pulses
 .. toctree::
    :maxdepth: 2
 
-   Pulse Planning </delivery-workflows/pulses/pulse-planning>
-   During Pulse </delivery-workflows/pulses/during-pulse>
-   Pulse Demos </delivery-workflows/pulses/pulse-demo>
-   Pulse Retro </delivery-workflows/pulses/pulse-retro>
+   Pulse Planning <pulse-planning>
+   During Pulse <during-pulse>
+   Pulse Demos <pulse-demo>
+   Pulse Retro <pulse-retro>
