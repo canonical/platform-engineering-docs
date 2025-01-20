@@ -70,6 +70,7 @@ Multiple times a day
   production and report on IS charms channel tagging relevant individuals in
   case of issues or improvement suggestions. Could be done twice a day(start and
   end). Identify if any new alerts need to be added/modified to reduce noise.
+
    * `GH Runners <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/44304e53d8a6d8bc/github-self-hosted-runner-metrics>`_
    * `Discourse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/ccaed73a5712d5f6/discourse-stats?orgId=1>`_
    * `Synapse <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/528989afbcc43cea/synapse-operator?orgId=1>`_
@@ -84,6 +85,7 @@ Once a day
   it. This should only cover the period for a given ninja when they are
   assigned, previously created issues are out of scope. If no response to a tag
   is received, Ninja should add the repo
+
    * `https://github.com/canonical/discourse-k8s-operator <https://github.com/canonical/discourse-k8s-operator>`_
    * `https://github.com/canonical/gateway-api-integrator-operator <https://github.com/canonical/gateway-api-integrator-operator>`_
    * `https://github.com/canonical/github-runner-operator <https://github.com/canonical/github-runner-operator>`_
