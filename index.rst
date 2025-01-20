@@ -1,5 +1,5 @@
 Platform Engineering Team
-==================================
+=========================
 
 The Platform Engineering team (formerly IS DevOps) is responsible for building,
 transitioning and maintaining operations-specific charms in line with the
@@ -47,8 +47,10 @@ Resources
    Delivery Workflows <delivery-workflows/index>
    Delivery Practices <delivery-practices/index>
    Design <design/index>
+   Documentation <documentation/index>
    Implementation <implementation/index>
    Onboarding <onboarding/index>
+   Reference <reference/index>
    Security Practices <security-practices/index>
    Working with other teams <working-with-other-teams/index>
    Hiring <hiring/index>

@@ -189,7 +189,10 @@ redirects = {}
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
     "https://github.com/canonical/ACME/*",
-    "https://github.com/canonical/infrastructure-services"
+    "https://github.com/canonical/infrastructure-services",
+    "https://github.com/canonical/is-prod-synapse-external/*",
+    "https://chat.staging.ubuntu.com",
+    "https://code.launchpad.net/~amandahla/canonical-is-firewalls/*"
 ]
 
 
@@ -232,7 +235,8 @@ linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
 extensions = [
     "canonical_sphinx",
     "sphinxcontrib.cairosvgconverter",
-    "sphinx_last_updated_by_git"
+    "sphinx_last_updated_by_git",
+    "sphinxcontrib.mermaid"
 ]
 
 
