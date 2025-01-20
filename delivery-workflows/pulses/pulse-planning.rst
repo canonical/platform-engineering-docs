@@ -23,16 +23,6 @@ clear after the meeting.
 Engineers should come prepared to this meeting with the required stories
 created.
 
-Pulse plan
-----------
-
-Based on the project meetings, a pulse statement should be prepared in advance
-by engineers which identifies what each engineer is planning to do during the
-next pulse. This should be reviewed during a pulse planning meeting to keep the
-rest of the team up to date with the status of a given project and provide an
-opportunity for input for any of the items in the pulse statement. More details
-in ISD073 - Written Pulse Statements (to be updated)
-
 Stand up
 --------
 

@@ -1,11 +1,8 @@
 Pulse retros
 ============
 
-Towards the end of each pulse a retrospective should be held where the pulse
-statement is reviewed for the result of each of the items that was intended for
-the pulse which should be prepared in advance by the engineers, if not already
-done during a project meeting. This should be done on the pulse statement as
-discussed in ISD073 - Written Pulse Statements (to be updated).
+Towards the end of each pulse a retrospective should be held where the pulse is
+reviewed.
 
 Additionally, the retro should be used as an opportunity to get feedback on team
 processes, external blockers, recognise achievements in the cycle, and discuss
