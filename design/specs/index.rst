@@ -71,13 +71,13 @@ as an example.
 Approvals are required from:
 
 * Management:
-  * Manager or technical lead (this can be different to the line manager of the
-    author of the spec) accountable for the project for simple/ local specs such
-    as those delivering on a project
-  * Platform Engineering Director (Varshi) and Leadership (Sebastien, Gregory,
-    David) for specs with a broader impact, such as proposals to change
-    architecture guidance, new processes or those requiring external review by
-    senior stakeholders
+   * Manager or technical lead (this can be different to the line manager of the
+     author of the spec) accountable for the project for simple/ local specs
+     such as those delivering on a project
+   * Platform Engineering Director (Varshi) and Leadership (Sebastien, Gregory,
+     David) for specs with a broader impact, such as proposals to change
+     architecture guidance, new processes or those requiring external review by
+     senior stakeholders
 * Representatives for external teams were appropriate (e.g., Kris for IS, Simon
   for Observability, Mykola for Data Platforms, etc.)
 

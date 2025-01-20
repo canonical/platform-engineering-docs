@@ -10,19 +10,19 @@ Week 1 - Scratching the Surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * you start your onboarding with getting access to our tools
-  * `Wiki <https://wiki.canonical.com.>`_
-  * Mattermost (`private <https://chat.canonical.com>`_)
-  * Matrix (`public community chat <https://matrix.to/#/#charmhub:ubuntu.com>`_)
-  * `Jira <https://warthogs.atlassian.net/jira/software/c/projects/ISD/boards/816>`_
-  * `Launchpad <https://launchpad.net/>`_ (and being part of the Platform
-    Engineering team)
-  * `Github <https://wiki.canonical.com/InformationInfrastructure/IS/GitHub>`_
-    (and being part of Canonical and is-charms) with
-    `signed commits <https://github.com/canonical/is-charms-contributing-guide/blob/main/development-setup.md#signed-commits>`_
-  * `Canonical Discourse <https://discourse.canonical.com/>`_ (private- internal
-    company only information)
-  * `Charmhub Discourse <https://charmhub.io/>`_ (public- community
-    documentation)
+   * `Wiki <https://wiki.canonical.com.>`_
+   * Mattermost (`private <https://chat.canonical.com>`_)
+   * Matrix (`public community chat <https://matrix.to/#/#charmhub:ubuntu.com>`_)
+   * `Jira <https://warthogs.atlassian.net/jira/software/c/projects/ISD/boards/816>`_
+   * `Launchpad <https://launchpad.net/>`_ (and being part of the Platform
+     Engineering team)
+   * `Github <https://wiki.canonical.com/InformationInfrastructure/IS/GitHub>`_
+     (and being part of Canonical and is-charms) with
+     `signed commits <https://github.com/canonical/is-charms-contributing-guide/blob/main/development-setup.md#signed-commits>`_
+   * `Canonical Discourse <https://discourse.canonical.com/>`_ (private- internal
+     company only information)
+   * `Charmhub Discourse <https://charmhub.io/>`_ (public- community
+     documentation)
 * you have read and signed the Ubuntu Code of Conduct (via your Launchpad
   acount)
 * you have set up corporate VPN

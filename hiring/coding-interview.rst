@@ -62,7 +62,7 @@ the candidate’s coding abilities anyway):
 #. Give the candidate an overview of the purpose of the class. For example, it
    is a basic implementation of a secret store product of a cloud provider. It
    should be able to store and return secrets. It is a shared store so more than
-  one user may interact with the store. Any interactions with the store can be
+   one user may interact with the store. Any interactions with the store can be
    assumed to be authenticated (the user can be assumed to be who they claim to
    be) but not authorized (the store needs to check whether the user should be
    able to access a given secret). There are 2 classes of users, a normal user

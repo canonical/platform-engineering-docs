@@ -117,7 +117,7 @@ of the kind of question you would ask to inquire further about the issue.
 For example:
 
 * main.py
-  * l80: use of sys.argv, why not use argparse?
-  * l20: reading the entire file into memory, what are the trade-offs?
-  * ...
+   * l80: use of sys.argv, why not use argparse?
+   * l20: reading the entire file into memory, what are the trade-offs?
+   * ...
 * ...

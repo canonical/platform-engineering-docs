@@ -36,10 +36,10 @@ As an example, if we’re requesting help debugging a problem on an environment
 managed by IS but for which we’re responsible (e.g. github runners,
 wordpress-k8s models once migration to sidecar has been done), we should
 provide:
- * Exact details on where the environment is hosted so that there’s no doubt as
-   to which one we’re referring to.
-  * This should include the host the environment is managed from, and the name
-    of the role account the host is managed under.
+* Exact details on where the environment is hosted so that there’s no doubt as
+  to which one we’re referring to.
+   * This should include the host the environment is managed from, and the name
+     of the role account the host is managed under.
 * Specific timing of a particular problem, e.g. between 10:00UTC and 10:07UTC on
   2023-02-03.
 * Which log files to look at (e.g. the specific location of the log files on

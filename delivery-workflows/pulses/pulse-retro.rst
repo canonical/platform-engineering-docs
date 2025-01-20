@@ -32,7 +32,9 @@ The external updates will be published as follows:
   <brief summary highlighting the most significant items>
 
   # <name of a charm or group of charms/ tool/ standard/ …>
+
   \* <dotted list of items related to the charm>
+
   \* ...
 
   ...
@@ -68,10 +70,13 @@ The internal updates will be published as follows:
 * The title should be “Platform Engineering Team Updates - Pulse #<pulse number>
   <year>”.
 * The content should be:
+
   <brief summary highlighting the most significant items>
 
   # <name of a charm/ tool/ standard/ …>
+
   \* <dotted list of items related to the charm>
+
   \* ...
 
   ...
