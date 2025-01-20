@@ -18,7 +18,7 @@ into the submission. When you are judging the interviews look for:
 #. Any open source contributions
 #. Why they want to join Canonical
 #. Skills they have and technologies they are familiar with (we use Python,
-   Plinux, k8s, GitHub actions, …)
+   linux, k8s, GitHub actions, …)
 
 Evidence of Exceptional Achievement
 -----------------------------------
@@ -43,7 +43,7 @@ Scorecard Grading
   Linux, k8s), strong motivation to join Canonical, clear communication,
   complete submission covering most of the questions asked
 * *Yes*: Good academic results (top 20%) , familiarity with Python and linux
-  (K8s, openstack, LXD etc. are good to have), motivation to join Canonical,
+  (K8s, OpenStack, LXD etc. are good to have), motivation to join Canonical,
   good communication, >60% complete submission
 * *No Decision*: Try avoiding this if possible. Only use it if you don't believe
   the candidate is a good fit for this role but could be a better fit for

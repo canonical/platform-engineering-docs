@@ -24,7 +24,7 @@ Week 1 - Scratching the Surface
    * `Charmhub Discourse <https://charmhub.io/>`_ (public- community
      documentation)
 * you have read and signed the Ubuntu Code of Conduct (via your Launchpad
-  acount)
+  account)
 * you have set up corporate VPN
 * you have placed your working hours in Google Calendar and
 * you have access to our Google drive
@@ -34,7 +34,7 @@ Week 1 - Scratching the Surface
   Discourse)
 * you have gone through the
   `New Starter Guide <https://docs.google.com/document/d/1-9h9HUDEeN0n1jKmBEZ69zjGKMjuVSi09k56V4nwRI0/edit?usp=sharing>`_
-* you have begun your HR trainings
+* you have begun your HR training
 * you have started your Engineering Onboarding and have the Onboarding sync in
   your Calendar
 * you have met your colleagues on the Daily

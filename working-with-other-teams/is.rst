@@ -25,7 +25,7 @@ Also, if there’s any work we can do to reduce the amount of work an SRE would
 need to do to process a ticket, we should likely invest the time to do so, even
 if we’re not familiar with the particular technology involved. Ticket size (how
 long a ticket is expected to take to complete)  is a key component in how
-tickets are sorted in the SRE’s priority queue, so anything we can do to reduce
+tickets are sorted in the SRE's priority queue, so anything we can do to reduce
 the size of the ticket makes it more likely to be processed sooner. Taking the
 time to learn about that technology and trying to debug ourselves so that we can
 provide detailed information on exactly what we need from SREs will make us more
@@ -62,7 +62,7 @@ determine what needs to be done to apply the change, and then provide a diff for
 SREs to apply, with the specific command involved.
 
 After creating a ticket, please notify a Platform Engineering manager so they
-can make sure the ticket is prioritised if appropriate.
+can make sure the ticket is prioritized if appropriate.
 
 Self-service whenever possible
 ------------------------------

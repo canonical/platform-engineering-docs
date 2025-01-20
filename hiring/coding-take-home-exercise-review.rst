@@ -1,7 +1,7 @@
 .. _coding-take-home-exercise-review:
 
-Coding take home exrercise review
-=================================
+Coding take home exercise review
+================================
 
 First a note on statistics. We receive many coding exercise submissions and
 relatively few of them are good. After a few of the early stages, reviewing the
@@ -50,7 +50,7 @@ judgment needs to be used for each review:
 
 Make a copy of the Coding
 `Take Home Exercise Checklist Template <https://docs.google.com/document/d/1srdyO-ccNNqHS9I8rhjUPhd8jlhn150gnn1T_sQz2QA/edit?usp=sharing>`_
-and check each of the checkboxes that apply for the candidate.
+and check each of the check boxes that apply for the candidate.
 
 Writing the Scorecard
 ---------------------

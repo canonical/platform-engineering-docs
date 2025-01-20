@@ -128,7 +128,7 @@ Once a pulse
 * Update  the
   `product feedback spreadsheet <https://docs.google.com/spreadsheets/d/1p3hqyyjG9Mb2cTDeEumCHl8Bx8WGm0uJdYTHVUzABvE/edit?gid=0#gid=0>`_
   if a new bug needs attention or is closed out
-* Check the IS Devops demo notes and remind the team if none is added 1 day
+* Check the IS DevOps demo notes and remind the team if none is added 1 day
   before the demo day
 * Post pulse report to internal and external discourse at the end of pulse
   following the guidance here: :ref:`internal-external-updates`

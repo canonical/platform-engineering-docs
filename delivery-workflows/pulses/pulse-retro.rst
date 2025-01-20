@@ -5,7 +5,7 @@ Towards the end of each pulse a retrospective should be held where the pulse is
 reviewed.
 
 Additionally, the retro should be used as an opportunity to get feedback on team
-processes, external blockers, recognise achievements in the cycle, and discuss
+processes, external blockers, recognize achievements in the cycle, and discuss
 any challenges the team is facing in general. This should also be prepared in
 advance by everyone in the team using
 `Team Improvement Ideas <https://docs.google.com/document/d/1S-YjcjWic1xZ9uPLvXNNY8mMCYtsZ3OTtohpZsQlVGA/edit?usp=sharing>`_.
@@ -125,7 +125,7 @@ Guidance for items to be included
   the problem.
 * Be succinct when describing the item, it may be one of many. Describe it in a
   way that is relevant to the stakeholder rather than someone who understands the
-  charm in detail. Use plain english and avoid jargon.
+  charm in detail. Use plain English and avoid jargon.
 * If the outcomes of spikes, bugs or tasks could be interesting to other teams,
   it is worth noting those on the updates as well.
 * Reports purely on progress are usually not required, unless there is something

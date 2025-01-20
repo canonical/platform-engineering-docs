@@ -51,7 +51,7 @@ Pair Programming Exercise
 -------------------------
 
 This part of the interview gives the candidate the opportunity to solve a
-problem live. The following is a suggested runsheet (note that most candidates
+problem live. The following is a suggested run sheet (note that most candidates
 won’t make it all the way through which is ok, we will get a good impression of
 the candidate’s coding abilities anyway):
 

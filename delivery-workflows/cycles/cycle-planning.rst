@@ -17,7 +17,7 @@ following rough formula:
 * Reserve 20% of time for management, training, hiring, leave, public holidays
 * Reserve 20% for bugs and production support
 
-Items are prioritised by management with input from the team and external
+Items are prioritized by management with input from the team and external
 stakeholders. Each item on the roadmap becomes an epic for the cycle with
 individual stories breaking down the epic to be created by engineers and
 reviewed by management. The epic should include clear requirements to explain
