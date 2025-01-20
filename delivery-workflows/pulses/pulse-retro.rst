@@ -12,6 +12,8 @@ advance by everyone in the team using
 The ideas in this document should be reviewed and any new or in-progress items
 discussed.
 
+ .. _internal-external-updates:
+
 Internal and External Team Updates
 ----------------------------------
 
