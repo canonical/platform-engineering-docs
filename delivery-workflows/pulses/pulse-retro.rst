@@ -14,10 +14,10 @@ discussed.
 
  .. _internal-external-updates:
 
-Internal and External Team Updates
+Internal and external team updates
 ----------------------------------
 
-External Updates
+External updates
 ~~~~~~~~~~~~~~~~
 
 The external updates will be published as follows:
@@ -49,7 +49,7 @@ The scope of items to be covered are any charming related deliverable that an
 external stakeholder might be interested in. This can include filing of bugs,
 new charm versions released (edge or stable) or new tools published by or
 standards adopted by the team. It does not include progress on charms that have
-not been deployed to charmhub. It also does not include things like progress on
+not been deployed to Charmhub. It also does not include things like progress on
 production deployments of charms.
 
 The items should be based on the content in
@@ -58,7 +58,7 @@ from the relevant period excluding items that should be internal (you can still
 use a [Canonical Internal Only] tag). These items will need to be summarized and
 grouped based on the headings in the content specification above.
 
-Internal Updates
+Internal updates
 ~~~~~~~~~~~~~~~~
 
 The internal updates will be published as follows:
@@ -83,7 +83,7 @@ The internal updates will be published as follows:
 
   For highlights of deliverables this pulse, please see our shared
   `demos <https://drive.google.com/drive/folders/1xCy9MASYNHFGc1Vi4vWWSE05Y-hySh1B>`_
-  folder, his is the EMEA and APAC demo for the pulse.
+  folder. This is the EMEA and APAC demo for the pulse.
 
 Here is an
 `internal example <https://discourse.canonical.com/t/is-devops-team-updates-pulse-1-2025/4982>`_
@@ -100,7 +100,7 @@ relevant period:
 These items will need to be summarized and grouped based on the headings in the
 content specification above.
 
-Keeping Track of Content
+Keeping track of content
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 The items are to be tracked in the following document:
@@ -111,7 +111,7 @@ Any items intended for internal stakeholders only should be noted after the
 Not all Jira stories will result in an item to be added to the tracking
 documents. Some Jira stories may result in multiple items to be added. Some of
 what the team does which isn’t tracked in Jira may also warrant an item in the
-tracking document. These should be added as soon as an IS DevOps team member
+tracking document. These should be added as soon as an Platform Engineering team member
 becomes aware of them.
 
 Guidance for items to be included
@@ -135,5 +135,5 @@ Guidance for items to be included
 Publishing
 ~~~~~~~~~~
 
-The internal and external posts are to be done by the Platform Engineering ninja
+The internal and external posts are to be done by the Platform Engineering Ninja
 assigned for a pulse who will write both the internal and external updates.

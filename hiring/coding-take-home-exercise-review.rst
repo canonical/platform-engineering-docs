@@ -15,7 +15,7 @@ document sets out guidance for reviewing the take home exercise, including the
 kinds of issues to look for:
 `06 - DevOps Eng / Associate Software Eng / COE - Expectations from Take-home test <https://docs.google.com/document/d/1vW-WJEvE1XcOpdliyfFKXQVywCCVVKNmX9A95b6E5_A/edit?usp=sharing>`_
 
-Common Issues
+Common issues
 -------------
 
 The team has commonly found the following issues which are worth highlighting if
@@ -52,7 +52,7 @@ Make a copy of the Coding
 `Take Home Exercise Checklist Template <https://docs.google.com/document/d/1srdyO-ccNNqHS9I8rhjUPhd8jlhn150gnn1T_sQz2QA/edit?usp=sharing>`_
 and check each of the check boxes that apply for the candidate.
 
-Writing the Scorecard
+Writing the scorecard
 ---------------------
 
 Be sure to rate the focus attributes. The scorecard has two free-form fields.
@@ -85,7 +85,7 @@ private field should include “recommended level: mid”. The hiring lead will
 compare the actual experience of the candidate with the recommendation and make
 a decision whether to move forward with the candidate.
 
-Private Field
+Private field
 ~~~~~~~~~~~~~
 
 .. image:: private-field.jpg
@@ -103,7 +103,7 @@ for the candidate (the number of functional and severe and informational
 stylistic issues) into the scorecard and include a link to the full checklist
 for the submission.
 
-Public Field
+Public field
 ~~~~~~~~~~~~
 
 .. image:: public-field.jpg

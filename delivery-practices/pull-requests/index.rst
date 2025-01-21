@@ -174,7 +174,7 @@ such as enabling a new bot), the PR description should include:
 * A high level overview of the change
 * The reason the change is needed
 * Any applicable spec if relevant and it is publicly available
-* Any changes to the juju events being observed (newly added, significantly
+* Any changes to the Juju events being observed (newly added, significantly
   modified or deleted)
 * Any high level changes to modules and why (Service, Observer, helper)
 * Any changes to charm libraries

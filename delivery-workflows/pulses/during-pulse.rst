@@ -16,9 +16,9 @@ Guidance on what to include in the digest:
 
 * Significant PRs you have raised or updated requiring a review from the team.
   Include some information about the purpose of the PR, what has changed and a
-  link to the PR. Note that the team already has notifications for PRs in place,
+  link to the PR. Note that the team already has notifications for PRs in place;
   if the PR is trivial or all you are intending is to request a review, rely on
-  other channels such as mattermost or the automated notifications.
+  other channels such as Mattermost or the automated notifications.
 * Something you struggled with, but then discovered the answer to (maybe someone
   else is struggling with the same thing, or can learn something based on what
   you mention).
@@ -81,7 +81,7 @@ Once a day
 
 * Check unassigned issues and security overview on Github and reply/ tag the
   engineer responsible to create JIRA tickets under the project epic linking to
-  it. This should only cover the period for a given ninja when they are
+  it. This should only cover the period for a given Ninja when they are
   assigned, previously created issues are out of scope. If no response to a tag
   is received, Ninja should add the repo
 
@@ -119,8 +119,8 @@ Once a day
   or to your manager if a ticket priority needs to be update or we have an empty
   spot in the priority queue
 * Post in your EOD report any issues found, tickets created, PRs assigned or
-  bug fixes Review or tag reviewers for community contributions.
-* Review or tag reviewers for community contributions.
+  bug fixes Review or tag reviewers for community contributions
+* Review or tag reviewers for community contributions
 
 Once a pulse
 ++++++++++++

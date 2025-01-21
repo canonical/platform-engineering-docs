@@ -47,7 +47,7 @@ Additional notes:
   being worked on (at a status before “approved”), consider enhancing that spec
   to also include the item.
 
-Reviews and Approvals
+Reviews and approvals
 ---------------------
 
 Spec writers should seek feedback from:

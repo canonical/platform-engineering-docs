@@ -24,7 +24,7 @@ The following sections describe both in detail.
 It can be helpful to read through the written interview to gauge the level of
 experience the candidate has (e.g., more senior versus just graduated).
 
-Take Home Exercise Review
+Take home exercise review
 -------------------------
 
 This part of the interview is like a pull request review of the take home
@@ -47,7 +47,7 @@ could be concerning are (not an exhaustive list):
 Capture the questions and a summary of the candidate’s responses for the
 scorecard.
 
-Pair Programming Exercise
+Pair programming exercise
 -------------------------
 
 This part of the interview gives the candidate the opportunity to solve a
@@ -65,7 +65,7 @@ the candidate’s coding abilities anyway):
    one user may interact with the store. Any interactions with the store can be
    assumed to be authenticated (the user can be assumed to be who they claim to
    be) but not authorized (the store needs to check whether the user should be
-   able to access a given secret). There are 2 classes of users, a normal user
+   able to access a given secret). There are 2 classes of users: a normal user
    who should only be able to access secrets they have created and an admin user
    (indicated by the “admin” username) who should be able to access any secret
    by its id. The same secret value can be stored multiple times where each
@@ -163,7 +163,7 @@ written and insert it into the interview document. Some candidates might suggest
 that they will send it to you later, please don’t agree to this as they might
 spend more time working on the code and delays you being able to complete your
 scorecard after the interview. Complete the scorecard and include their score
-out of the max score along with your notes in the scorecard on greenhouse. Also
+out of the max score along with your notes in the scorecard on Greenhouse. Also
 include a link to the document with all the detailed notes you have taken. That
 document should not be stored on a shared drive as those not involved in the
 hiring decisions may have access to that location.

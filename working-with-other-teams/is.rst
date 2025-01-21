@@ -33,7 +33,7 @@ self-sufficient in the longer term, as well as reducing the size of the task
 we’re requesting.
 
 As an example, if we’re requesting help debugging a problem on an environment
-managed by IS but for which we’re responsible (e.g. github runners,
+managed by IS but for which we’re responsible (e.g. GitHub runners,
 wordpress-k8s models once migration to sidecar has been done), we should
 provide:
 

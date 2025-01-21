@@ -22,6 +22,6 @@ stakeholders. Each item on the roadmap becomes an epic for the cycle with
 individual stories breaking down the epic to be created by engineers and
 reviewed by management. The epic should include clear requirements to explain
 what is needed. This can best be facilitated by a kick-off meeting to ensure
-everyone understands the scope for what is needed. This is to be done during the
-engineering sprint or shortly thereafter. More guidance on sprint preparation:
+everyone understands the scope for what is needed. This meeting is to be done during 
+the engineering sprint or shortly thereafter. More guidance on sprint preparation:
 `PR016 - Sprint Readiness Review (SRR) <https://docs.google.com/document/d/1baTwzRxoiEW0RuivVbBFndbbeKnX4RR0IvQeXKgz5Is/edit>`_
