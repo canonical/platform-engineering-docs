@@ -10,8 +10,8 @@ How-to guides for onboarding
    Add a new repository to the GitHub repositories </onboarding/how-to/add-new-repo-to-github-repos>
    Change all GitHub repositories </onboarding/how-to/change-all-github-repos>
    Configure a terraform plan on the IS-charms bastion </onboarding/how-to/configure-terraform-plan-bastion>
-   Connect your pull request to a Jira ticket </onboarding/how-to/submit-a-pr-tied-to-jira>
-   Create a debian package and publish it on PPA </onboarding/how-to/create-debian-package-publish-on-ppa>
+   Connect your pull request to a Jira ticket </onboarding/how-to/connect-a-pr-to-jira>
+   Create a Debian package and publish it on PPA </onboarding/how-to/create-debian-package-publish-on-ppa>
    Create a new charm </onboarding/how-to/create-new-charm>
    Deploy Synapse locally with with production terraform plans </onboarding/how-to/local-synapse-deployed-with-production-terraform-plans>
    Estimate Discourse downtime during a charm upgrade </onboarding/how-to/estimate-discourse-downtime-during-charm-upgrades>

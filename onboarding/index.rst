@@ -7,4 +7,5 @@ These documents may be helpful as you get started in the team.
    :maxdepth: 2
 
    How-to guides </onboarding/how-to/index>
+   Reference </onboarding/reference/index>
 

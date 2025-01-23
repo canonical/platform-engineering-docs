@@ -1,5 +1,6 @@
 How to add digest pinning in rock files and automated (renovate) bumps
 ======================================================================
+**Source:** `Discourse <https://discourse.canonical.com/t/digest-pinning-in-rock-files-and-automated-renovate-bumps/2575>`_
 
 We’re using `rocks <https://github.com/canonical/rockcraft>`__ heavily
 in our team and one thing that we were missing was the ability to know
