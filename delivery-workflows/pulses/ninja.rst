@@ -21,9 +21,11 @@ Multiple times a day
   and reply/report any issues to relevant people by either tagging them on the
   chat or posting in the internal team channel. Reach out to the manager if
   ßunclear
-* Monitor the Charm Development channel on the public Matrix instance, looking
-  out for comments or questions from community members about any of the charms
-  we’re responsible for and addressing them promptly
+* Monitor the
+  `Charm Development channel <https://matrix.to/#/#charmhub-charmdev:ubuntu.com>`_
+  on the public Matrix instance, looking out for comments or questions from
+  community members about any of the charms we’re responsible for and addressing
+  them promptly
 * Monitor the `Discourse community forum <https://discourse.charmhub.io/>`_ We
   should look out for comments or questions from community members about any of
   the charms we’re responsible for, or updates to or comments on the specific
