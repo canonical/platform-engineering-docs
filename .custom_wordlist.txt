@@ -3,9 +3,13 @@ APAC
 approvers
 api
 AppService
+<<<<<<< HEAD
 argparse
 argv
 backfill
+=======
+Bootstack
+>>>>>>> main
 bootstrap
 braindump
 changelog
@@ -80,6 +84,7 @@ nginx
 NotImplementedError
 ok
 olympiads
+OCI
 Onboarding
 onboarding
 OpenStack
@@ -90,6 +95,8 @@ PRs
 py
 Rados
 READMEs
+repo
+repos
 retrigger
 Sebastien
 SRE
@@ -98,15 +105,16 @@ SRE's
 SRR
 Standup
 standup
+subnets
 sys
-repo
-repos
 terraform
 tf
 TLS
 tmate
 tox
+Traefik
 ubuntu
+uptime
 url
 uuid
 Varshi
