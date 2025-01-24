@@ -1,7 +1,7 @@
 # Use tmate (debug-ssh) with self-hosted runners
 **Source: [Discourse](https://discourse.canonical.com/t/use-tmate-debug-ssh-with-self-hosted-runners/3289)**
 
-This guide covers how to setup [tmate action workflow](https://github.com/canonical/action-tmate) with Canonical's organisation wide self-hosted runners.
+This guide covers how to setup [tmate action workflow](https://github.com/canonical/action-tmate) with Canonical's organization wide self-hosted runners.
 
 ## 1. Connect to Canonical VPN
 - please read [IS How to: Company Open VPN](https://wiki.canonical.com/InformationInfrastructure/IS/HowTo/CompanyOpenVPN) and connect to Canonical's VPN.
@@ -16,7 +16,7 @@ This guide covers how to setup [tmate action workflow](https://github.com/canoni
 
 - Profile > settings > SSH and GPG keys
 ## 3. Setup repository workflow with [canonical/action-tmate](https://github.com/canonical/action-tmate). 
-* *note that this is a fork of [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate) which has been modified to work with Canonical VPN with automatic configuration.
+* *note that this is a fork of [`mxschmitt/action-tmate`](https://github.com/mxschmitt/action-tmate) which has been modified to work with Canonical VPN with automatic configuration.
 * example [workflow in use](https://github.com/canonical/operator-workflows/blob/main/.github/workflows/integration_test_run.yaml#L243-L246)
 * sample workflow on failure
     ```

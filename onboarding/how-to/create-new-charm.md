@@ -13,10 +13,10 @@ This how-to will not cover implementation details.
 
 2. Create the GitHub repository
 
-    Create an MP for changing the ```terraform.tfvars``` file in the [is-charms-github-repos](https://github.com/canonical/is-charms-github-repos).
+    Create an MP for changing the ```terraform.tfvars``` file in the [IS Charms GitHub repository template](https://github.com/canonical/is-charms-github-repos).
 
     Example:
-    https://github.com/canonical/is-charms-github-repos/pull/3
+    [Add `github-runner-manager` PR](https://github.com/canonical/is-charms-github-repos/pull/3)
 
     After it is merged, you can login in PS5 bastion, run the `pe` command and pick the `prod-is-charms-repos` environment.
 
@@ -28,17 +28,17 @@ This how-to will not cover implementation details.
 
 4. Adapt the template to your charm
 
-   Change charmcraft.yaml file, README.md and others accordingly.
+   Change `charmcraft.yaml` file, `README.md` and others accordingly.
 
 5. Request ownership change
 
    This will transfer charm ownership to the Platform Engineering team.
   Example:
-  https://discourse.charmhub.io/t/transfer-ownership-of-penpot-charm/15006
+  [Transfer ownership of Penpot charm](https://discourse.charmhub.io/t/transfer-ownership-of-penpot-charm/15006)
 
 6. Add CHARMHUB_TOKEN to the repo
 
-   Follow this [How-to](https://discourse.canonical.com/t/create-charmhub-token-for-a-project-on-github/2805) for creating a Charmhub token that will be used by GitHub Actions (see more about it in [operator-worflows](https://github.com/canonical/operator-workflows)).
+   Follow this [How-to](https://discourse.canonical.com/t/create-charmhub-token-for-a-project-on-github/2805) for creating a Charmhub token that will be used by GitHub Actions (see more about it in [operator-workflows](https://github.com/canonical/operator-workflows)).
 
    In case of needing publish the charm manually at first, the steps are:
    

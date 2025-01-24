@@ -187,7 +187,7 @@ Upgrade the providers, apply the terraform and verify the changes.
 Configure Ingress
 -----------------
 
-Now we need to expose Synapse externally as it was set before via url
+Now we need to expose Synapse externally as it was set before via URL
 `chat.staging.ubuntu.com <https://chat.staging.ubuntu.com>`_ . To do this, first let's enable Ingress in our cluster.
 
 Log in to any worker and enable Ingress

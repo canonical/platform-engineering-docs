@@ -5,7 +5,7 @@ This posts describes how I use the extension dash 3 for the `gh` 1 CLI.
 The examples/configuration is tailored for Platform Engineering repositories, though you can reconfigure to suit your needs.
 Comments are more than welcome!
 
-## The tl;dr
+## The TL;DR
 ```
 # gh extension install dlvhdr/gh-dash
 # gh dash
@@ -15,11 +15,11 @@ profit
 ## Why `gh dash`
 I’m mostly a CLI/TUI person and I will get back to that in a different (set of) post(s).
 
-I like to have most things I interact with in the same env and not having to jump from one app to the other.
+I like to have most things I interact with in the same environment and not having to jump from one app to the other.
 
-My main pain point with reviewing PRs and being on top of issues is that I would rely on e-mail and
+My main pain point with reviewing pull requests and being on top of issues is that I would rely on e-mail and
 GitHub can be especially chatty, and if you silence some notifications, you might miss things (you
-can correct me here). I was looking for a workflow where I can glance at all PRs, approve the trivial/bot ones and open a (complex) PR in the browser only when needed.
+can correct me here). I was looking for a workflow where I can glance at all pull requests, approve the trivial/bot ones and open a (complex) PR in the browser only when needed.
 
 ## The defaults
 `gh dash` ships with pretty sane defaults - you have “My Pull Requests”, “Needs My Review” and “Assigned to Me”. The good thing about these tabs is that you can also see the query against the GitHub API that is being made (and you can customize it, which we’ll do in the next section).
@@ -31,15 +31,15 @@ can correct me here). I was looking for a workflow where I can glance at all PRs
 The extension ships with a configuration file, placed under `~/.config/gh-dash/config.yml` by default.
 
 ## A custom workflow
-I wanted to have a way of looking at all PRs and all issues for repos that Platform Engineering manages.
-By default, new PRs are assigned to a team (“is-charms”), though that is at PR creation. If you
-join the party late, chances are someone has approved/requested changes and the assignees have changed. That way you won’t see these PRs in the default tabs that gh dash provides.
+I wanted to have a way of looking at all pull requests and all issues for repositories that Platform Engineering manages.
+By default, new pull requests are assigned to a team (“is-charms”), though that is at pull request creation. If you
+join the party late, chances are someone has approved/requested changes and the assignees have changed. That way you won’t see these pull requests in the default tabs that `gh dash` provides.
 
-Enter messing with yaml!
+Enter messing with YAML!
 
-PRs
-I added two additional tabs that let me check open PRs on all repos IS DevOps manages and split that
-into PRs opened by bots (currently that’s renovate) and the inverse of that:
+Pull requests
+I added two additional tabs that let me check open pull requests on all repositories Platform Engineering manages and split that
+into pull requests opened by bots (currently that’s renovate) and the inverse of that:
 ```
 prSections:
 - title: My Pull Requests
@@ -64,7 +64,7 @@ prSections:
 ```
 
 ## Issues
-This is the same as with PRs and I also used the only YAML trick I know…(anchors):
+This is the same as with pull requests and I also used the only YAML trick I know…(anchors):
 
 ```
 issuesSections:

@@ -9,22 +9,22 @@ Attention: for testing purposes only.
 * Postfix 3.8.1-2ubuntu0.2
 
 ## Steps
-### Install postfix
+### Install Postfix
 ```
 sudo apt install postfix
 ```
 Select “Local Only”. For the domain name, use the default suggested and finish the install.
 
-### Create a file /etc/postfix/virtual
+### Create a file `/etc/postfix/virtual`
 Content:
 ```
 @localhost myname
 @localhost.com myname
 ```
-So all e-mails ending with @localhost or @localhost.com will be redirected to myname
+So all e-mails ending with `@localhost` or `@localhost.com` will be redirected to `myname`.
 
-### Configure postfix
-Add the following lines to /etc/postfix/main.cf
+### Configure Postfix
+Add the following lines to `/etc/postfix/main.cf`:
 ```
 virtual_mailbox_domains=localhost.com"
 virtual_alias_maps = hash:/etc/postfix/virtual"
@@ -58,13 +58,13 @@ relay_transport = error
 inet_protocols = all
 virtual_alias_maps = hash:/etc/postfix/virtual
 ```
-Now check if /etc/postfix/virtual has right permissions so Postfix can read it and then run the following command to activate it.
+Now check if `/etc/postfix/virtual` has right permissions so Postfix can read it and then run the following command to activate it.
 
 ```
 postmap /etc/postfix/virtual
 ```
 ### Restart Postfix
-Restart postfix
+Restart Postfix
 ```
 systemctl restart postfix
 ```
@@ -83,7 +83,7 @@ email:
 ```
 
 ### Check the e-mail
-Check e-mail by reading the file /var/mail/myname or using the command mail.
+Check e-mail by reading the file `/var/mail/myname` or using the command `mail`.
 
 ## Reference
 [Setup a Local Only SMTP Email Server (Linux, Unix, Mac)](https://gist.github.com/raelgc/6031274)

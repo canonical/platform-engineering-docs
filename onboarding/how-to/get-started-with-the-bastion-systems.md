@@ -12,11 +12,11 @@ This is targeted at onboarders who are looking for some brief instructions; note
 
 ## Submitting IS Tickets
 
-To ssh into Prodstack, we need to submit a ticket to update our SSH key into Canonical's systems. Visit [IS requests](https://portal.admin.canonical.com/requests/) to submit a ticket, and then from the *Request Type* dropdown, separately file the following tickets:
+To SSH into Prodstack, we need to submit a ticket to update our SSH key into Canonical's systems. Visit [IS requests](https://portal.admin.canonical.com/requests/) to submit a ticket, and then from the *Request Type* dropdown, separately file the following tickets:
 
-* **'Request type | Update SSH Keys'**. Enter your public key and wait for approval. This will give us access to ssh into the prodstack systems.
+* **'Request type | Update SSH Keys'**. Enter your public key and wait for approval. This will give us access to SSH into the Prodstack systems.
 
-* **'Request type | Get shell access on private-fileshare'** -- To get access to the bastions, you may also need to submit a ticket to get access to the private-filesystem, to share files internally with other people.
+* **'Request type | Get shell access on `private-fileshare`'** -- To get access to the bastions, you may also need to submit a ticket to get access to the `private-filesystem`, to share files internally with other people.
 
 > *I don’t see the option from the dropdown!*
 >
@@ -34,13 +34,13 @@ To ssh into Prodstack, we need to submit a ticket to update our SSH key into Can
 
 ### Adding username to `main.tf`
 
-To get access to the staging environment, we need to submit an MP to the Launchpad repo. 
+To get access to the staging environment, we need to submit an MP to the Launchpad repository. 
 
-The MP should target the appropriate `main.tf` file, with respect to your team and required environment.  https://git.launchpad.net/canonical-terraform-plans/tree/prodstack/ps6/environments 
+The MP should target the appropriate `main.tf` file, with respect to your team and required environment.  [Launchpad link (warning: broken)](https://git.launchpad.net/canonical-terraform-plans/tree/prodstack/ps6/environments) 
 
-> Example: If you belonged to the `is-charms` team and wanted access to the `staging` environment, you would target https://git.launchpad.net/canonical-terraform-plans/tree/prodstack/ps6/environments/is-charms/staging/main.tf 
+> Example: If you belonged to the `is-charms` team and wanted access to the `staging` environment, you would target [this `main.tf`](https://git.launchpad.net/canonical-terraform-plans/tree/prodstack/ps6/environments/is-charms/staging/main.tf) 
 
-> Note that this example is for **ps6**, if you require access to **ps5** or some other server, ensure to target the correct destination.
+> Note that this example is for **PS6**, if you require access to **PS5** or some other server, ensure to target the correct destination.
 
 Now, we can clone the repository with the following: `git clone git+ssh://<USERNAME>@git.launchpad.net/canonical-terraform-plans`
 
@@ -61,7 +61,7 @@ To fork this repository and propose fixes from there, push to this repository:
 
 `git push git+ssh://codethulu@git.launchpad.net/~<USERNAME>/canonical-terraform-plans <BRANCHNAME>`
 
-> https://code.launchpad.net/canonical-terraform-plans will generate the commands specific to your user, as well as provide recent information about branch modifications.
+> [The Canonical Terraform Plans Launchpad](https://code.launchpad.net/canonical-terraform-plans) will generate the commands specific to your user, as well as provide recent information about branch modifications.
 
 You should now be able to generate a merge proposal and add any necessary reviewers. 
 
@@ -91,15 +91,15 @@ We should be ready to ssh into the bastion system now. (You still need to be con
 
 ```ssh -v <USERNAME>@is-charms-bastion-ps6.internal```
 
-> Once again, this example is for **ps6**. Change as required.
+> Once again, this example is for **PS6**. Change as required.
 
 You should now have access to bastion!
 
 
 ### Footnotes
-* A related post '[How to setup a new PS5/6 model](https://discourse.canonical.com/t/how-to-setup-a-new-ps5-6-model/3015)' inspired the general structure, and the level of detail of this post.
+* A related post '[How to set up a new PS5/6 model](https://discourse.canonical.com/t/how-to-setup-a-new-ps5-6-model/3015)' inspired the general structure, and the level of detail of this post.
 
-* https://wiki.canonical.com/InformationInfrastructure/IS/SSHebang is largely deprecated, but was referenced for SSH access to the system.
+* [The Canonical Wiki page on SSHebang](https://wiki.canonical.com/InformationInfrastructure/IS/SSHebang) is largely deprecated, but was referenced for SSH access to the system.
 
 * Thank you to my team, who patiently helped me with this process during my onboarding! Hopefully this guide should help detail some of the basic steps for your own onboarding.
 

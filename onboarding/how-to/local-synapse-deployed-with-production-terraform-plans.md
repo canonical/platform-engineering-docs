@@ -32,7 +32,7 @@ sudo iptables -P FORWARD ACCEPT
 
 ```
 
-Config directory to store many things (a file with env variables needed after every restart/new login).
+Configure directory to store many things (a file with environment variables needed after every restart/new login).
 ```
 STAGING_CONFIG_DIR=$HOME/config
 mkdir -p ${STAGING_CONFIG_DIR}
@@ -48,26 +48,26 @@ EOF
 
 #### Install S3 Server
 There are two options. Configure an external S3 or an internal one.
-The problem is that https is required for some things, like backup
-(see https://github.com/pgbackrest/pgbackrest/issues/556),
-and the certificates should be correct. As nor postgresql nor Synapse
-check the ssl ca for the s3-integrator, that implies changing certificates
+The problem is that HTTPS is required for some things, like backup
+(see [`https://github.com/pgbackrest/pgbackrest/issues/556`](https://github.com/pgbackrest/pgbackrest/issues/556)),
+and the certificates should be correct. As nor PostgreSQL nor Synapse
+check the SSL ca for the `s3-integrator`, that implies changing certificates
 in the units, so it is not described here.
 
 The recommended approach is to use an external S3 server configured manually 
-with https.
+with HTTPS.
 
 ##### Option 1. External S3 (recommended)
 
 Use your own S3 compatible server configuration. One easy option is to
-use Minio (or even your aws free tier). Then set the environment variables:
+use Minio (or even your AWS free tier). Then set the environment variables:
 ```
 export AWS_ENDPOINT=https://<your-s3-server>
 export AWS_ACCESS_KEY_ID=<aws access key id>
 export AWS_SECRET_ACCESS_KEY=<aws secret access key>
 ```
 
-To follow the rest of this howto, those credentials should be able to create buckets.
+To follow the rest of this how-to, those credentials should be able to create buckets.
 
 ##### Option 2. S3 charm.
 
@@ -86,7 +86,7 @@ export AWS_ACCESS_KEY_ID=minio
 export AWS_SECRET_ACCESS_KEY=supersuperkey
 ```
 
-#### Configure S3 variables and aws-cli
+#### Configure S3 variables and `aws-cli`
 
 ```
 export AWS_ENDPOINT_URL=${AWS_ENDPOINT}
@@ -112,7 +112,7 @@ aws-cli.aws s3api list-buckets
 
 ### Configure Vault
 
-https://charmhub.io/vault-k8s/docs/h-getting-started
+[Vault tutorial](https://charmhub.io/vault-k8s/docs/h-getting-started)
 ```
 sudo snap install vault
 
@@ -149,7 +149,7 @@ EOF
 
 ### Configure Proxy
 
-TODO check if the squid-reverseproxy could be useful.
+TODO check if the `squid-reverseproxy` could be useful.
 
 Inside the VM:
 ```
@@ -177,7 +177,7 @@ echo ${SQUID_URL}
 curl -vvv --proxy "${SQUID_URL}" "https://www.google.com"
 ```
 
-Ok, write it to the config file.
+Okay, write it to the configuration file.
 ```
 cat << EOF >> ${STAGING_CONFIG_DIR}/.envrc
 export SQUID_IP=${SQUID_IP}
@@ -194,8 +194,8 @@ In the case of `canonical-terraform-modules`, it will be downloaded by `terrafor
 
 Theses repositories require ssh to be downloaded, so the new VM does not have
 the credentials. There are several fixes to the problem, an easy one is to mount the
-`.ssh` directory in the host, and then umount it after `terraform init` (as having that
-directory mounted will break many things with multipass). Than can be done configuring
+`.ssh` directory in the host, and then `umount` it after `terraform init` (as having that
+directory mounted will break many things with Multipass). Than can be done configuring
 the `.ssh/config` like this:
 ```
 Host git.launchpad.net
@@ -209,7 +209,7 @@ And then mounting the `.ssh` directory from the host:
 ```
 multipass mount $HOME/.ssh staging:/home/ubuntu/.ssh
 ```
-And afterwads, umount it as soon as possible (after terraform init) with:
+And afterwards, `umount` it as soon as possible (after `terraform init`) with:
 ```
 multipass umount staging:/home/ubuntu/.ssh
 ```
@@ -251,7 +251,7 @@ aws-cli.aws s3api create-bucket --bucket prod-chat-ubuntu-com-db-tfstate
 aws-cli.aws s3api list-buckets
 ```
 
-### Terraform init
+### Terraform initialization
 
 ```
 cd ~/canonical-terraform-plans/chat-synapse/environments/prod-chat-ubuntu-com-db
@@ -316,7 +316,7 @@ aws-cli.aws s3api create-bucket --bucket prod-chat-ubuntu-com-k8s-backup
 aws-cli.aws s3api list-buckets
 ```
 
-### Terraform init
+### Terraform initialization
 ```
 export TF_VAR_synapse_irc_bridge_admins=whatever
 export TF_VAR_login_approle_role_id=unused
@@ -343,7 +343,7 @@ terraform apply
 
 ### Synapse and PostgreSQL
 
-There should be an offer already created, with url lxd:admin/prod-chat-synapse-db.postgresql
+There should be an offer already created, with URL `lxd:admin/prod-chat-synapse-db.postgresql`
 ```
 juju switch lxd:prod-chat-synapse-db
 juju show-offer postgresql
@@ -357,7 +357,7 @@ juju switch microk8s:prod-synapse-k8s
 juju find-offers lxd:
 juju integrate synapse:database lxd:admin/prod-chat-synapse-db.postgresql
 ```
-See https://juju.is/docs/juju/manage-offers for any issue.
+See [Juju | Manage offers](https://juju.is/docs/juju/manage-offers) for any issue.
 
 
 ## Test the deployment

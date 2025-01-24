@@ -4,12 +4,12 @@
 This document is still a WIP!!! 
 I'm just dumping materials here for now, will refactor them later
 
-The Platform Engineering team usually finds the need to contribute to the [Indico upstream](https://github.com/indico/indico), and while the [Indico documentation](https://docs.getindico.io/en/latest/installation/development/) is a valuable resource to get started, modifications are usually needed in your local environment due to the fact that it's not regularly maintained. This topic will also discuss working with the Canonical IDP and/or setting up your own IDP (from [the launchpad project](https://readthedocs.org/projects/canonical-identity-provider/)) 
+The Platform Engineering team usually finds the need to contribute to the [Indico upstream](https://github.com/indico/indico), and while the [Indico documentation](https://docs.getindico.io/en/latest/installation/development/) is a valuable resource to get started, modifications are usually needed in your local environment due to the fact that it's not regularly maintained. This topic will also discuss working with the Canonical IDP and/or setting up your own IDP (from [the Launchpad project](https://readthedocs.org/projects/canonical-identity-provider/)) 
 
-We'll use Multipass to create VMs to run the indico development environment. It's also recommended to have a "quick-start script" to get your environment up and running quickly, go to the Script section for an example script.
+We'll use Multipass to create VMs to run the Indico development environment. It's also recommended to have a "quick-start script" to get your environment up and running quickly, go to the Script section for an example script.
 
 ## Configure Multipass
-Don't forget to specify the available memory for the multipass vm, otherwise compiling language translations and building assets will take a lot of time and can potentially fail.
+Don't forget to specify the available memory for the Multipass VM, otherwise compiling language translations and building assets will take a lot of time and can potentially fail.
 
 ```
 #!/bin/bash
@@ -20,8 +20,8 @@ multipass transfer /home/tphan025/Canonical/indico-dev/init.sh ubuntu:init.sh
 multipass shell ubuntu
 ```
 
-## Configure nginx
-Example nginx config: 
+## Configure NGINX
+Example NGINX configuration: 
 ```
 server {
         listen [::]:443 ssl ipv6only=off;
@@ -41,19 +41,19 @@ server {
 
 }
 ```
-When behind a reverse proxy, indico needs to be run with `--proxy` option
+When behind a reverse proxy, Indico needs to be run with `--proxy` option
 ```
 indico run -h 10.212.230.221 -u https://indico.dev -q --enable-evalex --proxy
 ```
-**Note**: If the browser is blocking self-signed certificates, on chrome there's an option to type `thisisunsafe` and press Enter which will allow you to continue to indico. 
+**Note**: If the browser is blocking self-signed certificates, on chrome there's an option to type `thisisunsafe` and press Enter which will allow you to continue to Indico. 
 
 ## Using the canonical IDP
 
 ## Setting up canonical-identity-provider
 
 ## Automated script
-This script is to be run inside the created multipass vm. You can do this manually by running `multipass transfer <script location> <vm_name>:init.sh`. After that you can `multipass shell <vm_name>` and run the script with `mulitpass exec ubuntu -- bash init.sh`
-This script will install indico's dependencies, setup the sqlite database, configure indico and output instructions to run indico in development mode. 
+This script is to be run inside the created Multipass VM. You can do this manually by running `multipass transfer <script location> <vm_name>:init.sh`. After that you can `multipass shell <vm_name>` and run the script with `mulitpass exec ubuntu -- bash init.sh`
+This script will install Indico's dependencies, setup the SQLite database, configure Indico and output instructions to run Indico in development mode. 
 ```
 # File init.sh
 #!/bin/bash

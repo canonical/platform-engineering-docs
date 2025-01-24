@@ -3,9 +3,9 @@
 
 !!! Still a WIP
 
-This document will talk about how to bootstrap a Debian package repo, what are its components, what they do and how to build, test, sign and publish a Debian package. https://github.com/canonical/jenkins-agent-deb will be used as an example.
+This document will talk about how to bootstrap a Debian package repo, what are its components, what they do and how to build, test, sign and publish a Debian package. [The Jenkins agent Debian repository](https://github.com/canonical/jenkins-agent-deb) will be used as an example.
 
-This document is based on https://wiki.debian.org/Packaging/Intro and goes more into details about the packaging process. It also tries to explain some hidden convention in the packaging process and put the packaging into the context of the Platform Engineering team.
+This document is based on [Debian documentation](https://wiki.debian.org/Packaging/Intro) and goes more into details about the packaging process. It also tries to explain some hidden convention in the packaging process and put the packaging into the context of the Platform Engineering team.
 
 ## Install necessary packages
 ```
@@ -18,7 +18,7 @@ sudo apt install build-essential devscripts debhelper
 dch --create -v 1.0-0 --package jenkins-agent
 ```
 2. `debian/control`
-Contains information about your package as well as version of the underlying system used for packaging. Example of `debian/control` for jenkins-agent
+Contains information about your package as well as version of the underlying system used for packaging. Example of `debian/control` for `jenkins-agent`
 ```
 Source: jenkins-agent
 Section: java

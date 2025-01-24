@@ -12,7 +12,7 @@ Then, exit from your Canonistack instance and log back in using the `-L` flag an
 ssh ubuntu@CANONISTACK_IP -i CANONISTACK_SSH_KEY -L 8080:JUJU_UNIT_IP:8080
 ```
 
-Here, `CANONISTACK_IP` is the IP address of your Canonistack instance, `CANONISTACK_SSH_KEY` is the credentials for your instance, and `JUJU_UNIT_IP` is the IP address for the charm you want to access. Then you may the web page, for instance with <http://localhost:8080>. You must close the web page before exiting from the SSH command.
+Here, `CANONISTACK_IP` is the IP address of your Canonistack instance, `CANONISTACK_SSH_KEY` is the credentials for your instance, and `JUJU_UNIT_IP` is the IP address for the charm you want to access. Then you may the web page, for instance with [`http://localhost:8080`](http://localhost:8080). You must close the web page before exiting from the SSH command.
 
 ### When ingress is involved
 

@@ -59,4 +59,4 @@ Note: the `terraform plan` command might take a while. "*Patience you must have,
    ```bash
    terraform apply
    ```
-Note: Sensitive data as github_actions_dashboard_secret is defined as environment variable in the file `.envrc`. You can read more about it in "[Set values with variables](https://developer.hashicorp.com/terraform/tutorials/configuration-language/sensitive-variables#set-values-with-variables)" in the Terraform documentation.
+Note: Sensitive data as `github_actions_dashboard_secret` is defined as environment variable in the file `.envrc`. You can read more about it in "[Set values with variables](https://developer.hashicorp.com/terraform/tutorials/configuration-language/sensitive-variables#set-values-with-variables)" in the Terraform documentation.

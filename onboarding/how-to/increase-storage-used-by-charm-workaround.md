@@ -5,9 +5,7 @@ Currently, there is no way of resizing storage via `juju` command so this docume
 
 While working on this document, it was tried to:
 -  Change the PVC/PV resources: failed because it was not reflected on the Juju storage entity.
-- Change the [metadata.yaml](https://juju.is/docs/sdk/metadata-yaml#heading--storage) requiring bigger storage and refresh the charm: failed because is not allowed.
-
-*[Lasciate ogne speranza, voi ch'intrate](https://en.wikipedia.org/wiki/Inferno_(Dante)#:~:text=Dante%20passes%20through%20the%20gate,%2C%20ye%20who%20enter%20here.%22)*
+- Change the [`metadata.yaml`](https://juju.is/docs/sdk/metadata-yaml#heading--storage) requiring bigger storage and refresh the charm: failed because is not allowed.
 
 ## Environment
 * Juju 3.1.6
@@ -27,7 +25,7 @@ Follow the how to: [Enable Admin API and create a snapshot for Prometheus K8S ch
       ```
 
       1.2 Check the TSDB status to compare later
-      Access http://10.10.10.10:9090/tsdb-status where 10.10.10.10 is the Juju Unit IP.
+      Access [`http://10.10.10.10:9090/tsdb-status`](http://10.10.10.10:9090/tsdb-status) where 10.10.10.10 is the Juju Unit IP.
 
 2. Remove offers if any (don&#39;t use --force parameter)
 
@@ -39,7 +37,7 @@ If you get an error like `ERROR current model for controller $YOUR-CONTROLLER no
 
 If you get an error like `ERROR cannot delete application offer "prometheus": offer has 1 relation` you can use the parameter `--force` but be aware that this might have unexpected behavior later as you can check in this [Charmhub thread](https://chat.charmhub.io/charmhub/pl/yqy3ofefhf8yjbn1wwgehomwpo).
 
-3. Remove prometheus application (don't use `--force` parameter)
+3. Remove Prometheus application (don't use `--force` parameter)
 ```bash
 juju remove-application prometheus
 juju status # check if everything looks fine

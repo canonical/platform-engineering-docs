@@ -22,10 +22,10 @@ For all the examples, is considered a class named `Constraint` that represents a
 ### Simple validations
 
 This example validates:
-- arch is required and should be amd64, arm64, ppc64el, s390x or riscv64 (case sensitive)
+- arch is required and should be `amd64`, `arm64`, `ppc64el`, `s390x` or `riscv64` (case sensitive)
 - cores is a required int > 0
 - root_disk is a required int > 0
-- container is not required, default is lxd and should be lxd or kvm (case sensitive)
+- container is not required, default is `lxd` and should be `lxd` or `kvm` (case sensitive)
 
 ```python
 from datetime import datetime, timezone
@@ -51,7 +51,7 @@ print(first_constraint.model_dump(mode='json')) # print in JSON
 print(first_constraint.model_json_schema()) # generates JSON schema
 ```
 
-Note: Validation can be made in four ways: BaseModel, pydantic.dataclasses.dataclass, TypeAdapter and validate_call. See ["Dataclasses, TypedDicts, and more"](https://docs.pydantic.dev/latest/why/#typeddict) for more details about it.
+Note: Validation can be made in four ways: `BaseModel`, `pydantic.dataclasses.dataclass`, `TypeAdapter` and `validate_call`. See ["Dataclasses, TypedDicts, and more"](https://docs.pydantic.dev/latest/why/#typeddict) for more details about it.
 
 ### Error handling
 

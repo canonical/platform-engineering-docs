@@ -19,13 +19,13 @@ Here are the steps:
     load_creds openstack
     swift post stg-synapse-tfstate
 ```
-4. Load the S3 credentials and init the plan.
+4. Load the S3 credentials and `init` the plan.
 ```
     load_creds s3
     https_proxy=http://squid.internal:3128 NO_PROXY=radosgw.ps5.canonical.com terraform init -backend-config=backend.tfvars
 ```
 
-Note that NO_PROXY needs to be changed to radosgw.ps5.canonical.com if the environment is PS5.
+Note that NO_PROXY needs to be changed to `radosgw.ps5.canonical.com` if the environment is PS5.
 
 5. Import the model 
 

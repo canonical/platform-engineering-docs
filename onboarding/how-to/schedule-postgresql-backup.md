@@ -1,7 +1,7 @@
-# How to schedule a PosgreSQL backup
+# How to schedule a PostgreSQL backup
 **Source: [Discourse](https://discourse.canonical.com/t/how-to-schedule-a-posgresql-backup/3189)**
 
-This procedure might be changed soon but anyway, this is how a backup can be scheduled using crontab.
+This procedure might be changed soon but anyway, this is how a backup can be scheduled using Crontab.
 
 ## Environment
 
@@ -44,7 +44,7 @@ done
 chmod +x /home/my-application-db/backup-db.sh
 ```
 
-### Add it to the crontab
+### Add it to the Crontab
 
 ```
 crontab -e

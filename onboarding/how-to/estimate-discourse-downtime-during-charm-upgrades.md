@@ -47,7 +47,7 @@ else
 fi
 ```
 
-hitting Ctrl-C will output something like this:
+hitting <kbd>Ctrl</kbd>-<kbd>C</kbd> will output something like this:
 
 ```
 tphan025 at ubuntu1 in ~/personal/discouse-dev 
