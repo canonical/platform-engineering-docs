@@ -1,4 +1,4 @@
- .. _internal-external-updates:
+.. _internal-external-updates:
 
 Internal and external team updates
 ==================================
