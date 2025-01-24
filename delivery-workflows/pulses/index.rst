@@ -8,3 +8,4 @@ Pulses
    During Pulse <during-pulse>
    Pulse Demos <pulse-demo>
    Pulse Retro <pulse-retro>
+   Platform Engineering Ninja <ninja>
