@@ -20,7 +20,7 @@ Multiple times a day
   `team public rooms on Matrix <https://matrix.to/#/!DYvOMMMjuXPZRJYHdy:ubuntu.com?via=ubuntu.com&via=matrix.org>`_
   and reply/report any issues to relevant people by either tagging them on the
   chat or posting in the internal team channel. Reach out to the manager if
-  ßunclear
+  unclear
 * Monitor the
   `Charm Development channel <https://matrix.to/#/#charmhub-charmdev:ubuntu.com>`_
   on the public Matrix instance, looking out for comments or questions from
