@@ -13,10 +13,14 @@ Checklist
 Multiple times a day
 ~~~~~~~~~~~~~~~~~~~~
 
-* Monitor the public channels Platform Engineering, IS, IS Outage, team public
-  rooms on Matrix and reply/report any issues to relevant people by either
-  tagging them on the chat or posting in the internal team channel. Reach out to
-  the manager if unclear
+* Monitor the public channels
+  `Platform Engineering <https://chat.canonical.com/canonical/channels/platform-engineering>`_,
+  `IS <https://chat.canonical.com/canonical/channels/is>`_,
+  `IS Outage <https://chat.canonical.com/canonical/channels/is-outage>`_,
+  `team public rooms on Matrix <https://matrix.to/#/!DYvOMMMjuXPZRJYHdy:ubuntu.com?via=ubuntu.com&via=matrix.org>`_
+  and reply/report any issues to relevant people by either tagging them on the
+  chat or posting in the internal team channel. Reach out to the manager if
+  ßunclear
 * Monitor the Charm Development channel on the public Matrix instance, looking
   out for comments or questions from community members about any of the charms
   we’re responsible for and addressing them promptly
