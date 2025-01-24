@@ -188,40 +188,6 @@ such as enabling a new bot), the PR description should include:
           `ISD014 - Managing Charm Complexity <https://docs.google.com/document/d/1G62PosrObvmQY5KbxvqaxByojlhDxrmNtcbPS39YbaY/edit?usp=sharing>`_
     * Or which of the standards/ guidelines was not applied and why
 
-The above should be created as a template for raising PRs across all of our
-repositories:
-
-.. code-block:: markdown
-
-    Applicable spec: <link>
-
-    ### Overview
-
-    <A high level overview of the change>
-
-    ### Rationale
-
-    <The reason the change is needed>
-
-    ## Juju Events Changes
-
-    <Any changes to the juju events being observed (newly added, significantly modified or deleted)>
-
-    ### Module Changes
-
-    <Any high level changes to modules and why (Service, Observer, helper)>
-
-    ### Library Changes
-
-    <Any changes to charm libraries>
-
-    ### Checklist
-
-    - [ ] The [charm style guide](https://juju.is/docs/sdk/styleguide) was applied
-    - [ ] The [contributing guide](https://github.com/canonical/is-charms-contributing-guide) was applied
-    - [ ] The changes are compliant with [ISD054 - Manging Charm Complexity](https://discourse.charmhub.io/t/specification-isd014-managing-charm-complexity/11619)
-    - [ ] The documentation is generated using `src-docs`
-    - [ ] The documentation for charmhub is updated.
-    - [ ] The PR is tagged with appropriate label (`trivial`, `require-senior-review`, `documentation`)
-
-    <Explanation for any unchecked items above>
+The above should be created as a
+`template <https://github.com/canonical/is-charms-template-repo/blob/main/.github/pull_request_template.yaml>`_
+for raising PRs across all of our repositories.
