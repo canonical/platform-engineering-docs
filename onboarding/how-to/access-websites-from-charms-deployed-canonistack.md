@@ -31,7 +31,7 @@ ssh ubuntu@CANONISTACK_IP -i CANONISTACK_SSH_KEY -L 8080:INGRESS_IP:80
 
 Then you can visit the web page as `http://WEBSITE_URL:8080`.
 
-If you reach an error in your web page browser (e.g., the web page can only be accessed via `http://WEBSITE_URL` with no port, or the connection is refused), you can install a browser extension such as [ModHeader](https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj) to set `Host` as `WEBSITE_URL`. Then you can visit the website at [`http://INGRESS_IP:8080`](http://INGRESS_IP:8080).
+If you reach an error in your web page browser (e.g., the web page can only be accessed via `http://WEBSITE_URL` with no port, or the connection is refused), you can install a browser extension such as [ModHeader](https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj) to set `Host` as `WEBSITE_URL`. Then you can visit the website at `http://INGRESS_IP:8080`.
 
 ## Example: Jenkins K8s
 

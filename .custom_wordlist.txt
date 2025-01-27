@@ -86,6 +86,7 @@ linux
 lpcraft
 kubeconfig
 Mannambeth
+mattermost
 Mattermost
 Maubot
 maubot
@@ -104,10 +105,12 @@ Mykola
 namedtuple
 NAND
 netbox
+nginx
 NGINX
 NotImplementedError
 O'Reilly
 OCI
+ok
 olympiads
 Onboarding
 onboarding
@@ -115,8 +118,10 @@ onboarders
 OpenStack
 OpenTofu
 OSTEP
+paas
 PaaS
 Padawan
+penpot
 Penpot
 Postfix
 PostgreSQL
@@ -169,8 +174,10 @@ Varshi
 VM
 VMs
 VPN
+wazuh
 Wazuh
 WIP
+wordpress
 Wordpress
 Wuestkamp's
 Yevgeni's

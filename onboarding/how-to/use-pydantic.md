@@ -51,7 +51,7 @@ print(first_constraint.model_dump(mode='json')) # print in JSON
 print(first_constraint.model_json_schema()) # generates JSON schema
 ```
 
-Note: Validation can be made in four ways: `BaseModel`, `pydantic.dataclasses.dataclass`, `TypeAdapter` and `validate_call`. See ["Dataclasses, TypedDicts, and more"](https://docs.pydantic.dev/latest/why/#typeddict) for more details about it.
+Note: Validation can be made in four ways: `BaseModel`, `pydantic.dataclasses.dataclass`, `TypeAdapter` and `validate_call`. See ["Dataclasses, TypedDicts, and more"](https://docs.pydantic.dev/latest/why/#dataclasses-typeddict-more) for more details about it.
 
 ### Error handling
 

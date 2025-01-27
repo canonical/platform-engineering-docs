@@ -95,7 +95,7 @@ All things networking.
 
 This is also a classic, currently in the eighth revision, it covers all the technical aspects you will need and then some.
 
-[UNIX Network Programming](http://www.unpbook.com/)
+[UNIX Network Programming](https://unpbook.com/)
 
 Considered one of the best books on network programming, though it might be a bit too much in terms of content.
 
