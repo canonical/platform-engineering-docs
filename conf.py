@@ -1,5 +1,5 @@
-import datetime
 import ast
+import datetime
 
 # Configuration for the Sphinx documentation builder.
 # All configuration specific to your project should be done in this file.
@@ -192,7 +192,14 @@ linkcheck_ignore = [
     "https://github.com/canonical/infrastructure-services",
     "https://github.com/canonical/is-prod-synapse-external/*",
     "https://chat.staging.ubuntu.com",
-    "https://code.launchpad.net/~amandahla/canonical-is-firewalls/*"
+    "https://code.launchpad.net/~amandahla/canonical-is-firewalls/*",
+    "https://wiki.canonical.com/*",
+    "https://matrix.to/*",
+    "https://code.launchpad.net/~canonical-is/canonical-is-internal-proxy-configs/*",
+    "https://code.launchpad.net/~canonical-is/canonical-terraform-plans/*",
+    "https://cos-ps6.is-devops.canonical.com/*",
+    "https://code.launchpad.net/~canonical-is/canonical-mojo-specs/*",
+    "https://warthogs.atlassian.net/8"
 ]
 
 
