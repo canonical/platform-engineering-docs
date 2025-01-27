@@ -17,7 +17,7 @@ to the documentation so that we can remain as consistent as possible between
 our charms' documentation sets.
 
 Create the diagram
-~~~~~~~~~~~~~~~~~~
+------------------
 
 Use `Mermaid <https://mermaid.js.org/>`_ to create the diagram. Mermaid is a
 diagramming and charting tool that renders Markdown-inspired text definitions
@@ -32,7 +32,7 @@ Mermaid has a `live editor <https://mermaid.live/>`_ that you can use to
 create and render diagrams before adding them into the documentation.
 
 Add the diagram into the docs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 The diagram should be added into the "Charm architecture" Explanation document.
 If this file doesn't exist for the charm, then it will need to be created.
@@ -54,7 +54,7 @@ Some examples for "Charm architecture" documentation include:
 * `Mattermost <https://charmhub.io/mattermost-k8s/docs/architecture>`_
 
 Example diagrams
-~~~~~~~~~~~~~~~~
+----------------
 
 Below are some examples of Mermaid diagrams in Canonical documentation:
 
@@ -62,8 +62,60 @@ Below are some examples of Mermaid diagrams in Canonical documentation:
 * `Charmed MySQL K8s <https://charmhub.io/mysql-k8s/docs/e-flowcharts>`_
 * `Checkbox (an example of using Mermaid in RTD) <https://canonical-checkbox.readthedocs-hosted.com/en/stable/explanation/remote.html#automatic-session-resume>`_
 
-In our own team, the `Maubot operator <https://github.com/canonical/maubot-operator>`_
-contains the following Mermaid diagram in its README:
+Indico
+~~~~~~
+
+To serve as an example of a "charm architecture" diagram,
+here is a quick and dirty example for the Indico charm (taken from
+`this talk <https://docs.google.com/presentation/d/1v01jO85i62rer1QXcASmJGiv-87qinQDBHjGaPsTWTc/edit#slide=id.g159222fceda_0_223>`_):
+
+.. mermaid::
+
+   C4Component
+   title Component diagram for Indico Charm
+
+   Container_Boundary(imagebuildercharm), "Indico") {
+     Component(nginx, "NGINX", "", "Serves static resources, handles web traffic")
+     Component(charm, "Indico", "", "Observes events") 
+     Component(celery, "Celery", "", "Processes tasks asynchronously")
+
+     Rel(charm, nginx, "")
+     Rel(charm, celery, "")
+   }
+
+The raw code for this diagram (implemented in Markdown) is as follows:
+
+.. code-block::
+
+   ```mermaid
+   C4Component
+   title Component diagram for Indico Charm
+
+   Container_Boundary(imagebuildercharm), "Indico") {
+     Component(nginx, "NGINX", "", "Serves static resources, handles web traffic")
+     Component(charm, "Indico", "", "Observes events") 
+     Component(celery, "Celery", "", "Processes tasks asynchronously")
+
+     Rel(charm, nginx, "")
+     Rel(charm, celery, "")
+   }
+   ```
+
+.. warning::
+
+   The arrows for this diagram may not be totally accurate, so proceed
+   with caution if you choose to copy or use this specific diagram.
+
+Maubot
+~~~~~~
+
+The `Maubot operator <https://github.com/canonical/maubot-operator>`_
+already contains the following Mermaid diagram in its README:
+
+.. warning::
+
+   This diagram is a high-level overview of the Maubot charm. The diagram is
+   more aligned with "reference architecture".
 
 .. mermaid::
 
