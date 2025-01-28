@@ -1,5 +1,5 @@
-import datetime
 import ast
+import datetime
 
 # Configuration for the Sphinx documentation builder.
 # All configuration specific to your project should be done in this file.
@@ -137,11 +137,11 @@ html_context = {
     # Docs branch in the repo; used in links for viewing the source files
     #
     # TODO: To customise the branch, uncomment and update as needed.
-    # 'github_version': 'main',
+    "github_version": 'main',
     # Docs location in the repo; used in links for viewing the source files
     #
     # TODO: To customise the directory, uncomment and update as needed.
-    #"github_folder": "/sp-docs/",
+    "github_folder": "/",
 
     # TODO: To enable or disable the Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
@@ -192,7 +192,14 @@ linkcheck_ignore = [
     "https://github.com/canonical/infrastructure-services",
     "https://github.com/canonical/is-prod-synapse-external/*",
     "https://chat.staging.ubuntu.com",
-    "https://code.launchpad.net/~amandahla/canonical-is-firewalls/*"
+    "https://code.launchpad.net/~amandahla/canonical-is-firewalls/*",
+    "https://wiki.canonical.com/*",
+    "https://matrix.to/*",
+    "https://code.launchpad.net/~canonical-is/canonical-is-internal-proxy-configs/*",
+    "https://code.launchpad.net/~canonical-is/canonical-terraform-plans/*",
+    "https://cos-ps6.is-devops.canonical.com/*",
+    "https://code.launchpad.net/~canonical-is/canonical-mojo-specs/*",
+    "https://warthogs.atlassian.net/8"
 ]
 
 
@@ -244,6 +251,7 @@ extensions = [
 
 exclude_patterns = [
     "doc-cheat-sheet*",
+    "README.md",
 ]
 
 # Adds custom CSS files, located under 'html_static_path'
