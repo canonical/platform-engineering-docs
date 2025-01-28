@@ -26,5 +26,5 @@ To create an ADR:
 Description, and Reference.
 - Keep the description short and written in a way that people from different
 teams can understand.
-- As a reference, you can add specifications, discourse posts, Mattermost
+- As a reference, you can add specifications, Discourse posts, Mattermost
 threads, or any other resources that add context on how the decision was made.
