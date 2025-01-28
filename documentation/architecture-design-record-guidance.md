@@ -6,7 +6,7 @@ It records the context, the decision, the reasoning behind it, and
 any consequences. ADRs help teams track and communicate the evolution of a
 system’s architecture over time.
 
-## How to Create One
+## How to create an ADR
 
 To create an ADR:
 
