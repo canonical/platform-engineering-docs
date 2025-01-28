@@ -10,7 +10,7 @@ system’s architecture over time.
 
 To create an ADR:
 
-1. Use the Google Docs template titled "[Template] Architecture Design Record: Charm."
+1. Use the Google Docs template titled ["[Template] Architecture Design Record: Charm."](https://docs.google.com/document/d/1BWSteqpuFxtl8nCvjL2g64vUd2xL-ftxjN4Dq64nZ80/edit?usp=sharing)
 2. Create a new document based on this template.
 3. Save the document in the "Platform Engineering / Charms / [Charm Name]"
  Google Drive folder.
@@ -24,7 +24,9 @@ To create an ADR:
 - Update existing ADRs if the context or decisions evolve over time.
 - The Decisions section provides a table with the columns: Date, Environment,
 Description, and Reference.
-- Keep the description short and written in a way that people from different
+  - Environment refers to the name described in the 'Environments' section.
+  It usually corresponds to the Juju model name, e.g., stg-model-k8s.
+  - Keep the description short and written in a way that people from different
 teams can understand.
-- As a reference, you can add specifications, Discourse posts, Mattermost
+  - As a reference, you can add specifications, Discourse posts, Mattermost
 threads, or any other resources that add context on how the decision was made.
