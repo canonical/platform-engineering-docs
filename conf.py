@@ -217,6 +217,9 @@ linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*",
                                     "https://juju.is/docs/sdk/*",
                                     ]
 
+# give linkcheck multiple tries on failure
+# linkcheck_timeout = 30
+linkcheck_retries = 3
 
 ########################
 # Configuration extras #
