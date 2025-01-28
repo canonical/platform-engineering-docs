@@ -18,7 +18,7 @@ To create an ADR:
 
 [Charm Name] is the name of the charm (e.g. Synapse).
 
-## How to Keep It Updated
+## How to keep the ADR updated
 
 - Regularly review the ADRs as part of your project’s documentation updates.
 - Update existing ADRs if the context or decisions evolve over time.
