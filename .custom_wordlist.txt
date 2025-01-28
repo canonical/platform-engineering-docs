@@ -1,3 +1,5 @@
+ADR
+ADRs
 amd
 AoC
 APAC
@@ -151,6 +153,7 @@ SSHebang
 SSL
 Standup
 standup
+stg
 subnets
 sys
 terraform
