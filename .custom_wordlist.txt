@@ -107,6 +107,7 @@ SRE's
 SRR
 Standup
 standup
+stg
 subnets
 sys
 terraform
