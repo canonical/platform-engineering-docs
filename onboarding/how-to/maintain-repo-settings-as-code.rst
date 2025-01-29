@@ -1,5 +1,6 @@
 How to maintain your repository settings as code
 ================================================
+**Source:** `Discourse <https://discourse.canonical.com/t/maintaining-your-repo-settings-as-code/2386>`_
 
 This guide will help you maintain repository settings
 and your sanity consistently to ensure that the repository
