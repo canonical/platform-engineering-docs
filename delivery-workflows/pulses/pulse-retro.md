@@ -11,3 +11,5 @@ advance by everyone in the team using
 `Team Improvement Ideas <https://docs.google.com/document/d/1S-YjcjWic1xZ9uPLvXNNY8mMCYtsZ3OTtohpZsQlVGA/edit?usp=sharing>`_.
 The ideas in this document should be reviewed and any new or in-progress items
 discussed.
+
+Note: in EMEA & Americas, we're currently experimenting using a [Miro board](https://miro.com/app/board/uXjVLsCZaog=/) as a support to prepare and discuss during the retro.
