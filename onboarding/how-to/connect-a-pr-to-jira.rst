@@ -1,5 +1,6 @@
 How to connect your pull request to a Jira ticket
 =================================================
+**Source:** `Discourse <https://discourse.canonical.com/t/how-to-submit-your-first-pr/3154>`_
 
 This is a quick guide to help newcomers submit a PR tied to a Jira ticket!
 

@@ -37,10 +37,10 @@ the solution was to create our own Juju controller.
 Create a Juju controller
 ------------------------
 
-Before bootstrapping the controller, we need to enable Metallb to use the
+Before bootstrapping the controller, we need to enable MetalLB to use the
 workers IP as a pool.
 
-Log in to any worker and enable Metallb
+Log in to any worker and enable MetalLB
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On bastion - **prod-synapse-microk8s** environment
@@ -187,7 +187,7 @@ Upgrade the providers, apply the terraform and verify the changes.
 Configure Ingress
 -----------------
 
-Now we need to expose Synapse externally as it was set before via url
+Now we need to expose Synapse externally as it was set before via URL
 `chat.staging.ubuntu.com <https://chat.staging.ubuntu.com>`_ . To do this, first let's enable Ingress in our cluster.
 
 Log in to any worker and enable Ingress
