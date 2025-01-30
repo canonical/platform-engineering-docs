@@ -5,13 +5,11 @@ APAC
 approvers
 api
 AppService
-<<<<<<< HEAD
 argparse
 argv
 backfill
-=======
+Bitwarden
 Bootstack
->>>>>>> main
 bootstrap
 braindump
 changelog
