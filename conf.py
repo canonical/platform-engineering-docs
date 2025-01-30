@@ -137,11 +137,11 @@ html_context = {
     # Docs branch in the repo; used in links for viewing the source files
     #
     # TODO: To customise the branch, uncomment and update as needed.
-    # 'github_version': 'main',
+    "github_version": 'main',
     # Docs location in the repo; used in links for viewing the source files
     #
     # TODO: To customise the directory, uncomment and update as needed.
-    #"github_folder": "/sp-docs/",
+    "github_folder": "/",
 
     # TODO: To enable or disable the Previous / Next buttons at the bottom of pages
     # Valid options: none, prev, next, both
@@ -188,6 +188,9 @@ redirects = {}
 
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
+    "http://127.0.0.1:8080",
+    "http://localhost:8080",
+    "http://discourse-k8s:8080",
     "https://github.com/canonical/ACME/*",
     "https://github.com/canonical/infrastructure-services",
     "https://github.com/canonical/is-prod-synapse-external/*",
@@ -199,14 +202,24 @@ linkcheck_ignore = [
     "https://code.launchpad.net/~canonical-is/canonical-terraform-plans/*",
     "https://cos-ps6.is-devops.canonical.com/*",
     "https://code.launchpad.net/~canonical-is/canonical-mojo-specs/*",
-    "https://warthogs.atlassian.net/8"
+    "https://warthogs.atlassian.net/8",
+    "https://github.com/canonical/is-charms-github-repos",
+    "https://github.com/canonical/is-charms-github-repos/pull/3",
+    "http://10.10.10.10:9090/tsdb-status",
+    "https://www.dabeaz.com/python-distilled/",
+    "https://www.udemy.com/user/mumshad-mannambeth/"
 ]
 
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
 
-linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
+linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*",
+                                    "https://juju.is/docs/sdk/*",
+                                    ]
 
+# give linkcheck multiple tries on failure
+# linkcheck_timeout = 30
+linkcheck_retries = 3
 
 ########################
 # Configuration extras #

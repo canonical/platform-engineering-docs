@@ -1,5 +1,6 @@
 How to add a repository to the Mattermost GitHub bot
 ====================================================
+**Source:** `Discourse <https://discourse.canonical.com/t/add-a-repo-to-the-mattermost-github-bot/2869>`_
 
 If you have never linked your GitHub account before, type ``/github connect``
 in any Mattermost channel. 

@@ -1,5 +1,6 @@
 How to fix “Gateway Address Unavailable” for Traefik in PS6
 ===========================================================
+**Source:** `Discourse <https://discourse.canonical.com/t/fix-gateway-address-unavailable-for-traefik-in-ps6/2803>`_
 
 We encountered the “Gateway Address Unavailable” issue for Traefik (see
 the Discourse post

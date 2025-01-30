@@ -24,9 +24,17 @@ diagramming and charting tool that renders Markdown-inspired text definitions
 into diagrams. The benefit of this tool is that the diagrams can be rendered
 in GitHub and on Discourse.
 
-Use Mermaid's `C4 model syntax <https://mermaid.js.org/syntax/c4.html>`_ so
-that all of our diagrams follow a consistent structure according to the
+Whenever possible, use Mermaid's `C4 model syntax <https://mermaid.js.org/syntax/c4.html>`_
+so that all of our diagrams follow a consistent structure according to the
 `C4 model <https://c4model.com/>`_. 
+
+.. important::
+
+   The C4 model syntax in Mermaid is currently experimental and may produce
+   chaotic or clumsy-looking diagrams, especially for diagrams with many
+   different components or containers. While it is ideal to maintain
+   consistency and follow the C4 syntax, opt for the syntax in Mermaid that
+   produces a readable diagram while reducing your time and effort.
 
 Mermaid has a `live editor <https://mermaid.live/>`_ that you can use to
 create and render diagrams before adding them into the documentation.
