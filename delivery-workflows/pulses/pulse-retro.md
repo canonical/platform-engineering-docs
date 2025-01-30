@@ -11,4 +11,4 @@ advance by everyone in the team using
 The ideas in this document should be reviewed and any new or in-progress items
 discussed.
 
-Note: in EMEA & Americas, we're currently experimenting using a [Miro board](https://miro.com/app/board/uXjVLsCZaog=/) as a support to prepare and discuss during the retro.
+Note: in EMEA & Americas, we're currently experimenting using a [Miro board](https://miro.com/app/board/uXjVLsCZaog=/) (password in Bitwarden) as a support to prepare and discuss during the retro.
