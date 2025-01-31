@@ -67,3 +67,4 @@ Resources
    Architecture diagrams <architecture-diagram-guidance>
    Guidance on READMEs <readme-guidance>
    Guidance on tutorials <tutorial-guidance>
+   Demo document <demo-doc>
