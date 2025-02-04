@@ -1,6 +1,6 @@
 # Cycles in JIRA
 
-Cycles are materialized in JIRA as "versions" named after the end month of the cycle.
+Cycles are represented in JIRA as "versions" named after the end month of the cycle.
 Version *25.04* represents the cycle from October 2024 to April 2025.
 
 At the end of the cycle, the previous version is released and a new one is created to assign
