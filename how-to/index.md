@@ -4,7 +4,7 @@ The following sections contain how to guides for the team.
 
 ## Change or introduce new processes
 
-We are always working to imrpove our team's processes. This how to contains
+We are always working to improve our team's processes. This how to contains
 information about how to propose and document changes to our processes.
 
 Everyone on the team should be attending a retro for each pulse. For more
