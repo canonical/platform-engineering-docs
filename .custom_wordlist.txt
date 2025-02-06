@@ -72,6 +72,7 @@ indico
 init
 integrations
 io
+IPs
 irc
 ISD
 iterable
