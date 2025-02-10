@@ -7,7 +7,7 @@ The following sections contain how-to guides for the team.
 We are always working to improve our team's processes. This how to contains
 information about how to propose and document changes to our processes.
 
-Everyone on the team should be attending a retro for each pulse. For more
+Everyone on the team should attend a retro for each pulse. For more
 information, see [Pulse Retro](../delivery-workflows/pulses/pulse-retro.md).
 This is a great opportunity to raise any issues or suggestions for changes to
 our processes.
