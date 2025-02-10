@@ -1,6 +1,6 @@
 # How to
 
-The following sections contain how to guides for the team.
+The following sections contain how-to guides for the team.
 
 ## Change or introduce new processes
 
