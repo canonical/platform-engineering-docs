@@ -1,11 +1,6 @@
-Specs and Interfaces
-====================
+# Specs and Interfaces
 
-.. toctree::
-   :maxdepth: 2
-
-When a spec should be written
------------------------------
+## When a spec should be written
 
 The below discussion focuses on when a spec may or may not be necessary.
 Guidance on this can be provided during the project meetings. It is a guideline
@@ -47,8 +42,7 @@ Additional notes:
   being worked on (at a status before “approved”), consider enhancing that spec
   to also include the item.
 
-Reviews and approvals
----------------------
+## Reviews and approvals
 
 Spec writers should seek feedback from:
 
@@ -65,7 +59,7 @@ of the final approvers so that they have a chance for an initial round of review
 and comments can be addressed. Their line should have a status of Pending
 Review. The comment feature can be used to assign a task to the reviewer. See
 the changelog table and comment history on
-`this spec <https://docs.google.com/document/d/1TdfRQazCTBa7_tMnJWljdAFG_KtFOU8I_KHxlM8-wh8/edit?usp=sharing>`_
+[this spec](https://docs.google.com/document/d/1TdfRQazCTBa7_tMnJWljdAFG_KtFOU8I_KHxlM8-wh8/edit?usp=sharing>)
 as an example.
 
 Approvals are required from:
