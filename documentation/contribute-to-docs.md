@@ -157,19 +157,23 @@ you can edit the page and open a pull request to propose the changes.
 
 #### Converting from reStructuredText to Markdown
 
-TODO: Add text here about this! It's easy! Be sure to check everything!
+If your improvement to the documentation includes converting the document
+from reStructuredText to MyST, make sure you convert all formatting (links, directives,
+code, etc.) to MyST. Build and render the site by running `make run` to check
+that you didn't miss anything.
 
 ### Add a new document
 
 Choose the most appropriate location for the document. For instance,
-this demostration document was chosen to live under the `documentation` directory
+this demonstration document was chosen to live under the `documentation` directory
 since that's the most relevant place for this information. 
 
 Choose a descriptive and concise name for your document. You will need this
 name when you add the document to the appropriate table of contents in the
 directory's `index` file. 
 
-You must add your document to the table of contents!
+You must add your document to the table of contents of the `index` page
+in the directory where your document will live!
 
 ## Preview and test
 
@@ -184,10 +188,11 @@ When testing locally, some useful commands include:
 
 ### If the spell checker fails
 
-You can add words to `.custom_wordlist.txt` to prevent unnecessary failures.
+You can add words to `.wordlist.txt` to prevent unnecessary failures.
 
-You may need to run `make clean` followed by `make html` if you find that
-the spellchecker is complaining even after you've corrected a mistake.
+If you find that the spellchecker is complaining even after you've
+corrected a mistake, you can run `make spelling` to rebuild the documentation's
+HTML files. 
 
 ### If the link checker fails
 

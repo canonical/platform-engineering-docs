@@ -45,16 +45,6 @@ For syntax help and guidelines,
 refer to the `Canonical style guides
 <https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/#style-guides>`_.
 
-When testing locally, some useful commands include:
-
-* ``make help`` shows all the available commands.
-* ``make run`` builds the RTD site locally; you can visit.
-  :literalref:`http://127.0.0.1:8000` to view any changes you make.
-* ``make spellcheck`` runs the spelling check. You can add words to
-  ``.custom_wordlist.txt`` to prevent unnecessary failures.
-* ``make linkcheck`` runs the link checker.
-* ``make woke`` runs the inclusivity tests.
-
 Resources
 ~~~~~~~~~
 
