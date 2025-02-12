@@ -3,7 +3,7 @@ Platform Engineering Team
 
 The Platform Engineering team (formerly IS DevOps) is responsible for building,
 transitioning and maintaining operations-specific charms in line with the
-latest charming standards. 
+latest charming standards.
 We have 3 teams with folks from Americas, EMEA and APAC and are responsible for
 products like Indico, Github runners, Jenkins, Wordpress, Discourse, 12-factor charms and many more!
 
@@ -54,3 +54,4 @@ Resources
    Security Practices <security-practices/index>
    Working with other teams <working-with-other-teams/index>
    Hiring <hiring/index>
+   How to <how-to/index>
