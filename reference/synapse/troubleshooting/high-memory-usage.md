@@ -13,7 +13,7 @@ to the Synapse and Synapse database environments.
 
 ## Find highest request number
 
-Find the leader unit and login into the synapse-nginx container.
+Find the leader unit and log in into the synapse-nginx container.
 
 The grep should filter the moment that you noticed a memory usage peak. This can
 be checked in the Synapse Grafana dashboard.
