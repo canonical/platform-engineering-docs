@@ -44,7 +44,7 @@ the same user, not a provider.
 The IP is not registered in the table most of the time, or if it is, it
 contains the unit's IP since NGINX is in front of Synapse.
 
-Login into the Synapse database now.
+Log in into the Synapse database now.
 
 ```
  juju run postgresql/36 get-password
