@@ -83,7 +83,7 @@ synapse=# select * from user_stats_current order by joined_rooms DESC limit 20;
 
 ```
 
-So, we cant check the last time that the user @banana:ubuntu.com was online
+So, we can't check the last time that the user @banana:ubuntu.com was online
 before now but assuming the amount of /sync requests, probably that was some
 time ago and per the amount of rooms joined, once the user is back it has a lot
 of events to receive, causing the high memory usage now as per issue [13901](https://github.com/matrix-org/synapse/issues/13901).
