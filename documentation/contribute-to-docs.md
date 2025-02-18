@@ -144,8 +144,7 @@ Contributions to the RTD site will take on two primary forms:
 2. Adding a brand new document
 
 In either scenario, preview your changes locally, run the tests, and then
-open your PR! Tag Erin as a reviewer; you may want to tag another team member
-if the content requires a technical review.
+open your PR!
 
 ### Improve a currently existing document
 
@@ -201,3 +200,16 @@ You can add links to ignore to `conf.py` under `linkcheck_ignore`.
 
 If the complaint is about due to an anchor, then you can add the
 site you wish to ignore anchors on under `linkcheck_anchors_ignore_for_url`.
+
+## Open a pull request
+
+To merge a pull request, you need a single approval and must pass all of
+the documentation and linter tests. Your pull request will also result in a RTD
+build that you may use to preview your changes; this is the 
+`docs/readthedocs.com:canonical-platform-engineering` check. 
+
+Always tag Erin as a reviewer when you open a pull request. She will check the
+structure, grammar and style of the document. 
+
+Depending on the content in your document, you may need to tag another team member
+for a technical review.
