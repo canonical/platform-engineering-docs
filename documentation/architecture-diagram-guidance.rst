@@ -1,5 +1,5 @@
-Guidance on adding an architecture diagram
-==========================================
+Guidance on adding charm architecture diagrams
+==============================================
 
 As part of the 25.04 roadmap for our charms,
 `we have agreed <https://docs.google.com/spreadsheets/d/1v0DzKMIwj80vzfWJBAn2QsdgHIx9xYsL-xZBOf75GkI/edit?usp=sharing>`_
