@@ -172,8 +172,9 @@ Choose a descriptive and concise name for your document. You will need this
 name when you add the document to the appropriate table of contents in the
 directory's `index` file. 
 
-You must add your document to the table of contents of the `index` page
-in the directory where your document will live!
+Every new page must be referenced in a `toctree` directive. After you've chosen
+the best location for your document, add the title of your document to the
+`toctree` of the `index` file in the same directory.
 
 ## Preview and test
 
