@@ -60,7 +60,7 @@ When testing locally, some useful commands include:
 
 ### If the spell checker fails
 
-You can add words to `~/.sphinx/.wordlist.txt` to prevent unnecessary failures.
+You can add words to `.custom_wordlist.txt` to prevent unnecessary failures.
 
 If you find that the spellchecker is complaining even after you've
 corrected a mistake, you can run `make spelling` to rebuild the documentation's
