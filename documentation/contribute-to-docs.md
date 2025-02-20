@@ -6,7 +6,8 @@ contribute to the Platform Engineering RTD site. The guide covers useful
 Sphinx capabilities, the overall process, and local testing. 
 
 This document was created for the Sphinx + RTD demo on 20 February 2025.
-<!-- TODO: Add a link to the recording once it's available! -->
+[The recording of the demo](https://drive.google.com/file/d/1atJceVvgPcFt3jwzLmwrmSZ6sxHRGGxs/view?usp=drive_link)
+is available in the Platform Engineering demo Google Drive.
 
 ## Contribute to the RTD site
 
