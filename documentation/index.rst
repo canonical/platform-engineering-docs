@@ -45,6 +45,10 @@ For syntax help and guidelines,
 refer to the `Canonical style guides
 <https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/#style-guides>`_.
 
+.. seealso::
+
+   :ref:`contribute-to-the-rtd-site`
+
 Resources
 ~~~~~~~~~
 
@@ -60,4 +64,4 @@ Resources
    Architecture diagrams <architecture-diagram-guidance>
    Guidance on READMEs <readme-guidance>
    Guidance on tutorials <tutorial-guidance>
-   How to contribute to the documentation <contribute-to-docs>
+   Contribute <contribute-to-docs>

@@ -8,6 +8,83 @@ Sphinx capabilities, the overall process, and local testing.
 This document was created for the Sphinx + RTD demo on 20 February 2025.
 <!-- TODO: Add a link to the recording once it's available! -->
 
+## Contribute to the RTD site
+
+Contributions to the RTD site will take on two primary forms:
+1. Improving a currently existing document
+2. Adding a brand new document
+
+In either scenario, preview your changes locally, run the tests, and then
+open your PR!
+
+### Improve a currently existing document
+
+Whether you're on a random walk through our docs or you're looking for
+a specific document, you may spot something that you want to correct or
+improve upon. At the bottom of the document, there is a "Edit this page on GitHub"
+button with a link that takes you directly to the document on GitHub. From there,
+you can edit the page and open a pull request to propose the changes.
+
+#### Converting from reStructuredText to Markdown
+
+If your improvement to the documentation includes converting the document
+from reStructuredText to MyST, make sure you convert all formatting (links, directives,
+code, etc.) to MyST. Build and render the site by running `make run` to check
+that you didn't miss anything.
+
+### Add a new document
+
+Choose the most appropriate location for the document. For instance,
+this demonstration document was chosen to live under the `documentation` directory
+since that's the most relevant place for this information. 
+
+Choose a descriptive and concise name for your document. You will need this
+name when you add the document to the appropriate table of contents in the
+directory's `index` file. 
+
+Every new page must be referenced in a `toctree` directive. After you've chosen
+the best location for your document, add the title of your document to the
+`toctree` of the `index` file in the same directory.
+
+## Preview and test
+
+When testing locally, some useful commands include:
+
+* `make help` shows all the available commands.
+* `make run` builds the RTD site locally
+* `make spellcheck` runs the spelling check.
+* `make linkcheck` runs the link checker.
+* `make woke` runs the inclusivity tests.
+* `make vale` runs the Vale style checker.
+
+### If the spell checker fails
+
+You can add words to `.wordlist.txt` to prevent unnecessary failures.
+
+If you find that the spellchecker is complaining even after you've
+corrected a mistake, you can run `make spelling` to rebuild the documentation's
+HTML files. 
+
+### If the link checker fails
+
+You can add links to ignore to `conf.py` under `linkcheck_ignore`. 
+
+If the complaint is about due to an anchor, then you can add the
+site you wish to ignore anchors on under `linkcheck_anchors_ignore_for_url`.
+
+## Open a pull request
+
+To merge a pull request, you need a single approval and must pass all of
+the documentation and linter tests. Your pull request will also result in a RTD
+build that you may use to preview your changes; this is the 
+`docs/readthedocs.com:canonical-platform-engineering` check. 
+
+Always tag Erin as a reviewer when you open a pull request. She will check the
+structure, grammar and style of the document. 
+
+Depending on the content in your document, you may need to tag another team member
+for a technical review.
+
 ## Useful Sphinx capabilities
 
 For the purposes of the demo, I previewed different capabilities in Sphinx
@@ -136,80 +213,3 @@ lines[^note].
 ```{seealso}
 See also: [Footnotes](https://mystmd.org/spec/footnotes)
 ```
-
-## Contribute to the RTD site
-
-Contributions to the RTD site will take on two primary forms:
-1. Improving a currently existing document
-2. Adding a brand new document
-
-In either scenario, preview your changes locally, run the tests, and then
-open your PR!
-
-### Improve a currently existing document
-
-Whether you're on a random walk through our docs or you're looking for
-a specific document, you may spot something that you want to correct or
-improve upon. At the bottom of the document, there is a "Edit this page on GitHub"
-button with a link that takes you directly to the document on GitHub. From there,
-you can edit the page and open a pull request to propose the changes.
-
-#### Converting from reStructuredText to Markdown
-
-If your improvement to the documentation includes converting the document
-from reStructuredText to MyST, make sure you convert all formatting (links, directives,
-code, etc.) to MyST. Build and render the site by running `make run` to check
-that you didn't miss anything.
-
-### Add a new document
-
-Choose the most appropriate location for the document. For instance,
-this demonstration document was chosen to live under the `documentation` directory
-since that's the most relevant place for this information. 
-
-Choose a descriptive and concise name for your document. You will need this
-name when you add the document to the appropriate table of contents in the
-directory's `index` file. 
-
-Every new page must be referenced in a `toctree` directive. After you've chosen
-the best location for your document, add the title of your document to the
-`toctree` of the `index` file in the same directory.
-
-## Preview and test
-
-When testing locally, some useful commands include:
-
-* `make help` shows all the available commands.
-* `make run` builds the RTD site locally
-* `make spellcheck` runs the spelling check.
-* `make linkcheck` runs the link checker.
-* `make woke` runs the inclusivity tests.
-* `make vale` runs the Vale style checker.
-
-### If the spell checker fails
-
-You can add words to `.wordlist.txt` to prevent unnecessary failures.
-
-If you find that the spellchecker is complaining even after you've
-corrected a mistake, you can run `make spelling` to rebuild the documentation's
-HTML files. 
-
-### If the link checker fails
-
-You can add links to ignore to `conf.py` under `linkcheck_ignore`. 
-
-If the complaint is about due to an anchor, then you can add the
-site you wish to ignore anchors on under `linkcheck_anchors_ignore_for_url`.
-
-## Open a pull request
-
-To merge a pull request, you need a single approval and must pass all of
-the documentation and linter tests. Your pull request will also result in a RTD
-build that you may use to preview your changes; this is the 
-`docs/readthedocs.com:canonical-platform-engineering` check. 
-
-Always tag Erin as a reviewer when you open a pull request. She will check the
-structure, grammar and style of the document. 
-
-Depending on the content in your document, you may need to tag another team member
-for a technical review.
