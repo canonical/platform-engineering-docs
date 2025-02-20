@@ -50,6 +50,7 @@ Resources
 
 * `Canonical blog post about Diátaxis <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`_
 * `Canonical starter pack documentation <https://canonical-starter-pack.readthedocs-hosted.com/latest/>`_
+* `MyST cheat sheet <https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/style-guide-myst/>`_
 
 .. toctree::
    :hidden:
