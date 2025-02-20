@@ -207,7 +207,8 @@ linkcheck_ignore = [
     "https://github.com/canonical/is-charms-github-repos/pull/3",
     "http://10.10.10.10:9090/tsdb-status",
     "https://www.dabeaz.com/python-distilled/",
-    "https://www.udemy.com/user/mumshad-mannambeth/"
+    "https://www.udemy.com/user/mumshad-mannambeth/",
+    "https://nostarch.com/networkprogrammingwithgo"
 ]
 
 
