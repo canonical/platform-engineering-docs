@@ -84,7 +84,7 @@ max(jemalloc_stats_app_memory_bytes{juju_unit=~"synapse.*",job=~".*synapse_appli
 
 - Each panel should be configured as a library panel for easy reuse across dashboards.
 - The `juju_model` variable must be added to allow dynamic filtering by model.
-- Use appropriate units in Grafana (e.g., percent for CPU, bytes for memory, requests per minute for traffic
+- Use appropriate units in Grafana (e.g., percent for CPU, bytes for memory, requests per minute for traffic)
 
 ## Reference
 
