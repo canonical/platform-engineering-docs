@@ -15,7 +15,7 @@ Once approved and deployed, access it in Grafana.
 For each panel:
    - Click on the three dots (⋮) → More → Create library panel.
    - Name the library panel following the pattern [Charm's Name][Signal Name] (e.g., [Synapse][LATENCY]).
-   - Save it in the "Service Health Status" folder.
+   - Save the panel in the "Service Health Status" folder.
 
 ## Add a row
 
