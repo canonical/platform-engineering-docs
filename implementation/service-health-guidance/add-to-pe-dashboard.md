@@ -1,4 +1,4 @@
-# Add to Platform Engineering Dashboard
+# Add a new charm to Platform Engineering dashboard
 
 ## Submit a PR
 
