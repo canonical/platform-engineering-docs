@@ -1,6 +1,6 @@
 # Create Dashboard
 
-This guide provides a concise reference for creating a service health dashboard based on the four key monitoring signals: Latency, Errors, Traffic, and Saturation.
+This guide provides a concise reference for creating a service health dashboard based on the four key monitoring signals: Latency, Errors, Traffic and Saturation.
 
 Each panel should be created as a library panel so it can be easily imported into a general dashboard (see [Add to Platform Engineering Dashboard](add-to-pe-dashboard)). Additionally, a `juju_model` variable should be added to allow filtering per model.
 
