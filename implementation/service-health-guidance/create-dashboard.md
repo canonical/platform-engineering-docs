@@ -69,7 +69,7 @@ sum(rate(synapse_http_server_responses_total{juju_model=~"$synapse_model"}[5m]) 
 
 ## Saturation
 
-Saturation measures how much of the system's resources are being utilized, including CPU, memory, disk I/O, and other critical resources across various components like databases, task runners, and other services, indicating when the system is nearing its capacity limits.
+Saturation measures how much of the system's resources are being utilized, including CPU, memory, disk I/O and other critical resources across various components like databases, task runners and other services, indicating when the system is nearing its capacity limits.
 
 What was considered for Synapse: CPU and memory usage of the most resource-consuming unit over the last 5 minutes.
 
