@@ -4,7 +4,7 @@ Service Health Guidance
 Without a centralized dashboard, the :ref:`Ninja`
 must rely on fragmented monitoring tools or manual processes, increasing the
 risk of delayed responses to production issues. Implementing a centralized
-Grafana dashboard(referred as "Platform Engineering dashboard") allows them to
+Grafana dashboard (referred as "Platform Engineering dashboard") allows them to
 quickly assess the health of all deployed products in one place.
 
 Each charm will provide, where applicable, metrics for Latency, Traffic, Errors,
