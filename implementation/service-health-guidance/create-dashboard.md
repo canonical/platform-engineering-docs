@@ -55,7 +55,7 @@ sum by(code) (rate(synapse_http_server_responses_total{code=~"5..", juju_model=~
 
 ## Traffic
 
-Traffic reflects the volume of operations. This panel should display the total number of operations per minute—such as requests for a web application, transactions for a database, or jobs for a task runner—helping to assess demand and system load.
+Traffic reflects the volume of operations. This panel should display the total number of operations per minute—such as requests for a web application, transactions for a database or jobs for a task runner—helping to assess demand and system load.
 
 What was considered for Synapse: Total number of requests per minute over the last 5 minutes.
 
