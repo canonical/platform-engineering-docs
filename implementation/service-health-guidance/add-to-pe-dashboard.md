@@ -13,7 +13,7 @@ See how to create one in [Create Dashboard](create-dashboard).
 
 ## Access COS
 
-Once approved and deployed, access it in Grafana.
+Once approved and deployed, access the dashboard in Grafana.
 
 ## Create library panels
 
