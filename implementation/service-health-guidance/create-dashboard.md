@@ -90,7 +90,7 @@ max(jemalloc_stats_app_memory_bytes{juju_unit=~"synapse.*",job=~".*synapse_appli
 
 - Each panel should be configured as a library panel for easy reuse across dashboards.
 - The examples focus on Synapse, a chat/web application, but the Four Golden Signals can be adapted to any application. For example, a database might track the number of transactions, while Jenkins could monitor job executions.
-- Use appropriate units in Grafana (e.g., percent for CPU, bytes for memory, requests per minute for traffic)
+- Use appropriate units in Grafana (e.g., percent for CPU, bytes for memory, requests per minute for traffic).
 - Panels can be created using Loki as a data source, not just Prometheus.
 
 ## Reference
