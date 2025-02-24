@@ -16,7 +16,7 @@ Refer to the [Synapse Operator charm](https://github.com/canonical/synapse-opera
 
 Latency measures how long an operation takes to complete. Depending on the application, this could be the time to process a request, complete a transaction, finish a job, or execute a process. It’s important to distinguish between the latency of successful and failed operations.
 
-What was considered for Synapse: 95% of requests were completed in the time displayed on the panel or less.
+What was considered for Synapse: 95% of HTTP requests were completed in the time displayed on the panel or less.
 
 ### Queries
 
