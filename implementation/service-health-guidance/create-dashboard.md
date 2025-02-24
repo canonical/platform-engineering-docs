@@ -8,7 +8,7 @@ The variable will then be created while following the [Add to Platform Engineeri
 
 Create a panel for each signal considering the following information and examples.
 
-Refer to the [Synapse Operator charm](https://github.com/canonical/synapse-operator/pull/702) for an example on how the `synapse_model`variable is used as well as how the panels should look like.
+Refer to the [Synapse Operator charm](https://github.com/canonical/synapse-operator/pull/702) for an example on how the `synapse_model` variable is used as well as how the panels should look.
 
 ---
 
