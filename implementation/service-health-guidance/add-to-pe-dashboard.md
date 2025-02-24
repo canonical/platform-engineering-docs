@@ -45,7 +45,7 @@ Add a new variable:
 - Data Source: `${prometheusds}`
 - Sort: Alphabetical (ASC)
 
-Mind that data source can be Loki as well if your charm is integrated with it.
+Keep in mind that the data source can be Loki as well if your charm is integrated with it.
 
 ## Update the row title
 
