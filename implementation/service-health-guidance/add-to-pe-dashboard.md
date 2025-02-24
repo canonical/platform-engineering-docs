@@ -2,9 +2,7 @@
 
 This how-to guide will walk you through how to add a new dashboard to the Platform Engineering dashboard.
 
-Follow the instructions below if the charm is in production in PS6 and should be monitored by the Ninja.
-
-Currently, the dashboard is only available for charms deployed in PS6.
+Currently, the dashboard is only available for charms deployed in PS6. Follow the instructions below if the charm is in production in PS6 and should be monitored by the Ninja.
 
 ## Submit a PR
 
