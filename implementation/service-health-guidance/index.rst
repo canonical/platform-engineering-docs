@@ -1,7 +1,7 @@
 Service Health Guidance
 =======================
 
-Without a centralized dashboard, the `Ninja </delivery-workflows/pulses/ninja>`_
+Without a centralized dashboard, the :ref:`Ninja`
 must rely on fragmented monitoring tools or manual processes, increasing the
 risk of delayed responses to production issues. Implementing a centralized
 Grafana dashboard(referred as "Platform Engineering dashboard") allows them to

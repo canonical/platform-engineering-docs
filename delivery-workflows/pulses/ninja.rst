@@ -1,3 +1,4 @@
+.. _ninja:
 Platform Engineering Ninja
 ==========================
 
