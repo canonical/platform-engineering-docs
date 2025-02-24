@@ -15,6 +15,8 @@ Refer to `ISD204 - Platform Engineering Services Health Dashboard <https://docs.
 The `Platform Engineering dashboard <https://cos-ps6.is-devops.canonical.com/prod-cos-k8s-ps6-is-charms-grafana/d/d4a0ab60-1744-4be7-a16a-547fbff975ad/platform-engineering-services-health?orgId=1>`_ is available at PS6 only.
 Access requires a VPN connection.
 
+**Contents**
+
 .. toctree::
    :maxdepth: 2
 

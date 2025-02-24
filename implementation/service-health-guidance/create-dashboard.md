@@ -10,6 +10,11 @@ Create a panel for each signal considering the following information and example
 
 Refer to the [Synapse Operator charm](https://github.com/canonical/synapse-operator/pull/702) for an example on how the `synapse_model` variable is used as well as how the panels should look.
 
+## Prerequisites
+
+- The charm supports integration with [COS](https://charmhub.io/topics/canonical-observability-stack).
+- An initial dashboard must be available to add panels to. See [Build your first dashboard](https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/) for reference.
+
 ---
 
 ## Latency
