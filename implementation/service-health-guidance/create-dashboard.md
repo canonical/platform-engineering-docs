@@ -41,7 +41,7 @@ histogram_quantile(0.95, sum(rate(synapse_http_server_response_time_seconds_buck
 
 ## Errors
 
-Errors represent failed operations across different system components. Monitoring error rates helps in identifying issues within web applications, databases, task runners, and other services, allowing for early detection of system failures or performance degradation.
+Errors represent failed operations across different system components. Monitoring error rates helps in identifying issues within web applications, databases, task runners and other services, allowing for early detection of system failures or performance degradation.
 
 What was considered for Synapse: Current rate of failed requests per minute, based on the last 5 minutes, grouped by error code.
 
