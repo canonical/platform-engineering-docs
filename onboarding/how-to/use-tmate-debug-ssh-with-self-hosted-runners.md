@@ -1,3 +1,4 @@
+(tmate-debug-ssh-self-hosted-runners)=
 # Use tmate (debug-ssh) with self-hosted runners
 **Source: [Discourse](https://discourse.canonical.com/t/use-tmate-debug-ssh-with-self-hosted-runners/3289)**
 

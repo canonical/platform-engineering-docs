@@ -37,7 +37,7 @@ The tutorial should contain the following pieces:
   * A working station, e.g., a laptop, with amd64 architecture.
   * Juju 3 installed and bootstrapped to a MicroK8s controller. You can
     accomplish this process by using a Multipass VM as outlined in this guide:
-    `Set up / Tear down your test environment <https://juju.is/docs/juju/set-up--tear-down-your-test-environment>`_
+    `Set up / Tear down your test environment <https://canonical-juju.readthedocs-hosted.com/en/latest/user/howto/manage-your-deployment/manage-your-deployment-environment/>`_
 
 * **Set up tutorial model**. The tutorial should begin at this point. Have
   the user create Juju model with a predetermined name so that you can reference

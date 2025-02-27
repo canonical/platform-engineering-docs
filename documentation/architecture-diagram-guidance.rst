@@ -1,5 +1,5 @@
-Guidance on adding an architecture diagram
-==========================================
+Guidance on adding charm architecture diagrams
+==============================================
 
 As part of the 25.04 roadmap for our charms,
 `we have agreed <https://docs.google.com/spreadsheets/d/1v0DzKMIwj80vzfWJBAn2QsdgHIx9xYsL-xZBOf75GkI/edit?usp=sharing>`_
@@ -82,7 +82,7 @@ here is a quick and dirty example for the Indico charm (taken from
    C4Component
    title Component diagram for Indico Charm
 
-   Container_Boundary(imagebuildercharm), "Indico") {
+   Container_Boundary(indico, "Indico") {
      Component(nginx, "NGINX", "", "Serves static resources, handles web traffic")
      Component(charm, "Indico", "", "Observes events") 
      Component(celery, "Celery", "", "Processes tasks asynchronously")
