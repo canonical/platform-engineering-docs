@@ -178,6 +178,7 @@ TUI
 TUIs
 TypedDicts
 ubuntu
+uniq
 Unmerged
 uptime
 url
