@@ -22,13 +22,10 @@ We are going to check the NGINX log file `access.log` to identify the IPs with t
 highest number of accesses during this time.
 
 ```{terminal}
-kubectl exec -it synapse-1 -c synapse-nginc -- /bin/bash
- cd /var/log/nginx/
- cat access.log |grep '06/Feb/2025:14'|awk '{print $(NF-1)}'|sort -n|uniq -c|sort -k1
-```
+:input: kubectl exec -it synapse-1 -c synapse-nginc -- /bin/bash
 
-```{terminal}
-   ...
+:input: cd /var/log/nginx/
+:input: cat access.log |grep '06/Feb/2025:14'|awk '{print $(NF-1)}'|sort -n|uniq -c|sort -k1
    ...
    1520 "87.120.163.53"
    1600 "872.59.228.245"
@@ -47,7 +44,8 @@ can be checked in the Synapse Grafana dashboard. In this case, it occurred betwe
 - `uniq -c`: Counts occurrences of unique strings.
 - `sort -k1`: Sorts by the first field (the count from uniq).
 
-> **Note**: Once we have Loki integration in place, this step will be much easier. :-)
+```{note} Once we have Loki integration in place, this step will be much easier. :-)
+```
 
 From the command above, the IP `96.141.139.92` performed 3427 requests in one hour.
 In the next step
@@ -70,11 +68,8 @@ multiple users behind a provider.
 Use the following command now to verify that.
 
 ```{terminal}
- cat access.log |grep '06/Feb/2025:14'|grep 96.141.139.92|awk -F'"' '{print $(NF-5)}'|sort|uniq -c
-```
-
-```{terminal}
- 3427 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36
+:input: cat access.log |grep '06/Feb/2025:14'|grep 96.141.139.92|awk -F'"' '{print $(NF-5)}'|sort|uniq -c
+3427 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36
 ```
 
 - `cat access.log`: Prints access.log content to the output.
@@ -99,13 +94,11 @@ Log in into the Synapse database now so we can check all the users that has the
 same user-agent found in step 2.
 
 ```{terminal}
- juju run postgresql/36 get-password
- juju ssh postgresql/35
- psql -h <postgresql unit IP> -U operator -W synapse
- select distinct user_id from devices where user_agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36';
-```
+:input: juju run postgresql/36 get-password
 
-```{terminal}
+:input: juju ssh postgresql/35
+:input: psql -h <postgresql unit IP> -U operator -W synapse
+select distinct user_id from devices where user_agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36';
           user_id
 ----------------------------
  @apple:ubuntu.com
@@ -122,12 +115,7 @@ To do so, access the NGINX container again as in steps 1 and 2, then filter the
 logs using the following command:
 
 ```{terminal}
-cat access.log |grep '06/Feb/2025:14'|grep 96.141.139.92|grep rooms
-```
-
-Content example
-
-```{terminal}
+:input: cat access.log |grep '06/Feb/2025:14'|grep 96.141.139.92|grep rooms
 192.168.103.128 - - [06/Feb/2025:14:55:13 +0000] "POST /_matrix/client/v3/rooms/!ioioioioioi%3Aubuntu.com/event/... HTTP/1.1" 200 33 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36" "96.141.139.92" "https"
 
 ```
@@ -139,9 +127,6 @@ members of the room by running the following query.
 
 ```{terminal}
  select distinct user_id from room_memberships where room_id='!ioioioioioi:ubuntu.com' order by user_id;
-```
-
-```{terminal}
          user_id
 ----------------------------
  @banana:ubuntu.com
@@ -160,9 +145,6 @@ We can check this by running the following query.
 ```{terminal}
 synapse=# select * from user_stats_current order by joined_rooms DESC limit 20;
             user_id            | joined_rooms | completed_delta_stream_id 
-```
-
-```{terminal}
 -------------------------------+--------------+---------------------------
  @user1:ubuntu.com        |          326 |                   3962503
  ...
@@ -184,5 +166,5 @@ Unfortunately there is no solution other than to restart the instance.
 There is no action to do this, but is possible to restart Synapse by using Pebble:
 
 ```{terminal}
-juju ssh --container synapse  synapse/0 pebble restart synapse
+:input: juju ssh --container synapse  synapse/0 pebble restart synapse
 ```
