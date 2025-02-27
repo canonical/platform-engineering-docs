@@ -1,3 +1,5 @@
+.. _documentation-index:
+
 Documentation
 =============
 
@@ -43,21 +45,16 @@ For syntax help and guidelines,
 refer to the `Canonical style guides
 <https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/#style-guides>`_.
 
-When testing locally, some useful commands include:
+.. seealso::
 
-* ``make help`` shows all the available commands.
-* ``make run`` builds the RTD site locally; you can visit.
-  :literalref:`http://127.0.0.1:8000` to view any changes you make.
-* ``make spellcheck`` runs the spelling check. You can add words to
-  ``.custom_wordlist.txt`` to prevent unnecessary failures.
-* ``make linkcheck`` runs the link checker.
-* ``make woke`` runs the inclusivity tests.
+   :ref:`contribute-to-the-rtd-site`
 
 Resources
 ~~~~~~~~~
 
 * `Canonical blog post about Diátaxis <https://ubuntu.com/blog/diataxis-a-new-foundation-for-canonical-documentation>`_
 * `Canonical starter pack documentation <https://canonical-starter-pack.readthedocs-hosted.com/latest/>`_
+* `MyST cheat sheet <https://canonical-documentation-with-sphinx-and-readthedocscom.readthedocs-hosted.com/style-guide-myst/>`_
 
 .. toctree::
    :hidden:
@@ -67,3 +64,4 @@ Resources
    Architecture diagrams <architecture-diagram-guidance>
    Guidance on READMEs <readme-guidance>
    Guidance on tutorials <tutorial-guidance>
+   Contribute <contribute-to-docs>

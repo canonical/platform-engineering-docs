@@ -5,6 +5,7 @@ AGPLv
 API
 APIs
 balancer
+callouts
 Charmhub
 CLI
 DCO
