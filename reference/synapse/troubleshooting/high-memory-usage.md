@@ -6,9 +6,13 @@ receive, resulting in numerous /sync endpoint requests.
 
 This document will guide on how to detect if this is the case.
 
-> **Note**: All the steps assume that you are connected to the bastion and have access to the Synapse and Synapse database environments.
+```{note}
+All the steps assume that you are connected to the bastion and have access to the Synapse and Synapse database environments.
+```
 
-> **Warning**: All the IPs and users are fake.
+```{warning}
+All the IPs and users are fake.
+```
 
 ## Step 1. Find highest number of accesses
 
@@ -17,13 +21,13 @@ Find the leader unit and log in into the synapse-nginx container.
 We are going to check the NGINX log file `access.log` to identify the IPs with the
 highest number of accesses during this time.
 
-```bash
+```{terminal}
 kubectl exec -it synapse-1 -c synapse-nginc -- /bin/bash
  cd /var/log/nginx/
  cat access.log |grep '06/Feb/2025:14'|awk '{print $(NF-1)}'|sort -n|uniq -c|sort -k1
 ```
 
-```bash
+```{terminal}
    ...
    ...
    1520 "87.120.163.53"
@@ -65,11 +69,11 @@ multiple users behind a provider.
 
 Use the following command now to verify that.
 
-```bash
+```{terminal}
  cat access.log |grep '06/Feb/2025:14'|grep 96.141.139.92|awk -F'"' '{print $(NF-5)}'|sort|uniq -c
 ```
 
-```bash
+```{terminal}
  3427 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36
 ```
 
@@ -94,14 +98,14 @@ some luck and investigation.
 Log in into the Synapse database now so we can check all the users that has the
 same user-agent found in step 2.
 
-```bash
+```{terminal}
  juju run postgresql/36 get-password
  juju ssh postgresql/35
  psql -h <postgresql unit IP> -U operator -W synapse
  select distinct user_id from devices where user_agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36';
 ```
 
-```sql
+```{terminal}
           user_id
 ----------------------------
  @apple:ubuntu.com
@@ -117,12 +121,13 @@ One way to do this is by checking if there are requests adding events to rooms.
 To do so, access the NGINX container again as in steps 1 and 2, then filter the
 logs using the following command:
 
-```bash
+```{terminal}
 cat access.log |grep '06/Feb/2025:14'|grep 96.141.139.92|grep rooms
 ```
 
 Content example
-```bash
+
+```{terminal}
 192.168.103.128 - - [06/Feb/2025:14:55:13 +0000] "POST /_matrix/client/v3/rooms/!ioioioioioi%3Aubuntu.com/event/... HTTP/1.1" 200 33 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rambox/2.4.1 Chrome/126.0.6478.234 Safari/537.36" "96.141.139.92" "https"
 
 ```
@@ -132,11 +137,11 @@ By this request, we know that the user is member of `!ioioioioioi%3Aubuntu.com` 
 Let's compare the previous list with the members of this room. We can get the
 members of the room by running the following query.
 
-```sql
+```{terminal}
  select distinct user_id from room_memberships where room_id='!ioioioioioi:ubuntu.com' order by user_id;
 ```
 
-```sql
+```{terminal}
          user_id
 ----------------------------
  @banana:ubuntu.com
@@ -152,12 +157,12 @@ Also `@banana:ubuntu.com` is one of the members that joined the biggest number o
 
 We can check this by running the following query.
 
-```sql
+```{terminal}
 synapse=# select * from user_stats_current order by joined_rooms DESC limit 20;
             user_id            | joined_rooms | completed_delta_stream_id 
 ```
 
-```sql
+```{terminal}
 -------------------------------+--------------+---------------------------
  @user1:ubuntu.com        |          326 |                   3962503
  ...
@@ -178,6 +183,6 @@ Unfortunately there is no solution other than to restart the instance.
 
 There is no action to do this, but is possible to restart Synapse by using Pebble:
 
-```
+```{terminal}
 juju ssh --container synapse  synapse/0 pebble restart synapse
 ```
