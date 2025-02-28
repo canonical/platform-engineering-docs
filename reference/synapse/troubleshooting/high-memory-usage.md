@@ -48,7 +48,6 @@ can be checked in the Synapse Grafana dashboard. In this case, it occurred betwe
 ```
 
 From the command above, the IP `96.141.139.92` performed 3427 requests in one hour.
-In the next step
 
 ## Step 2. Find if requests are not from a provider
 
@@ -144,9 +143,9 @@ We can check this by running the following query.
 
 ```{terminal}
 synapse=# select * from user_stats_current order by joined_rooms DESC limit 20;
-            user_id            | joined_rooms | completed_delta_stream_id 
--------------------------------+--------------+---------------------------
- @user1:ubuntu.com        |          326 |                   3962503
+            user_id           | joined_rooms | completed_delta_stream_id
+------------------------------+--------------+---------------------------
+ @user1:ubuntu.com            |          326 |                   3962503
  ...
  @user2:ubuntu.com            |           85 |                   3940704
  @banana:ubuntu.com           |           84 |                   3865021
