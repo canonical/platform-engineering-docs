@@ -26,3 +26,4 @@ How-to guides for onboarding
    Use gh dash </onboarding/how-to/use-gh-dash>
    Use Pydantic </onboarding/how-to/use-pydantic>
    Use tmate (debug-ssh) with self-hosted runners </onboarding/how-to/use-tmate-debug-ssh-with-self-hosted-runners>
+   Manage the team mailing list </onboarding/how-to/manage-the-team-mailing-list>
