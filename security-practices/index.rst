@@ -5,3 +5,4 @@ Security Practices
    :hidden:
    :maxdepth: 1
 
+   Testing secrets <testing-secrets>
