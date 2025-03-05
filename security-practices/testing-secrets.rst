@@ -11,6 +11,8 @@ Setting up BitWarden
 See the `IS guide on BitWarden
 <https://canonical-information-systems-documentation.readthedocs-hosted.com/en/
 latest/how-to/bitwarden/>`_.
+Also probably worth a read: `Lastpass going out, BitWarren coming in
+https://discourse.canonical.com/t/lastpass-going-out-bitwarden-coming-in/4258`_.
 
 Organising secrets in BitWarden
 -------------------------------
