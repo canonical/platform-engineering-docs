@@ -160,6 +160,7 @@ SREs
 SRR
 SSHebang
 SSL
+snapcraft
 standup
 Standup
 stg
