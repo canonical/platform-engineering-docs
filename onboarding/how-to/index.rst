@@ -20,10 +20,10 @@ How-to guides for onboarding
    Increase storage used by charms </onboarding/how-to/increase-storage-used-by-charm-workaround>
    Install a local SMTP server </onboarding/how-to/install-local-smtp-server>
    Maintain repository settings as code </onboarding/how-to/maintain-repo-settings-as-code>
+   Manage the team mailing list </onboarding/how-to/manage-the-team-mailing-list>
    Schedule a PostgreSQL backup </onboarding/how-to/schedule-postgresql-backup>
    Set up a development environment for Indico </onboarding/how-to/set-up-a-development-environment-for-indico>
    Upgrade a terraform provider </onboarding/how-to/upgrade-terraform-provider>
    Use gh dash </onboarding/how-to/use-gh-dash>
    Use Pydantic </onboarding/how-to/use-pydantic>
    Use tmate (debug-ssh) with self-hosted runners </onboarding/how-to/use-tmate-debug-ssh-with-self-hosted-runners>
-   Manage the team mailing list </onboarding/how-to/manage-the-team-mailing-list>
