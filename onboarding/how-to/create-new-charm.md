@@ -13,14 +13,7 @@ This how-to will not cover implementation details.
 
 2. Create the GitHub repository
 
-    Create an MP for changing the ```terraform.tfvars``` file in the [IS Charms GitHub repository template](https://github.com/canonical/is-charms-github-repos).
-
-    Example:
-    [Add `github-runner-manager` PR](https://github.com/canonical/is-charms-github-repos/pull/3)
-
-    After it is merged, you can login in PS5 bastion, run the `pe` command and pick the `prod-is-charms-repos` environment.
-
-    Once you are there, you can run `terraform plan` and then `terraform apply`.
+   Follow the instructions from [How to maintain your repository settings as code](maintain-repo-settings-as-code).
 
 3. Register the charm name in Charmhub
 

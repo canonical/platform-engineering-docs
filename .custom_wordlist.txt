@@ -29,6 +29,7 @@ CKA
 CKAD
 CKS
 COE
+Codecov
 configs
 Crontab
 Ctrl
