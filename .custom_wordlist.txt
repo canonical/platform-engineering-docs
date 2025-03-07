@@ -2,6 +2,7 @@ ADR
 ADRs
 amd
 AoC
+akismet
 APAC
 api
 approvers
@@ -88,6 +89,7 @@ juju
 KeyError
 kubeconfig
 labelled
+Lastpass
 LDAP
 learnt
 lego
