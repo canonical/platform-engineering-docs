@@ -16,7 +16,7 @@ For a new charm, create your repository using the "canonical/is-charms-template-
 3. The charm should most likely be public.
 4. "Codecov", "Jira Software + Github" and "Renovate" should be enabled.
 
-For other kinds of repositories (not charms), follow the same approach, skipping the template step.
+For other kinds of repositories (not charms), follow the same approach, but skip the template step.
 
 
 ## How to update repository settings
