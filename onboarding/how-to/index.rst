@@ -8,7 +8,6 @@ How-to guides for onboarding
    Add digest pinning in rock files </onboarding/how-to/digest-pinning-rock-files-renovate-bumps>
    Add a repository to the Mattermost GitHub bot </onboarding/how-to/add-repo-mattermost-github-bot>
    Add a new repository to the GitHub repositories </onboarding/how-to/add-new-repo-to-github-repos>
-   Change all GitHub repositories </onboarding/how-to/change-all-github-repos>
    Configure a terraform plan on the IS-charms bastion </onboarding/how-to/configure-terraform-plan-bastion>
    Connect your pull request to a Jira ticket </onboarding/how-to/connect-a-pr-to-jira>
    Create a new charm </onboarding/how-to/create-new-charm>
