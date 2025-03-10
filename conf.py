@@ -194,6 +194,7 @@ linkcheck_ignore = [
     "https://github.com/canonical/ACME/*",
     "https://github.com/canonical/infrastructure-services",
     "https://github.com/canonical/is-prod-synapse-external/*",
+    "https://github.com/canonical/platform-engineering-repos/",
     "https://chat.staging.ubuntu.com",
     "https://code.launchpad.net/~amandahla/canonical-is-firewalls/*",
     "https://wiki.canonical.com/*",
