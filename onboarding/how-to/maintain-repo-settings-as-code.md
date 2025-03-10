@@ -27,7 +27,7 @@ Once your repository is created, you should update the settings to match the tea
 2. Apply the changes (see next section).
 
 
-## How to apply changes
+## Apply changes
 
 1. Connect to PS5's bastion.
 2. Switch to the `prod-is-charms-repos` environment: `pe prod-is-charms-repos`
