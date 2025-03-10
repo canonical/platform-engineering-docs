@@ -7,7 +7,7 @@ in the [platform-engineering-repos](https://github.com/canonical/platform-engine
 There is currently no CI/CD to apply the changes done in the repository. 
 Please follow the steps below to apply the changes.
 
-## How to create a new repository
+## Create a new repository
 
 For a new charm, create your repository using the "canonical/is-charms-template-repo" template:
 
