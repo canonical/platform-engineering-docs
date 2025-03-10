@@ -7,19 +7,19 @@ in the [platform-engineering-repos](https://github.com/canonical/platform-engine
 There is currently no CI/CD to apply the changes done in the repository. 
 Please follow the steps below to apply the changes.
 
-## How to create a new repository
+## Create a new repository
 
 For a new charm, create your repository using the "canonical/is-charms-template-repo" template:
 
-1. Go to [New repository](https://github.com/new)
+1. Go to [New repository](https://github.com/new).
 2. Select "canonical/is-charms-template-repo" as the template in the drop-down.
 3. The charm should most likely be public.
 4. "Codecov", "Jira Software + Github" and "Renovate" should be enabled.
 
-For other kinds of repositories (not charms), follow the same approach, skipping the template step.
+For other kinds of repositories (not charms), follow the same approach, but skip the template step.
 
 
-## How to update repository settings
+## Update repository settings
 
 Once your repository is created, you should update the settings to match the team's standards.
 
@@ -27,7 +27,7 @@ Once your repository is created, you should update the settings to match the tea
 2. Apply the changes (see next section).
 
 
-## How to apply changes
+## Apply changes
 
 1. Connect to PS5's bastion.
 2. Switch to the `prod-is-charms-repos` environment: `pe prod-is-charms-repos`
