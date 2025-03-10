@@ -19,7 +19,7 @@ For a new charm, create your repository using the "canonical/is-charms-template-
 For other kinds of repositories (not charms), follow the same approach, but skip the template step.
 
 
-## How to update repository settings
+## Update repository settings
 
 Once your repository is created, you should update the settings to match the team's standards.
 
