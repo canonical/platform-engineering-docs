@@ -33,4 +33,6 @@ Once your repository is created, you should update the settings to match the tea
 2. Switch to the `prod-is-charms-repos` environment: `pe prod-is-charms-repos`
 3. Follow the instructions there: load the vault token, go to the right directory, and run `terragrunt plan` and `terragrunt apply`.
 
-Important: the vault token expires after ~15min. If you experience any error, try to refresh the token with `vault_auth`.
+```{important}
+The vault token expires after ~15min. If you experience any error, try to refresh the token with `vault_auth`.
+```
