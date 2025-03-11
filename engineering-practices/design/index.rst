@@ -5,7 +5,7 @@ Design
    :hidden:
    :maxdepth: 1
 
-   Specs and Interfaces </design/specs/index>
+   Specs and Interfaces <specs/index>
 
 
    

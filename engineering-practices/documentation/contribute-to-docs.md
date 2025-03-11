@@ -192,7 +192,7 @@ If you want to include an image nested in a separate directory, you must include
 the full path to the image (with a `/` at the front of the path!). Below is
 an example from [one of our onboarding documents](tmate-debug-ssh-self-hosted-runners).
 
-```{image} /onboarding/how-to/images/use-tmate-debug-ssh-with-self-hosted-runners-2.png
+```{image} /engineering-practices/how-to/images/use-tmate-debug-ssh-with-self-hosted-runners-2.png
 :alt: output-action
 :align: center
 :scale: 50%
