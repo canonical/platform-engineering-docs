@@ -16,6 +16,6 @@ For minor changes/ clarifications to processes, just raise a PR on our team
 documentation. For major changes, such as introducing a new process or making a
 significant change to an existing process, please write a new spec or update an
 existing spec. This process spec should go through our
-[usual review process](../design/specs/index.md).
+[usual review process](../engineering-practices/design/specs/index.md).
 Once the spec has been approved, the team documentation should be updated to
 reflect the new or changed process.
