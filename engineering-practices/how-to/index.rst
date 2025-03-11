@@ -1,5 +1,5 @@
-How-to guides for onboarding
-============================
+How-to guides
+=============
 
 .. toctree::
    :maxdepth: 1
