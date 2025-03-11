@@ -1,20 +1,43 @@
 Platform Engineering Team
 =========================
 
-The Platform Engineering team (formerly IS DevOps) is responsible for building,
-transitioning and maintaining operations-specific charms in line with the
-latest charming standards.
-We have 3 teams with folks from Americas, EMEA and APAC and are responsible for
-products like Indico, Github runners, Jenkins, Wordpress, Discourse, 12-factor charms and many more!
+The Platform Engineering team (formerly IS DevOps) is dedicated to building, transitioning, and maintaining operations-specific charms
+while adhering to the latest charming standards. Our goal is to support both internal and external ITOps teams in adopting a fully 
+model-driven operations framework, maximizing its benefits.
+
+Our responsibilities include:
+
+-  Designing and implementing world-class charmed solutions for application and infrastructure management that serve both internal teams and external organizations.
+-  Ensuring seamless integration with the latest charmed solutions from product engineering.
+-  Collaborating with IS to deploy these solutions, gather feedback, and refine them for optimal functionality.
+-  Maintaining and regularly updating the charms we own.
 
 For a full list of charms we are responsible for, see the `Charm Engineering Releases <https://releases.juju.is/?team=IS>`_ page.
 
-Our mission
------------
 
-Our mission is to drive operational efficiency and enable self service capabilities
-through standardizing workflows, building tool chains and automating key operations.
-We are building foundational components that allow IS to provide our internal cloud as a service.
+Our stakeholders
+----------------
+
+#. IS(Canonical ITOps): Canonical’s IS team oversees a wide range of responsibilities, from data center management and Juju infrastructure provisioning 
+   to application management and security. As the largest stakeholder in our work, IS plays a key role in shaping our roadmap, ensuring that our services
+   are thoroughly tested internally before being deployed in customer environments.
+   The majority of functional requirements for our charms come from IS, forming the foundation of the products we develop. However, it's crucial to 
+   maintain a broader perspective, ensuring that our solutions follow industry best practices rather than ad-hoc fixes. Additionally, these solutions 
+   must be designed to work seamlessly for external organizations, not just for our internal needs.
+
+#. Security: Canonical Security team is responsible for ensuring compliance, security and risk management of our internal solutions.In recent cycles, we have 
+   worked closely with the security team to develop charms for solutions like OpenCTI, Cloudflare, and Wazuh. 
+   These will enable us to monitor our infrastructure, network, endpoints, and potential threats more effectively in the future.
+
+#. Web: The Canonical Web team is responsible for developing our websites and front-end interfaces for various tools. 
+   We have closely collaborated with them on the 12-factor project to streamline site deployment and management, leveraging the power of Juju and charms
+   for long-term efficiency and scalability.
+
+#. Community: The Community team focuses on fostering OSS community engagement and maintaining developer relations for various products.
+   We frequently collaborate with them, as they rely on our support for developing solutions like Indio and Matrix to drive community involvement.
+
+#. Others: Given our role as a bridge between product engineering and operations, we regularly collaborate with other charm engineering teams—
+   such as Starcraft, Server, Launchpad, and Landscape—to build and refine solutions together.
 
 Roadmap
 -----------
