@@ -6,10 +6,12 @@ Everything regarding "how" we do.
 .. toctree::
    :maxdepth: 2
 
+   Contributing Guide <contributing-guide/index>
    Design <design/index>
    Documentation <documentation/index>
-   How-to guides <how-to/index>
-   Implementation <implementation/index>
+   Charm development <charm-development/index>
+   Snap development <snap-development/index>
    Security Practices <security-practices/index>
+   How-to guides <how-to/index>
 
 
