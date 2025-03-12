@@ -1,5 +1,10 @@
 # Charm deployment to staging
 
+This page aims at listing the main steps to deploy one of our charms in staging.
+
+It's not exhaustive yet, feel free to add missing sections.
+
+
 ## Request the environment 
 
 Request a staging environment on [IS Portal](https://portal.admin.canonical.com/requests/new).
