@@ -12,7 +12,7 @@ Request a staging environement on [IS Portal](https://portal.admin.canonical.com
 
 ## Access the environment
 
-Once the environment has been created, you should be able to access the environment through the bastions (see [how-tos](/engineering-practices/how-to) if needed).
+Once the environment has been created, you should be able to access the environment through the bastions (see [how-tos](/engineering-practices/how-to/index) if needed).
 
 ## Enable Gitops
 
