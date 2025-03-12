@@ -9,7 +9,6 @@ How-to guides
    Add a repository to the Mattermost GitHub bot <add-repo-mattermost-github-bot>
    Configure a terraform plan on the IS-charms bastion <configure-terraform-plan-bastion>
    Connect your pull request to a Jira ticket <connect-a-pr-to-jira>
-   Create a new charm <create-new-charm>
    Deploy Synapse locally with with production terraform plans <local-synapse-deployed-with-production-terraform-plans>
    Estimate Discourse downtime during a charm upgrade <estimate-discourse-downtime-during-charm-upgrades>
    Fix "Gateway Address Unavailable" error <fix-gateway-address-unavailable-traefik-ps6>
