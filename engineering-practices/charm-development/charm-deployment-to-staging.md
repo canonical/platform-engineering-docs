@@ -2,7 +2,9 @@
 
 This page aims at listing the main steps to deploy one of our charms in staging.
 
-It's not exhaustive yet, feel free to add missing sections.
+```{warning}
+This page is a work in progress. Feel free to add missing sections.
+```
 
 
 ## Request the environment 
