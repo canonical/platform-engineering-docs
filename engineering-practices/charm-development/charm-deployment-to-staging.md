@@ -4,7 +4,7 @@
 
 Request a staging environment on [IS Portal](https://portal.admin.canonical.com/requests/new).
   - Use the "IS-Services: Set up a new Prodstack environment" category.
-  - Service name: provide an explicit name, you don't have to prefix it with "stg"
+  - Service name: provide an explicit name. You don't have to prefix the name with "stg".
   - Team/owner: is-charms
   - Cloud: PS6
 
