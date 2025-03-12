@@ -8,8 +8,8 @@ project and links to relevant resources (especially documentation).
 The README template
 ~~~~~~~~~~~~~~~~~~~
 
-If you create a new charm using the ``is-charms-template-repo``, then your new
-repository will contain the `README template <https://github.com/canonical/is-charms-template-repo/blob/main/README.md>`_
+If you create a new charm using the ``platform-engineering-charm-template``, then your new
+repository will contain the `README template <https://github.com/canonical/platform-engineering-charm-template/blob/main/README.md>`_
 that you can use as guidance.
 
 Pre-existing charms that were created prior to the inclusion of this template

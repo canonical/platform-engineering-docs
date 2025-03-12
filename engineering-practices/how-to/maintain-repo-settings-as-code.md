@@ -9,10 +9,10 @@ Please follow the steps below to apply the changes.
 
 ## Create a new repository
 
-For a new charm, create your repository using the "canonical/is-charms-template-repo" template:
+For a new charm, create your repository using the "canonical/platform-engineering-charm-template" template:
 
 1. Go to [New repository](https://github.com/new).
-2. Select "canonical/is-charms-template-repo" as the template in the drop-down.
+2. Select "canonical/platform-engineering-charm-template" as the template in the drop-down.
 3. The charm should most likely be public.
 4. "Codecov", "Jira Software + Github" and "Renovate" should be enabled.
 

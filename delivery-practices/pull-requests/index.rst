@@ -189,5 +189,5 @@ such as enabling a new bot), the PR description should include:
     * Or which of the standards/ guidelines was not applied and why
 
 The above should be created as a
-`template <https://github.com/canonical/is-charms-template-repo/blob/main/.github/pull_request_template.yaml>`_
+`template <https://github.com/canonical/platform-engineering-charm-template/blob/main/.github/pull_request_template.yaml>`_
 for raising PRs across all of our repositories.
