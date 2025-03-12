@@ -90,6 +90,7 @@ juju
 KeyError
 kubeconfig
 labelled
+lifecycle
 Lastpass
 LDAP
 learnt
