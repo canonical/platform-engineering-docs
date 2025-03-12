@@ -1,6 +1,5 @@
 # Charm deployment to staging
 
-
 ## Request the environment 
 
 Request a staging environment on [IS Portal](https://portal.admin.canonical.com/requests/new).
@@ -13,6 +12,7 @@ Request a staging environment on [IS Portal](https://portal.admin.canonical.com/
 ## Access the environment
 
 Once the environment has been created, you should be able to access the environment through the bastions.
+
 
 ## Enable GitOps
 
