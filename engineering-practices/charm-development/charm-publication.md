@@ -5,7 +5,7 @@
 
 Though this might differ for certain cases, for the large part we should follow the same practices.
 
-Below is the summary of guidance, more details can be found in the approved spec:
+Below is the summary of guidance, and more details can be found in the approved spec:
 
 1.  Workloadless charms will be initially published to track “1”, which will increase whenever a breaking change is added.
 
