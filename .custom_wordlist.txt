@@ -68,6 +68,7 @@ Gruntwork's
 handoff
 haproxy
 Hightower's
+hoc
 httprequest
 https
 HTTPS
@@ -157,6 +158,7 @@ Reddit
 repo
 repos
 retrigger
+scalability
 Sebastien
 SICP
 SMTP
