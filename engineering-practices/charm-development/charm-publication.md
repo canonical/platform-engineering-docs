@@ -16,5 +16,5 @@ Below is the summary of guidance, and more details can be found in the approved 
    Breaking changes should be postponed until the new track is released as a consequence of the increased major workload version
    
 4.  The default track will be the latest stable version. For instance, 2/stable when 1/edge, 1/stable, 2/edge and 2/stable are available. 
-   This will mean that an operator will have to manually switch tracks, in order to upgrade a charm to a higher track.
+   This will mean that an operator will have to manually switch tracks in order to upgrade a charm to a higher track.
    
