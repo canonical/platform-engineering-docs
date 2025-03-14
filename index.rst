@@ -34,7 +34,7 @@ Our stakeholders
    for long-term efficiency and scalability.
 
 #. Community: The Community team focuses on fostering OSS community engagement and maintaining developer relations for various products.
-   We frequently collaborate with them, as they rely on our support for developing solutions like Indio and Matrix to drive community involvement.
+   We frequently collaborate with them, as they rely on our support for developing solutions like Indico and Matrix to drive community involvement.
 
 #. Others: Given our role as a bridge between product engineering and operations, we regularly collaborate with other charm engineering teams—
    such as Starcraft, Server, Launchpad, and Landscape—to build and refine solutions together.
