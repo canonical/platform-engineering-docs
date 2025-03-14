@@ -3,7 +3,7 @@
 
 [ISD-151](https://docs.google.com/document/d/1wkucY_V7othjizqGoJcF8apF6WIhRPnI2OMM56mPzZc/edit?tab=t.0) defines the guidance for creating tracks on Charmhub.
 
-Though, this might differ for certain cases- for the large part we should follow the same practices.
+Though this might differ for certain cases, for the large part we should follow the same practices.
 
 Below is the summary of guidance, more details can be found in the approved spec:
 
