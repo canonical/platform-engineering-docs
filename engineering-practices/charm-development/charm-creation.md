@@ -13,7 +13,7 @@ This how-to will not cover implementation details.
 
 2. Create the GitHub repository
 
-   Follow the instructions from [How to maintain your repository settings as code](maintain-repo-settings-as-code).
+   Follow the instructions from [How to maintain your repository settings as code](/engineering-practices/how-to/maintain-repo-settings-as-code).
 
 3. Register the charm name in Charmhub
 
