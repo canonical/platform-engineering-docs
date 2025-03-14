@@ -18,7 +18,7 @@ For a full list of charms we are responsible for, see the `Charm Engineering Rel
 Our stakeholders
 ----------------
 
-#. IS(Canonical ITOps): Canonical’s IS team oversees a wide range of responsibilities, from data center management and Juju infrastructure provisioning 
+#. IS (Canonical ITOps): Canonical’s IS team oversees a wide range of responsibilities, from data center management and Juju infrastructure provisioning 
    to application management and security. As the largest stakeholder in our work, IS plays a key role in shaping our roadmap, ensuring that our services
    are thoroughly tested internally before being deployed in customer environments.
    The majority of functional requirements for our charms come from IS, forming the foundation of the products we develop. However, it's crucial to 
