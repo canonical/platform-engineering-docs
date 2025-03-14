@@ -25,7 +25,7 @@ Our stakeholders
    maintain a broader perspective, ensuring that our solutions follow industry best practices rather than ad-hoc fixes. Additionally, these solutions 
    must be designed to work seamlessly for external organizations, not just for our internal needs.
 
-#. Security: Canonical Security team is responsible for ensuring compliance, security and risk management of our internal solutions.In recent cycles, we have 
+#. Security: Canonical Security team is responsible for ensuring compliance, security and risk management of our internal solutions. In recent cycles, we have 
    worked closely with the security team to develop charms for solutions like OpenCTI, Cloudflare, and Wazuh. 
    These will enable us to monitor our infrastructure, network, endpoints, and potential threats more effectively in the future.
 
