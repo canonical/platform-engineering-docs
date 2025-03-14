@@ -9,6 +9,3 @@ Delivery Practices
    JIRA </delivery-practices/jira/index>
    Pull Requests </delivery-practices/pull-requests/index>
    Releases </delivery-practices/releases/index>
-
-   
-   

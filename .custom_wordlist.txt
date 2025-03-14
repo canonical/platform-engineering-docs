@@ -28,6 +28,7 @@ Chrony
 CKA
 CKAD
 CKS
+Cloudflare
 COE
 Codecov
 configs
@@ -67,6 +68,7 @@ Gruntwork's
 handoff
 haproxy
 Hightower's
+hoc
 httprequest
 https
 HTTPS
@@ -83,6 +85,7 @@ IPs
 irc
 ISD
 iterable
+ITOps
 jenkins
 jhack
 Jira
@@ -127,10 +130,12 @@ olympiads
 onboarders
 onboarding
 Onboarding
+OpenCTI
 OpenStack
 OpenTofu
 O'Reilly
 orgId
+OSS
 OSTEP
 paas
 PaaS
@@ -154,6 +159,7 @@ Reddit
 repo
 repos
 retrigger
+scalability
 Sebastien
 SICP
 SMTP
@@ -167,6 +173,7 @@ SSL
 snapcraft
 standup
 Standup
+Starcraft
 stg
 subnets
 sys
@@ -197,6 +204,7 @@ Wazuh
 WIP
 wordpress
 Wordpress
+Workloadless
 Wuestkamp's
 Yevgeni's
 YouTube
